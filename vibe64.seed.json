@@ -1,0 +1,17 @@
+{
+  "schema": "vibe64.seed",
+  "schemaVersion": 1,
+  "id": "jskit-database",
+  "name": "Database",
+  "tagline": "Personal accounts with lasting data",
+  "description": "People sign in and work with records that stay safely in the database. Each person gets their own experience, without team or workspace sharing.",
+  "kind": "foundation",
+  "repository": "vibe64-dev/jskit-seed-database",
+  "basedOn": null,
+  "icon": "database",
+  "capabilities": {
+    "authentication": "local-db",
+    "database": "mariadb",
+    "workspaces": false
+  }
+}
