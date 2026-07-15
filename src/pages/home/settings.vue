@@ -23,16 +23,7 @@ import { RouterView } from "vue-router";
 
 <style scoped>
 .generated-ui-screen {
-  --generated-ui-screen-title-size: 1.85rem;
   --generated-ui-screen-panel-padding: 1rem;
-}
-
-.settings-shell__title {
-  font-size: var(--generated-ui-screen-title-size);
-  font-weight: 650;
-  letter-spacing: 0;
-  line-height: 1.15;
-  margin: 0 0 0.35rem;
 }
 
 .settings-shell__panel {
@@ -75,10 +66,6 @@ import { RouterView } from "vue-router";
 }
 
 @media (max-width: 960px) {
-  .generated-ui-screen {
-    --generated-ui-screen-title-size: 1.35rem;
-  }
-
   .settings-shell__body {
     grid-template-columns: 1fr;
   }
