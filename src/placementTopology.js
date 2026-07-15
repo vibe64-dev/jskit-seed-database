@@ -1,0 +1,222 @@
+const placements = [];
+
+function addPlacementTopology(value = {}) {
+  placements.push(value);
+}
+
+export { addPlacementTopology };
+export default { placements };
+
+const menuLinkRenderers = Object.freeze({
+  link: "local.main.ui.surface-aware-menu-link-item"
+});
+
+const bottomNavLinkRenderers = Object.freeze({
+  link: "local.main.ui.tab-link-item"
+});
+
+addPlacementTopology({
+  id: "shell.primary-nav",
+  description: "Primary top-level navigation for the current surface.",
+  surfaces: ["*"],
+  default: true,
+  variants: {
+    compact: {
+      outlet: "shell-layout:primary-bottom-nav",
+      renderers: bottomNavLinkRenderers
+    },
+    medium: {
+      outlet: "shell-layout:primary-menu",
+      renderers: menuLinkRenderers
+    },
+    expanded: {
+      outlet: "shell-layout:primary-menu",
+      renderers: menuLinkRenderers
+    }
+  }
+});
+
+addPlacementTopology({
+  id: "shell.secondary-nav",
+  description: "Secondary navigation for the current surface.",
+  surfaces: ["*"],
+  variants: {
+    compact: {
+      outlet: "shell-layout:secondary-menu",
+      renderers: menuLinkRenderers
+    },
+    medium: {
+      outlet: "shell-layout:secondary-menu",
+      renderers: menuLinkRenderers
+    },
+    expanded: {
+      outlet: "shell-layout:secondary-menu",
+      renderers: menuLinkRenderers
+    }
+  }
+});
+
+addPlacementTopology({
+  id: "shell.identity",
+  description: "Current surface identity and switcher controls.",
+  surfaces: ["*"],
+  variants: {
+    compact: {
+      outlet: "shell-layout:top-left"
+    },
+    medium: {
+      outlet: "shell-layout:top-left"
+    },
+    expanded: {
+      outlet: "shell-layout:top-left"
+    }
+  }
+});
+
+addPlacementTopology({
+  id: "shell.status",
+  description: "Surface status, connection, and utility indicators.",
+  surfaces: ["*"],
+  variants: {
+    compact: {
+      outlet: "shell-layout:top-right"
+    },
+    medium: {
+      outlet: "shell-layout:top-right"
+    },
+    expanded: {
+      outlet: "shell-layout:top-right"
+    }
+  }
+});
+
+addPlacementTopology({
+  id: "shell.global-actions",
+  description: "Global surface actions that should stay outside primary navigation.",
+  surfaces: ["*"],
+  variants: {
+    compact: {
+      outlet: "shell-layout:top-right",
+      renderers: menuLinkRenderers
+    },
+    medium: {
+      outlet: "shell-layout:top-right",
+      renderers: menuLinkRenderers
+    },
+    expanded: {
+      outlet: "shell-layout:top-right",
+      renderers: menuLinkRenderers
+    }
+  }
+});
+
+addPlacementTopology({
+  id: "page.supporting-content",
+  description: "Supporting page content that opens as a bottom sheet on compact layouts and a side panel on wider layouts.",
+  surfaces: ["*"],
+  variants: {
+    compact: {
+      outlet: "shell-layout:supporting-bottom-sheet"
+    },
+    medium: {
+      outlet: "shell-layout:supporting-side-panel"
+    },
+    expanded: {
+      outlet: "shell-layout:supporting-side-panel"
+    }
+  }
+});
+
+addPlacementTopology({
+  id: "page.section-nav",
+  owner: "home-settings",
+  description: "Navigation between child pages in the home settings section.",
+  surfaces: ["home"],
+  variants: {
+    compact: {
+      outlet: "home-settings:primary-menu",
+      renderers: menuLinkRenderers
+    },
+    medium: {
+      outlet: "home-settings:primary-menu",
+      renderers: menuLinkRenderers
+    },
+    expanded: {
+      outlet: "home-settings:primary-menu",
+      renderers: menuLinkRenderers
+    }
+  }
+});
+
+
+addPlacementTopology({
+  id: "auth.profile-menu",
+  description: "Authenticated profile menu actions.",
+  surfaces: ["*"],
+  variants: {
+    compact: {
+      outlet: "auth-profile-menu:primary-menu",
+      renderers: {
+        link: "auth.web.profile.menu.link-item"
+      }
+    },
+    medium: {
+      outlet: "auth-profile-menu:primary-menu",
+      renderers: {
+        link: "auth.web.profile.menu.link-item"
+      }
+    },
+    expanded: {
+      outlet: "auth-profile-menu:primary-menu",
+      renderers: {
+        link: "auth.web.profile.menu.link-item"
+      }
+    }
+  }
+});
+
+
+addPlacementTopology({
+  id: "home.tools-menu",
+  description: "Home surface tools menu actions.",
+  surfaces: ["home"],
+  variants: {
+    compact: {
+      outlet: "home-cog:primary-menu",
+      renderers: {
+        link: "local.main.ui.surface-aware-menu-link-item"
+      }
+    },
+    medium: {
+      outlet: "home-cog:primary-menu",
+      renderers: {
+        link: "local.main.ui.surface-aware-menu-link-item"
+      }
+    },
+    expanded: {
+      outlet: "home-cog:primary-menu",
+      renderers: {
+        link: "local.main.ui.surface-aware-menu-link-item"
+      }
+    }
+  }
+});
+
+
+addPlacementTopology({
+  id: "settings.sections",
+  owner: "account-settings",
+  description: "Account settings content sections.",
+  surfaces: ["account"],
+  variants: {
+    compact: {
+      outlet: "account-settings:sections"
+    },
+    medium: {
+      outlet: "account-settings:sections"
+    },
+    expanded: {
+      outlet: "account-settings:sections"
+    }
+  }
+});
