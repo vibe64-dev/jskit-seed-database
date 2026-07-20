@@ -33,14 +33,20 @@
     },
     "@jskit-ai/shell-web": {
       "packageId": "@jskit-ai/shell-web",
-      "version": "0.1.113",
+      "version": "0.1.125",
       "source": {
         "type": "catalog",
         "descriptorPath": "../jskit-catalog/catalog/packages.json#@jskit-ai/shell-web"
       },
       "managed": {
         "packageJson": {
-          "dependencies": {},
+          "dependencies": {
+            "@jskit-ai/shell-web": {
+              "hadPrevious": true,
+              "previousValue": "0.1.125",
+              "value": "0.x"
+            }
+          },
           "devDependencies": {},
           "scripts": {}
         },
@@ -93,6 +99,7 @@
         "files": [
           {
             "path": "src/App.vue",
+            "ownership": "app",
             "hash": "e8ad49df01c665c6453d783ea3b67deda05473870fd29faa039e9a38e28a7f2c",
             "hadPrevious": true,
             "previousContentBase64": "PHNjcmlwdCBzZXR1cD4KaW1wb3J0IHsgUm91dGVyVmlldyB9IGZyb20gInZ1ZS1yb3V0ZXIiOwppbXBvcnQgU2hlbGxFcnJvckhvc3QgZnJvbSAiQGpza2l0LWFpL3NoZWxsLXdlYi9jbGllbnQvY29tcG9uZW50cy9TaGVsbEVycm9ySG9zdCI7Cjwvc2NyaXB0PgoKPHRlbXBsYXRlPgogIDx2LWFwcD4KICAgIDxSb3V0ZXJWaWV3IC8+CiAgICA8U2hlbGxFcnJvckhvc3QgLz4KICA8L3YtYXBwPgo8L3RlbXBsYXRlPgo=",
@@ -103,6 +110,7 @@
           },
           {
             "path": "src/components/ShellLayout.vue",
+            "ownership": "app",
             "hash": "0c2c3b5439890e0822dab32b0a740927b7612df1510efe2254cb20d90fd7312c",
             "hadPrevious": true,
             "previousContentBase64": "PHNjcmlwdD4KaW1wb3J0IHsgaCB9IGZyb20gInZ1ZSI7CmltcG9ydCBQYWNrYWdlU2hlbGxMYXlvdXQgZnJvbSAiQGpza2l0LWFpL3NoZWxsLXdlYi9jbGllbnQvY29tcG9uZW50cy9TaGVsbExheW91dCI7CgpleHBvcnQgZGVmYXVsdCB7CiAgbmFtZTogIlNoZWxsTGF5b3V0IiwKICBpbmhlcml0QXR0cnM6IGZhbHNlLAogIHNldHVwKF8sIHsgYXR0cnMsIHNsb3RzIH0pIHsKICAgIHJldHVybiAoKSA9PiBoKFBhY2thZ2VTaGVsbExheW91dCwgYXR0cnMsIHNsb3RzKTsKICB9Cn07Cjwvc2NyaXB0Pgo=",
@@ -113,6 +121,7 @@
           },
           {
             "path": "src/components/menus/MenuLinkItem.vue",
+            "ownership": "app",
             "hash": "91460689ede313da18352c5fd67f99f198433198906b276586c7f60742f042a1",
             "hadPrevious": true,
             "previousContentBase64": "PHNjcmlwdCBzZXR1cD4KaW1wb3J0IFNoZWxsTWVudUxpbmtJdGVtIGZyb20gIkBqc2tpdC1haS9zaGVsbC13ZWIvY2xpZW50L2NvbXBvbmVudHMvU2hlbGxNZW51TGlua0l0ZW0iOwoKY29uc3QgcHJvcHMgPSBkZWZpbmVQcm9wcyh7CiAgbGFiZWw6IHsKICAgIHR5cGU6IFN0cmluZywKICAgIGRlZmF1bHQ6ICIiCiAgfSwKICB0bzogewogICAgdHlwZTogU3RyaW5nLAogICAgZGVmYXVsdDogIiIKICB9LAogIGljb246IHsKICAgIHR5cGU6IFN0cmluZywKICAgIGRlZmF1bHQ6ICIiCiAgfSwKICBkaXNhYmxlZDogewogICAgdHlwZTogQm9vbGVhbiwKICAgIGRlZmF1bHQ6IGZhbHNlCiAgfSwKICBleGFjdDogewogICAgdHlwZTogQm9vbGVhbiwKICAgIGRlZmF1bHQ6IGZhbHNlCiAgfQp9KTsKPC9zY3JpcHQ+Cgo8dGVtcGxhdGU+CiAgPFNoZWxsTWVudUxpbmtJdGVtIHYtYmluZD0icHJvcHMiIC8+CjwvdGVtcGxhdGU+Cg==",
@@ -123,6 +132,7 @@
           },
           {
             "path": "src/components/menus/SurfaceAwareMenuLinkItem.vue",
+            "ownership": "app",
             "hash": "63ad9112bf096974a6b268e2c719e9d5522fde179350f56dc640f8902c0e914e",
             "hadPrevious": true,
             "previousContentBase64": "PHNjcmlwdCBzZXR1cD4KaW1wb3J0IFNoZWxsU3VyZmFjZUF3YXJlTWVudUxpbmtJdGVtIGZyb20gIkBqc2tpdC1haS9zaGVsbC13ZWIvY2xpZW50L2NvbXBvbmVudHMvU2hlbGxTdXJmYWNlQXdhcmVNZW51TGlua0l0ZW0iOwoKY29uc3QgcHJvcHMgPSBkZWZpbmVQcm9wcyh7CiAgbGFiZWw6IHsKICAgIHR5cGU6IFN0cmluZywKICAgIGRlZmF1bHQ6ICIiCiAgfSwKICB0bzogewogICAgdHlwZTogU3RyaW5nLAogICAgZGVmYXVsdDogIiIKICB9LAogIGljb246IHsKICAgIHR5cGU6IFN0cmluZywKICAgIGRlZmF1bHQ6ICIiCiAgfSwKICBzdXJmYWNlOiB7CiAgICB0eXBlOiBTdHJpbmcsCiAgICBkZWZhdWx0OiAiIgogIH0sCiAgc2NvcGVkU3VmZml4OiB7CiAgICB0eXBlOiBTdHJpbmcsCiAgICBkZWZhdWx0OiAiLyIKICB9LAogIHVuc2NvcGVkU3VmZml4OiB7CiAgICB0eXBlOiBTdHJpbmcsCiAgICBkZWZhdWx0OiAiLyIKICB9LAogIGRpc2FibGVkOiB7CiAgICB0eXBlOiBCb29sZWFuLAogICAgZGVmYXVsdDogZmFsc2UKICB9LAogIGV4YWN0OiB7CiAgICB0eXBlOiBCb29sZWFuLAogICAgZGVmYXVsdDogZmFsc2UKICB9Cn0pOwo8L3NjcmlwdD4KCjx0ZW1wbGF0ZT4KICA8U2hlbGxTdXJmYWNlQXdhcmVNZW51TGlua0l0ZW0gdi1iaW5kPSJwcm9wcyIgLz4KPC90ZW1wbGF0ZT4K",
@@ -133,6 +143,7 @@
           },
           {
             "path": "src/components/menus/TabLinkItem.vue",
+            "ownership": "app",
             "hash": "6fc8405ca0e19516ce762e392733fd39e7c2af85d8483193b4ee52caac76f1f4",
             "hadPrevious": true,
             "previousContentBase64": "PHNjcmlwdCBzZXR1cD4KaW1wb3J0IFNoZWxsVGFiTGlua0l0ZW0gZnJvbSAiQGpza2l0LWFpL3NoZWxsLXdlYi9jbGllbnQvY29tcG9uZW50cy9TaGVsbFRhYkxpbmtJdGVtIjsKCmNvbnN0IHByb3BzID0gZGVmaW5lUHJvcHMoewogIGxhYmVsOiB7CiAgICB0eXBlOiBTdHJpbmcsCiAgICBkZWZhdWx0OiAiIgogIH0sCiAgdG86IHsKICAgIHR5cGU6IFN0cmluZywKICAgIGRlZmF1bHQ6ICIiCiAgfSwKICBpY29uOiB7CiAgICB0eXBlOiBTdHJpbmcsCiAgICBkZWZhdWx0OiAiIgogIH0sCiAgc3VyZmFjZTogewogICAgdHlwZTogU3RyaW5nLAogICAgZGVmYXVsdDogIiIKICB9LAogIHNjb3BlZFN1ZmZpeDogewogICAgdHlwZTogU3RyaW5nLAogICAgZGVmYXVsdDogIi8iCiAgfSwKICB1bnNjb3BlZFN1ZmZpeDogewogICAgdHlwZTogU3RyaW5nLAogICAgZGVmYXVsdDogIi8iCiAgfSwKICBkaXNhYmxlZDogewogICAgdHlwZTogQm9vbGVhbiwKICAgIGRlZmF1bHQ6IGZhbHNlCiAgfSwKICBleGFjdDogewogICAgdHlwZTogQm9vbGVhbiwKICAgIGRlZmF1bHQ6IGZhbHNlCiAgfQp9KTsKPC9zY3JpcHQ+Cgo8dGVtcGxhdGU+CiAgPFNoZWxsVGFiTGlua0l0ZW0gdi1iaW5kPSJwcm9wcyIgLz4KPC90ZW1wbGF0ZT4K",
@@ -143,6 +154,7 @@
           },
           {
             "path": "src/error.js",
+            "ownership": "app",
             "hash": "dd7e2f4e32b83d1227135a0f224bb2c46854fe7fd9714c7cc56cf94f2f1eb55b",
             "hadPrevious": true,
             "previousContentBase64": "aW1wb3J0IHsgY3JlYXRlRGVmYXVsdEVycm9yUG9saWN5IH0gZnJvbSAiQGpza2l0LWFpL3NoZWxsLXdlYi9jbGllbnQvZXJyb3IiOwoKLyoqCiAqIEFwcC1vd25lZCBlcnJvciBoYW5kbGluZyBjb250cmFjdC4KICogLSBpbnRlbnQgY2hvb3NlcyBkZWZhdWx0IHByZXNlbnRhdGlvbjogcmVzb3VyY2UtbG9hZCwgYWN0aW9uLWZlZWRiYWNrLCBhcHAtcmVjb3ZlcmFibGUsIGJsb2NraW5nLgogKiAtIHBvbGljeShldmVudCwgY3R4KTogZGVjaWRlIGNoYW5uZWwgKyBwcmVzZW50ZXIgKyBtZXNzYWdlLgogKiAtIGRlZmF1bHRQcmVzZW50ZXJJZDogdXNlZCB3aGVuIHBvbGljeSBkb2VzIG5vdCBzZXQgcHJlc2VudGVySWQuCiAqIC0gcHJlc2VudGVyczogb3B0aW9uYWwgY3VzdG9tIHByZXNlbnRlcnMgcmVnaXN0ZXJlZCBhdCBib290LgogKi8KZXhwb3J0IGRlZmF1bHQgT2JqZWN0LmZyZWV6ZSh7CiAgZGVmYXVsdFByZXNlbnRlcklkOiAibWF0ZXJpYWwuc25hY2tiYXIiLAogIHBvbGljeTogY3JlYXRlRGVmYXVsdEVycm9yUG9saWN5KHsKICAgIHJlc291cmNlTG9hZENoYW5uZWw6ICJzaWxlbnQiLAogICAgYWN0aW9uRmVlZGJhY2tDaGFubmVsOiAic25hY2tiYXIiLAogICAgYXBwUmVjb3ZlcmFibGVDaGFubmVsOiAiYmFubmVyIiwKICAgIGJsb2NraW5nQ2hhbm5lbDogImRpYWxvZyIKICB9KSwKICBwcmVzZW50ZXJzOiBbXQp9KTsK",
@@ -159,7 +171,8 @@
             "preserveOnRemove": false,
             "reason": "Install app-owned placement registry scaffold used by shell-web placement runtime.",
             "category": "shell-web",
-            "id": "shell-web-placement-registry"
+            "id": "shell-web-placement-registry",
+            "ownership": "app"
           },
           {
             "path": "src/placementTopology.js",
@@ -169,10 +182,12 @@
             "preserveOnRemove": false,
             "reason": "Install app-owned semantic placement topology used by shell-web placement runtime.",
             "category": "shell-web",
-            "id": "shell-web-placement-topology"
+            "id": "shell-web-placement-topology",
+            "ownership": "app"
           },
           {
             "path": "src/pages/home.vue",
+            "ownership": "app",
             "hash": "52e99863be5b81fa9e5813bb10e912b4439446ebdcc5c543e46f223558b355cc",
             "hadPrevious": true,
             "previousContentBase64": "PHJvdXRlIGxhbmc9Impzb24iPgp7CiAgIm1ldGEiOiB7CiAgICAianNraXQiOiB7CiAgICAgICJzdXJmYWNlIjogImhvbWUiCiAgICB9CiAgfQp9Cjwvcm91dGU+Cgo8c2NyaXB0IHNldHVwPgppbXBvcnQgU2hlbGxMYXlvdXQgZnJvbSAiQC9jb21wb25lbnRzL1NoZWxsTGF5b3V0LnZ1ZSI7CmltcG9ydCB7IFJvdXRlclZpZXcgfSBmcm9tICJ2dWUtcm91dGVyIjsKPC9zY3JpcHQ+Cgo8dGVtcGxhdGU+CiAgPFNoZWxsTGF5b3V0IHRpdGxlPSIiIHN1YnRpdGxlPSIiPgogICAgPFJvdXRlclZpZXcgLz4KICA8L1NoZWxsTGF5b3V0Pgo8L3RlbXBsYXRlPgo=",
@@ -189,7 +204,8 @@
             "preserveOnRemove": false,
             "reason": "Install shell-driven home surface starter page.",
             "category": "shell-web",
-            "id": "shell-web-page-home"
+            "id": "shell-web-page-home",
+            "ownership": "app"
           },
           {
             "path": "src/pages/home/settings.vue",
@@ -199,10 +215,12 @@
             "preserveOnRemove": false,
             "reason": "Install shell-driven home settings shell route with section navigation.",
             "category": "shell-web",
-            "id": "shell-web-page-home-settings-shell"
+            "id": "shell-web-page-home-settings-shell",
+            "ownership": "app"
           },
           {
             "path": "src/pages/home/settings/index.vue",
+            "ownership": "app",
             "hash": "e82040354f747a009887df7cf3f2f25911e42959f40d376ba254fa7e8fa69247",
             "hadPrevious": true,
             "previousContentBase64": "PHNjcmlwdCBzZXR1cD4KaW1wb3J0IHsgcmVkaXJlY3RUb0NoaWxkIH0gZnJvbSAiQGpza2l0LWFpL2tlcm5lbC9jbGllbnQvcGFnZVJlZGlyZWN0cyI7CgpkZWZpbmVQYWdlKHsKICByZWRpcmVjdDogcmVkaXJlY3RUb0NoaWxkKCJnZW5lcmFsIikKfSk7Cjwvc2NyaXB0Pgo=",
@@ -213,6 +231,7 @@
           },
           {
             "path": "src/pages/home/settings/general/index.vue",
+            "ownership": "app",
             "hash": "ef2c566a83b707e5e69c9e821caf891f177ee344fa0c6ab7307b3031f618c3bf",
             "hadPrevious": true,
             "previousContentBase64": "PHNjcmlwdCBzZXR1cD4KaW1wb3J0IHsgY29tcHV0ZWQgfSBmcm9tICJ2dWUiOwppbXBvcnQgeyB1c2VTaGVsbExheW91dFN0YXRlIH0gZnJvbSAiQGpza2l0LWFpL3NoZWxsLXdlYi9jbGllbnQvY29tcG9zYWJsZXMvdXNlU2hlbGxMYXlvdXRTdGF0ZSI7Cgpjb25zdCB7IGRyYXdlckRlZmF1bHRPcGVuLCBzZXREcmF3ZXJEZWZhdWx0T3BlbiB9ID0gdXNlU2hlbGxMYXlvdXRTdGF0ZSgpOwoKY29uc3QgZHJhd2VyRGVmYXVsdE9wZW5Nb2RlbCA9IGNvbXB1dGVkKHsKICBnZXQoKSB7CiAgICByZXR1cm4gZHJhd2VyRGVmYXVsdE9wZW4udmFsdWU7CiAgfSwKICBzZXQodmFsdWUpIHsKICAgIHNldERyYXdlckRlZmF1bHRPcGVuKEJvb2xlYW4odmFsdWUpKTsKICB9Cn0pOwo8L3NjcmlwdD4KCjx0ZW1wbGF0ZT4KICA8c2VjdGlvbiBjbGFzcz0iZ2VuZXJhdGVkLXVpLXNjcmVlbiBnZW5lcmF0ZWQtdWktc2NyZWVuLS1zZXR0aW5ncyBzZXR0aW5ncy1nZW5lcmFsLXNjcmVlbiBkLWZsZXggZmxleC1jb2x1bW4gZ2EtNCI+CiAgICA8ZGl2PgogICAgICA8aDIgY2xhc3M9InRleHQtaDYgbWItMiI+TmF2aWdhdGlvbjwvaDI+CiAgICAgIDxwIGNsYXNzPSJ0ZXh0LWJvZHktMiB0ZXh0LW1lZGl1bS1lbXBoYXNpcyBtYi0wIj4KICAgICAgICBDaG9vc2UgdGhlIGRlZmF1bHQgYmVoYXZpb3IgZm9yIHdpZGVyIHNjcmVlbnMuIFBob25lIGxheW91dHMga2VlcCBwcmltYXJ5IG5hdmlnYXRpb24gaW4gdGhlIGJvdHRvbSBiYXIuCiAgICAgIDwvcD4KICAgIDwvZGl2PgoKICAgIDx2LXN3aXRjaAogICAgICB2LW1vZGVsPSJkcmF3ZXJEZWZhdWx0T3Blbk1vZGVsIgogICAgICBjb2xvcj0icHJpbWFyeSIKICAgICAgaW5zZXQKICAgICAgaGlkZS1kZXRhaWxzPSJhdXRvIgogICAgICBsYWJlbD0iT3BlbiBkcmF3ZXIgYnkgZGVmYXVsdCBvbiB3aWRlciBzY3JlZW5zIgogICAgLz4KICA8L3NlY3Rpb24+CjwvdGVtcGxhdGU+Cgo8c3R5bGUgc2NvcGVkPgouc2V0dGluZ3MtZ2VuZXJhbC1zY3JlZW4gOmRlZXAoLnYtc3dpdGNoKSB7CiAgbWluLWhlaWdodDogNDhweDsKfQo8L3N0eWxlPgo=",
@@ -223,6 +242,7 @@
           },
           {
             "path": "tests/e2e/adaptive-shell.spec.ts",
+            "ownership": "app",
             "hash": "456cbb65ebd0b97052e4e171bf87081e89b293fe67b9250af2cf876969d4eafd",
             "hadPrevious": true,
             "previousContentBase64": "aW1wb3J0IHsgZXhwZWN0LCB0ZXN0IH0gZnJvbSAiQHBsYXl3cmlnaHQvdGVzdCI7CmltcG9ydCB7IHJ1bkFkYXB0aXZlU2hlbGxTbW9rZSB9IGZyb20gIkBqc2tpdC1haS9zaGVsbC13ZWIvdGVzdC9hZGFwdGl2ZVNoZWxsU21va2UiOwoKcnVuQWRhcHRpdmVTaGVsbFNtb2tlKHsgdGVzdCwgZXhwZWN0IH0pOwo=",
@@ -235,12 +255,12 @@
         "migrations": []
       },
       "options": {},
-      "installedAt": "2026-07-15T08:43:37.109Z",
-      "migrationSyncVersion": "0.1.113"
+      "installedAt": "2026-07-20T15:08:09.844Z",
+      "migrationSyncVersion": "0.1.125"
     },
     "@jskit-ai/database-runtime": {
       "packageId": "@jskit-ai/database-runtime",
-      "version": "0.1.113",
+      "version": "0.1.123",
       "source": {
         "type": "catalog",
         "descriptorPath": "../jskit-catalog/catalog/packages.json#@jskit-ai/database-runtime"
@@ -248,45 +268,14 @@
       "managed": {
         "packageJson": {
           "dependencies": {
-            "dotenv": {
-              "hadPrevious": false,
-              "previousValue": "",
-              "value": "^16.4.5"
-            },
-            "knex": {
-              "hadPrevious": false,
-              "previousValue": "",
-              "value": "^3.1.0"
-            },
             "@jskit-ai/database-runtime": {
-              "hadPrevious": false,
-              "previousValue": "",
+              "hadPrevious": true,
+              "previousValue": "0.1.123",
               "value": "0.x"
             }
           },
           "devDependencies": {},
-          "scripts": {
-            "db:migrations:sync": {
-              "hadPrevious": false,
-              "previousValue": "",
-              "value": "jskit migrations changed"
-            },
-            "db:migrate": {
-              "hadPrevious": false,
-              "previousValue": "",
-              "value": "npm run db:migrations:sync && knex --knexfile ./knexfile.js migrate:latest"
-            },
-            "db:migrate:rollback": {
-              "hadPrevious": false,
-              "previousValue": "",
-              "value": "knex --knexfile ./knexfile.js migrate:rollback"
-            },
-            "db:migrate:status": {
-              "hadPrevious": false,
-              "previousValue": "",
-              "value": "npm run db:migrations:sync && knex --knexfile ./knexfile.js migrate:list"
-            }
-          }
+          "scripts": {}
         },
         "text": {},
         "source": {},
@@ -294,9 +283,10 @@
         "files": [
           {
             "path": "knexfile.js",
+            "ownership": "package",
             "hash": "d3f0f69c4cfa86d333e4f600e7a979ce24acb000d431fe1b17fee50e7f289fdd",
-            "hadPrevious": false,
-            "previousContentBase64": "",
+            "hadPrevious": true,
+            "previousContentBase64": "aW1wb3J0IHBhdGggZnJvbSAibm9kZTpwYXRoIjsKaW1wb3J0IGRvdGVudiBmcm9tICJkb3RlbnYiOwppbXBvcnQgewogIG5vcm1hbGl6ZVRleHQsCiAgdG9LbmV4Q2xpZW50SWQsCiAgcmVzb2x2ZURhdGFiYXNlQ2xpZW50RnJvbUVudmlyb25tZW50LAogIHJlc29sdmVLbmV4Q29ubmVjdGlvbkZyb21FbnZpcm9ubWVudAp9IGZyb20gIkBqc2tpdC1haS9kYXRhYmFzZS1ydW50aW1lL3NoYXJlZCI7Cgpjb25zdCBhcHBSb290ID0gcHJvY2Vzcy5jd2QoKTsKZG90ZW52LmNvbmZpZyh7CiAgcGF0aDogcGF0aC5qb2luKGFwcFJvb3QsICIuZW52IiksCiAgcXVpZXQ6IHRydWUKfSk7Cgpjb25zdCBkaWFsZWN0SWQgPSByZXNvbHZlRGF0YWJhc2VDbGllbnRGcm9tRW52aXJvbm1lbnQocHJvY2Vzcy5lbnYpOwpjb25zdCBjbGllbnQgPSB0b0tuZXhDbGllbnRJZChkaWFsZWN0SWQpOwpjb25zdCBkZWZhdWx0UG9ydCA9IGRpYWxlY3RJZCA9PT0gInBnIiA/IDU0MzIgOiAzMzA2Owpjb25zdCBtaWdyYXRpb25zRGlyZWN0b3J5ID0gcGF0aC5yZXNvbHZlKGFwcFJvb3QsIG5vcm1hbGl6ZVRleHQocHJvY2Vzcy5lbnYuREJfTUlHUkFUSU9OU19ESVIpIHx8ICJtaWdyYXRpb25zIik7CgpleHBvcnQgZGVmYXVsdCB7CiAgY2xpZW50LAogIGNvbm5lY3Rpb246IHJlc29sdmVLbmV4Q29ubmVjdGlvbkZyb21FbnZpcm9ubWVudChwcm9jZXNzLmVudiwgewogICAgY2xpZW50OiBkaWFsZWN0SWQsCiAgICBkZWZhdWx0UG9ydCwKICAgIGNvbnRleHQ6ICJrbmV4IG1pZ3JhdGlvbnMiCiAgfSksCiAgbWlncmF0aW9uczogewogICAgZGlyZWN0b3J5OiBtaWdyYXRpb25zRGlyZWN0b3J5LAogICAgZXh0ZW5zaW9uOiAiY2pzIgogIH0KfTsK",
             "preserveOnRemove": false,
             "reason": "Install root Knex configuration so app scripts can run migrations through Knex CLI.",
             "category": "database-runtime",
@@ -304,9 +294,10 @@
           },
           {
             "path": "migrations/.gitkeep",
+            "ownership": "package",
             "hash": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
-            "hadPrevious": false,
-            "previousContentBase64": "",
+            "hadPrevious": true,
+            "previousContentBase64": "Cg==",
             "preserveOnRemove": false,
             "reason": "Ensure migrations directory exists so Knex migration commands can run before any module installs migrations.",
             "category": "database-runtime",
@@ -316,27 +307,23 @@
         "migrations": []
       },
       "options": {},
-      "installedAt": "2026-07-15T08:43:21.542Z",
-      "migrationSyncVersion": "0.1.113"
+      "installedAt": "2026-07-20T15:08:09.145Z",
+      "migrationSyncVersion": "0.1.123"
     },
     "@jskit-ai/database-runtime-mysql": {
       "packageId": "@jskit-ai/database-runtime-mysql",
-      "version": "0.1.112",
+      "version": "0.1.122",
       "source": {
-        "type": "catalog",
-        "descriptorPath": "../jskit-catalog/catalog/packages.json#@jskit-ai/database-runtime-mysql"
+        "type": "npm-installed-package",
+        "packagePath": "node_modules/@jskit-ai/database-runtime-mysql",
+        "descriptorPath": "node_modules/@jskit-ai/database-runtime-mysql/package.descriptor.mjs"
       },
       "managed": {
         "packageJson": {
           "dependencies": {
-            "mysql2": {
-              "hadPrevious": false,
-              "previousValue": "",
-              "value": "^3.11.2"
-            },
             "@jskit-ai/database-runtime-mysql": {
-              "hadPrevious": false,
-              "previousValue": "",
+              "hadPrevious": true,
+              "previousValue": "0.1.122",
               "value": "0.x"
             }
           },
@@ -348,67 +335,66 @@
             "file": ".env",
             "op": "upsert-env",
             "key": "DB_CLIENT",
-            "value": "mysql2",
             "hadPrevious": true,
-            "previousValue": "mysql2",
             "reason": "Configure database client driver for runtime wiring.",
             "category": "runtime-config",
-            "id": "database-client-mysql"
+            "id": "database-client-mysql",
+            "value": "mysql2",
+            "previousValue": "mysql2"
           },
           ".env::database-host": {
             "file": ".env",
             "op": "upsert-env",
             "key": "DB_HOST",
-            "value": "127.0.0.1",
             "hadPrevious": true,
-            "previousValue": "127.0.0.1",
             "reason": "Configure database host.",
             "category": "runtime-config",
-            "id": "database-host"
+            "id": "database-host",
+            "value": "127.0.0.1",
+            "previousValue": "127.0.0.1"
           },
           ".env::database-port": {
             "file": ".env",
             "op": "upsert-env",
             "key": "DB_PORT",
-            "value": "36899",
             "hadPrevious": true,
-            "previousValue": "36899",
             "reason": "Configure database port.",
             "category": "runtime-config",
-            "id": "database-port"
+            "id": "database-port",
+            "value": "36899",
+            "previousValue": "36899"
           },
           ".env::database-name": {
             "file": ".env",
             "op": "upsert-env",
             "key": "DB_NAME",
-            "value": "merc_vibe64_dev_jskit_seed_database",
             "hadPrevious": true,
-            "previousValue": "merc_vibe64_dev_jskit_seed_database",
             "reason": "Configure database name.",
             "category": "runtime-config",
-            "id": "database-name"
+            "id": "database-name",
+            "value": "merc_vibe64_dev_jskit_seed_database",
+            "previousValue": "merc_vibe64_dev_jskit_seed_database"
           },
           ".env::database-user": {
             "file": ".env",
             "op": "upsert-env",
             "key": "DB_USER",
-            "value": "vibe64_dev_app",
             "hadPrevious": true,
-            "previousValue": "vibe64_dev_app",
             "reason": "Configure database user.",
             "category": "runtime-config",
-            "id": "database-user"
+            "id": "database-user",
+            "value": "vibe64_dev_app",
+            "previousValue": "vibe64_dev_app"
           },
           ".env::database-password": {
             "file": ".env",
             "op": "upsert-env",
             "key": "DB_PASSWORD",
-            "value": "v64_92d672b54d765a41b6defbf82b1ee931",
             "hadPrevious": true,
-            "previousValue": "v64_92d672b54d765a41b6defbf82b1ee931",
             "reason": "Configure database password.",
             "category": "runtime-config",
-            "id": "database-password"
+            "id": "database-password",
+            "sensitive": true
           }
         },
         "source": {},
@@ -420,40 +406,30 @@
         "db-host": "127.0.0.1",
         "db-port": "36899",
         "db-name": "merc_vibe64_dev_jskit_seed_database",
-        "db-user": "vibe64_dev_app",
-        "db-password": "v64_92d672b54d765a41b6defbf82b1ee931"
+        "db-user": "vibe64_dev_app"
       },
-      "installedAt": "2026-07-15T08:43:23.205Z",
-      "migrationSyncVersion": "0.1.112"
+      "installedAt": "2026-07-20T15:08:10.525Z",
+      "migrationSyncVersion": "0.1.122"
     },
     "@jskit-ai/auth-core": {
       "packageId": "@jskit-ai/auth-core",
-      "version": "0.1.112",
+      "version": "0.1.121",
       "source": {
-        "type": "catalog",
-        "descriptorPath": "../jskit-catalog/catalog/packages.json#@jskit-ai/auth-core"
+        "type": "npm-installed-package",
+        "packagePath": "node_modules/@jskit-ai/auth-core",
+        "descriptorPath": "node_modules/@jskit-ai/auth-core/package.descriptor.mjs"
       },
       "managed": {
         "packageJson": {
           "dependencies": {
-            "@fastify/cookie": {
-              "hadPrevious": false,
-              "previousValue": "",
-              "value": "^11.0.2"
-            },
-            "@fastify/csrf-protection": {
-              "hadPrevious": false,
-              "previousValue": "",
-              "value": "^7.1.0"
-            },
-            "@fastify/rate-limit": {
-              "hadPrevious": false,
-              "previousValue": "",
-              "value": "^10.3.0"
+            "@jskit-ai/kernel": {
+              "hadPrevious": true,
+              "previousValue": "0.1.124",
+              "value": "0.x"
             },
             "@jskit-ai/auth-core": {
-              "hadPrevious": false,
-              "previousValue": "",
+              "hadPrevious": true,
+              "previousValue": "0.1.121",
               "value": "0.x"
             }
           },
@@ -467,19 +443,25 @@
         "migrations": []
       },
       "options": {},
-      "installedAt": "2026-07-15T08:43:37.105Z",
-      "migrationSyncVersion": "0.1.112"
+      "installedAt": "2026-07-20T15:08:07.751Z",
+      "migrationSyncVersion": "0.1.121"
     },
     "@jskit-ai/http-runtime": {
       "packageId": "@jskit-ai/http-runtime",
-      "version": "0.1.112",
+      "version": "0.1.122",
       "source": {
         "type": "catalog",
         "descriptorPath": "../jskit-catalog/catalog/packages.json#@jskit-ai/http-runtime"
       },
       "managed": {
         "packageJson": {
-          "dependencies": {},
+          "dependencies": {
+            "@jskit-ai/http-runtime": {
+              "hadPrevious": true,
+              "previousValue": "0.1.122",
+              "value": "0.x"
+            }
+          },
           "devDependencies": {},
           "scripts": {}
         },
@@ -490,81 +472,39 @@
         "migrations": []
       },
       "options": {},
-      "installedAt": "2026-07-15T08:43:37.108Z",
-      "migrationSyncVersion": "0.1.112"
+      "installedAt": "2026-07-20T15:08:09.842Z",
+      "migrationSyncVersion": "0.1.122"
     },
     "@jskit-ai/auth-web": {
       "packageId": "@jskit-ai/auth-web",
-      "version": "0.1.114",
+      "version": "0.1.124",
       "source": {
-        "type": "catalog",
-        "descriptorPath": "../jskit-catalog/catalog/packages.json#@jskit-ai/auth-web"
+        "type": "npm-installed-package",
+        "packagePath": "node_modules/@jskit-ai/auth-web",
+        "descriptorPath": "node_modules/@jskit-ai/auth-web/package.descriptor.mjs"
       },
       "managed": {
         "packageJson": {
           "dependencies": {
             "@jskit-ai/auth-web": {
-              "hadPrevious": false,
-              "previousValue": "",
+              "hadPrevious": true,
+              "previousValue": "0.1.124",
               "value": "0.x"
             }
           },
           "devDependencies": {},
-          "scripts": {
-            "server:auth": {
-              "hadPrevious": false,
-              "previousValue": "",
-              "value": "SERVER_SURFACE=auth node ./bin/server.js"
-            },
-            "dev:auth": {
-              "hadPrevious": false,
-              "previousValue": "",
-              "value": "VITE_SURFACE=auth vite"
-            },
-            "build:auth": {
-              "hadPrevious": false,
-              "previousValue": "",
-              "value": "VITE_SURFACE=auth vite build"
-            }
-          }
+          "scripts": {}
         },
-        "text": {
-          "config/public.js::auth-web-surface-config-auth": {
-            "file": "config/public.js",
-            "op": "append-text",
-            "value": "\nconfig.surfaceDefinitions.auth = {\n  id: \"auth\",\n  label: \"Auth\",\n  pagesRoot: \"auth\",\n  enabled: true,\n  requiresAuth: false,\n  requiresWorkspace: false,\n  origin: \"\"\n};\n",
-            "position": "bottom",
-            "reason": "Register auth surface definition in public surface config.",
-            "category": "auth-web",
-            "id": "auth-web-surface-config-auth"
-          },
-          "src/placement.js::auth-web-placement-block": {
-            "file": "src/placement.js",
-            "op": "append-text",
-            "value": "\naddPlacement({\n  id: \"auth.profile.widget\",\n  target: \"shell.status\",\n  kind: \"component\",\n  surfaces: [\"*\"],\n  order: 1000,\n  componentToken: \"auth.web.profile.widget\"\n});\n\naddPlacement({\n  id: \"auth.profile.menu.sign-in\",\n  target: \"auth.profile-menu\",\n  kind: \"link\",\n  surfaces: [\"*\"],\n  order: 200,\n  props: {\n    label: \"Sign in\",\n    to: \"/auth/login\"\n  },\n  when: ({ auth }) => auth?.authenticated !== true\n});\n\naddPlacement({\n  id: \"auth.profile.menu.sign-out\",\n  target: \"auth.profile-menu\",\n  kind: \"link\",\n  surfaces: [\"*\"],\n  order: 1000,\n  props: {\n    label: \"Sign out\",\n    to: \"/auth/signout\"\n  },\n  when: ({ auth }) => auth?.authenticated === true\n});\n",
-            "position": "bottom",
-            "reason": "Append auth profile placement entries into app-owned placement registry.",
-            "category": "auth-web",
-            "id": "auth-web-placement-block"
-          },
-          "src/placementTopology.js::auth-web-profile-menu-topology": {
-            "file": "src/placementTopology.js",
-            "op": "append-text",
-            "value": "\naddPlacementTopology({\n  id: \"auth.profile-menu\",\n  description: \"Authenticated profile menu actions.\",\n  surfaces: [\"*\"],\n  variants: {\n    compact: {\n      outlet: \"auth-profile-menu:primary-menu\",\n      renderers: {\n        link: \"auth.web.profile.menu.link-item\"\n      }\n    },\n    medium: {\n      outlet: \"auth-profile-menu:primary-menu\",\n      renderers: {\n        link: \"auth.web.profile.menu.link-item\"\n      }\n    },\n    expanded: {\n      outlet: \"auth-profile-menu:primary-menu\",\n      renderers: {\n        link: \"auth.web.profile.menu.link-item\"\n      }\n    }\n  }\n});\n",
-            "position": "bottom",
-            "reason": "Append auth profile menu topology into the app-owned placement topology.",
-            "category": "auth-web",
-            "id": "auth-web-profile-menu-topology"
-          }
-        },
+        "text": {},
         "source": {},
         "vite": {},
         "files": [
           {
             "path": "src/views/auth/LoginView.vue",
+            "ownership": "package",
             "hash": "e73adefd3e6e9c4188ec94c9797eb7af161da5f6d1ba3dd5502dd4cdaca1eca4",
-            "hadPrevious": false,
-            "previousContentBase64": "",
+            "hadPrevious": true,
+            "previousContentBase64": "PHNjcmlwdCBzZXR1cD4KaW1wb3J0IERlZmF1bHRMb2dpblZpZXcgZnJvbSAiQGpza2l0LWFpL2F1dGgtd2ViL2NsaWVudC92aWV3cy9EZWZhdWx0TG9naW5WaWV3IjsKPC9zY3JpcHQ+Cgo8dGVtcGxhdGU+CiAgPERlZmF1bHRMb2dpblZpZXcgLz4KPC90ZW1wbGF0ZT4K",
             "preserveOnRemove": false,
             "reason": "Install minimal login container that renders the module-provided DefaultLoginView by default.",
             "category": "auth-web",
@@ -572,9 +512,10 @@
           },
           {
             "path": "src/views/auth/SignOutView.vue",
+            "ownership": "package",
             "hash": "7fa51245e90a862b25926d306fdd80849dc663c6cac1fb71f42fd54cc4d83780",
-            "hadPrevious": false,
-            "previousContentBase64": "",
+            "hadPrevious": true,
+            "previousContentBase64": "PHNjcmlwdCBzZXR1cD4KaW1wb3J0IERlZmF1bHRTaWduT3V0VmlldyBmcm9tICJAanNraXQtYWkvYXV0aC13ZWIvY2xpZW50L3ZpZXdzL0RlZmF1bHRTaWduT3V0VmlldyI7Cjwvc2NyaXB0PgoKPHRlbXBsYXRlPgogIDxEZWZhdWx0U2lnbk91dFZpZXcgLz4KPC90ZW1wbGF0ZT4K",
             "preserveOnRemove": false,
             "reason": "Install minimal sign-out container that renders the module-provided SignOutView by default (edit the scaffolded file to customize).",
             "category": "auth-web",
@@ -582,9 +523,10 @@
           },
           {
             "path": "src/views/auth/ResetPasswordView.vue",
+            "ownership": "package",
             "hash": "3e62b0911364945ab07414dcc166ca653aa0718ba6f31104bb084b4e2026f85b",
-            "hadPrevious": false,
-            "previousContentBase64": "",
+            "hadPrevious": true,
+            "previousContentBase64": "PHNjcmlwdCBzZXR1cD4KaW1wb3J0IERlZmF1bHRSZXNldFBhc3N3b3JkVmlldyBmcm9tICJAanNraXQtYWkvYXV0aC13ZWIvY2xpZW50L3ZpZXdzL0RlZmF1bHRSZXNldFBhc3N3b3JkVmlldyI7Cjwvc2NyaXB0PgoKPHRlbXBsYXRlPgogIDxEZWZhdWx0UmVzZXRQYXNzd29yZFZpZXcgLz4KPC90ZW1wbGF0ZT4K",
             "preserveOnRemove": false,
             "reason": "Install minimal password reset container that renders the module-provided DefaultResetPasswordView by default.",
             "category": "auth-web",
@@ -592,9 +534,10 @@
           },
           {
             "path": "src/pages/auth/login.vue",
+            "ownership": "package",
             "hash": "ca4916a3d4608f5249b8eb66bbacd13f6860274a10c5f81164ae8da38704c289",
-            "hadPrevious": false,
-            "previousContentBase64": "",
+            "hadPrevious": true,
+            "previousContentBase64": "PHJvdXRlIGxhbmc9Impzb24iPgp7CiAgIm1ldGEiOiB7CiAgICAiZ3VhcmQiOiB7CiAgICAgICJwb2xpY3kiOiAicHVibGljIgogICAgfQogIH0KfQo8L3JvdXRlPgoKPHNjcmlwdCBzZXR1cD4KaW1wb3J0IERlZmF1bHRMb2dpblZpZXcgZnJvbSAiQGpza2l0LWFpL2F1dGgtd2ViL2NsaWVudC92aWV3cy9EZWZhdWx0TG9naW5WaWV3IjsKPC9zY3JpcHQ+Cgo8dGVtcGxhdGU+CiAgPERlZmF1bHRMb2dpblZpZXcgLz4KPC90ZW1wbGF0ZT4K",
             "preserveOnRemove": false,
             "reason": "Provide an auth-surface /auth/login wrapper that renders the package login view.",
             "category": "auth-web",
@@ -602,9 +545,10 @@
           },
           {
             "path": "src/pages/auth/signout.vue",
+            "ownership": "package",
             "hash": "0ada4fe6f41a0b2d0ed74b2e4762da46f2031534c5ee6b4d394c252ca05cd235",
-            "hadPrevious": false,
-            "previousContentBase64": "",
+            "hadPrevious": true,
+            "previousContentBase64": "PHJvdXRlIGxhbmc9Impzb24iPgp7CiAgIm1ldGEiOiB7CiAgICAiZ3VhcmQiOiB7CiAgICAgICJwb2xpY3kiOiAicHVibGljIgogICAgfQogIH0KfQo8L3JvdXRlPgoKPHNjcmlwdCBzZXR1cD4KaW1wb3J0IERlZmF1bHRTaWduT3V0VmlldyBmcm9tICJAanNraXQtYWkvYXV0aC13ZWIvY2xpZW50L3ZpZXdzL0RlZmF1bHRTaWduT3V0VmlldyI7Cjwvc2NyaXB0PgoKPHRlbXBsYXRlPgogIDxEZWZhdWx0U2lnbk91dFZpZXcgLz4KPC90ZW1wbGF0ZT4K",
             "preserveOnRemove": false,
             "reason": "Provide an auth-surface /auth/signout wrapper that renders the package sign-out view.",
             "category": "auth-web",
@@ -612,9 +556,10 @@
           },
           {
             "path": "src/pages/auth/reset-password.vue",
+            "ownership": "package",
             "hash": "d40cc3f89fc0fd1ac21f645dcccf534281c86c6e6b96bc80d4fcacb0a48c375e",
-            "hadPrevious": false,
-            "previousContentBase64": "",
+            "hadPrevious": true,
+            "previousContentBase64": "PHJvdXRlIGxhbmc9Impzb24iPgp7CiAgIm1ldGEiOiB7CiAgICAiZ3VhcmQiOiB7CiAgICAgICJwb2xpY3kiOiAicHVibGljIgogICAgfQogIH0KfQo8L3JvdXRlPgoKPHNjcmlwdCBzZXR1cD4KaW1wb3J0IERlZmF1bHRSZXNldFBhc3N3b3JkVmlldyBmcm9tICJAanNraXQtYWkvYXV0aC13ZWIvY2xpZW50L3ZpZXdzL0RlZmF1bHRSZXNldFBhc3N3b3JkVmlldyI7Cjwvc2NyaXB0PgoKPHRlbXBsYXRlPgogIDxEZWZhdWx0UmVzZXRQYXNzd29yZFZpZXcgLz4KPC90ZW1wbGF0ZT4K",
             "preserveOnRemove": false,
             "reason": "Provide an auth-surface /auth/reset-password wrapper that renders the package password reset view.",
             "category": "auth-web",
@@ -624,27 +569,23 @@
         "migrations": []
       },
       "options": {},
-      "installedAt": "2026-07-15T08:43:38.676Z",
-      "migrationSyncVersion": "0.1.114"
+      "installedAt": "2026-07-20T15:08:09.916Z",
+      "migrationSyncVersion": "0.1.124"
     },
     "@jskit-ai/auth-provider-local-core": {
       "packageId": "@jskit-ai/auth-provider-local-core",
-      "version": "0.1.13",
+      "version": "0.1.25",
       "source": {
-        "type": "catalog",
-        "descriptorPath": "../jskit-catalog/catalog/packages.json#@jskit-ai/auth-provider-local-core"
+        "type": "npm-installed-package",
+        "packagePath": "node_modules/@jskit-ai/auth-provider-local-core",
+        "descriptorPath": "node_modules/@jskit-ai/auth-provider-local-core/package.descriptor.mjs"
       },
       "managed": {
         "packageJson": {
           "dependencies": {
-            "nodemailer": {
-              "hadPrevious": false,
-              "previousValue": "",
-              "value": "^7.0.10"
-            },
             "@jskit-ai/auth-provider-local-core": {
-              "hadPrevious": false,
-              "previousValue": "",
+              "hadPrevious": true,
+              "previousValue": "0.1.25",
               "value": "0.x"
             }
           },
@@ -656,32 +597,23 @@
             "file": ".env",
             "op": "upsert-env",
             "key": "AUTH_PROVIDER",
-            "value": "local",
             "hadPrevious": true,
-            "previousValue": "local",
             "reason": "Select local auth as the auth provider.",
             "category": "runtime-config",
-            "id": "auth-provider"
+            "id": "auth-provider",
+            "value": "local",
+            "previousValue": "local"
           },
           ".env::auth-local-backend": {
             "file": ".env",
             "op": "upsert-env",
             "key": "AUTH_LOCAL_BACKEND",
-            "value": "file",
             "hadPrevious": true,
-            "previousValue": "db",
             "reason": "Use the built-in local file auth backend.",
             "category": "runtime-config",
-            "id": "auth-local-backend"
-          },
-          ".gitignore::auth-local-store-gitignore": {
-            "file": ".gitignore",
-            "op": "append-text",
-            "value": "\n.jskit/auth/\n",
-            "position": "bottom",
-            "reason": "Ignore local auth runtime state.",
-            "category": "runtime-state",
-            "id": "auth-local-store-gitignore"
+            "id": "auth-local-backend",
+            "value": "file",
+            "previousValue": "db"
           }
         },
         "source": {},
@@ -690,12 +622,12 @@
         "migrations": []
       },
       "options": {},
-      "installedAt": "2026-07-15T08:43:40.381Z",
-      "migrationSyncVersion": "0.1.13"
+      "installedAt": "2026-07-20T15:08:08.384Z",
+      "migrationSyncVersion": "0.1.25"
     },
     "@jskit-ai/uploads-runtime": {
       "packageId": "@jskit-ai/uploads-runtime",
-      "version": "0.1.91",
+      "version": "0.1.100",
       "source": {
         "type": "catalog",
         "descriptorPath": "../jskit-catalog/catalog/packages.json#@jskit-ai/uploads-runtime"
@@ -703,14 +635,9 @@
       "managed": {
         "packageJson": {
           "dependencies": {
-            "@fastify/multipart": {
-              "hadPrevious": false,
-              "previousValue": "",
-              "value": "^9.4.0"
-            },
             "@jskit-ai/uploads-runtime": {
-              "hadPrevious": false,
-              "previousValue": "",
+              "hadPrevious": true,
+              "previousValue": "0.1.100",
               "value": "0.x"
             }
           },
@@ -724,47 +651,23 @@
         "migrations": []
       },
       "options": {},
-      "installedAt": "2026-07-15T08:43:47.108Z",
-      "migrationSyncVersion": "0.1.91"
+      "installedAt": "2026-07-20T15:08:13.678Z",
+      "migrationSyncVersion": "0.1.100"
     },
     "@jskit-ai/uploads-image-web": {
       "packageId": "@jskit-ai/uploads-image-web",
-      "version": "0.1.91",
+      "version": "0.1.100",
       "source": {
-        "type": "catalog",
-        "descriptorPath": "../jskit-catalog/catalog/packages.json#@jskit-ai/uploads-image-web"
+        "type": "npm-installed-package",
+        "packagePath": "node_modules/@jskit-ai/uploads-image-web",
+        "descriptorPath": "node_modules/@jskit-ai/uploads-image-web/package.descriptor.mjs"
       },
       "managed": {
         "packageJson": {
           "dependencies": {
-            "@uppy/compressor": {
-              "hadPrevious": false,
-              "previousValue": "",
-              "value": "^3.1.0"
-            },
-            "@uppy/core": {
-              "hadPrevious": false,
-              "previousValue": "",
-              "value": "^5.2.0"
-            },
-            "@uppy/dashboard": {
-              "hadPrevious": false,
-              "previousValue": "",
-              "value": "^5.1.1"
-            },
-            "@uppy/image-editor": {
-              "hadPrevious": false,
-              "previousValue": "",
-              "value": "^4.2.0"
-            },
-            "@uppy/xhr-upload": {
-              "hadPrevious": false,
-              "previousValue": "",
-              "value": "^5.1.1"
-            },
             "@jskit-ai/uploads-image-web": {
-              "hadPrevious": false,
-              "previousValue": "",
+              "hadPrevious": true,
+              "previousValue": "0.1.100",
               "value": "0.x"
             }
           },
@@ -778,22 +681,23 @@
         "migrations": []
       },
       "options": {},
-      "installedAt": "2026-07-15T08:43:52.908Z",
-      "migrationSyncVersion": "0.1.91"
+      "installedAt": "2026-07-20T15:08:13.682Z",
+      "migrationSyncVersion": "0.1.100"
     },
     "@jskit-ai/json-rest-api-core": {
       "packageId": "@jskit-ai/json-rest-api-core",
-      "version": "0.1.58",
+      "version": "0.1.68",
       "source": {
-        "type": "catalog",
-        "descriptorPath": "../jskit-catalog/catalog/packages.json#@jskit-ai/json-rest-api-core"
+        "type": "npm-installed-package",
+        "packagePath": "node_modules/@jskit-ai/json-rest-api-core",
+        "descriptorPath": "node_modules/@jskit-ai/json-rest-api-core/package.descriptor.mjs"
       },
       "managed": {
         "packageJson": {
           "dependencies": {
             "@jskit-ai/json-rest-api-core": {
-              "hadPrevious": false,
-              "previousValue": "",
+              "hadPrevious": true,
+              "previousValue": "0.1.68",
               "value": "0.x"
             }
           },
@@ -807,22 +711,23 @@
         "migrations": []
       },
       "options": {},
-      "installedAt": "2026-07-15T08:43:54.778Z",
-      "migrationSyncVersion": "0.1.58"
+      "installedAt": "2026-07-20T15:08:11.141Z",
+      "migrationSyncVersion": "0.1.68"
     },
     "@jskit-ai/resource-core": {
       "packageId": "@jskit-ai/resource-core",
-      "version": "0.1.58",
+      "version": "0.1.67",
       "source": {
-        "type": "catalog",
-        "descriptorPath": "../jskit-catalog/catalog/packages.json#@jskit-ai/resource-core"
+        "type": "npm-installed-package",
+        "packagePath": "node_modules/@jskit-ai/resource-core",
+        "descriptorPath": "node_modules/@jskit-ai/resource-core/package.descriptor.mjs"
       },
       "managed": {
         "packageJson": {
           "dependencies": {
             "@jskit-ai/resource-core": {
-              "hadPrevious": false,
-              "previousValue": "",
+              "hadPrevious": true,
+              "previousValue": "0.1.67",
               "value": "0.x"
             }
           },
@@ -836,22 +741,23 @@
         "migrations": []
       },
       "options": {},
-      "installedAt": "2026-07-15T08:43:56.179Z",
-      "migrationSyncVersion": "0.1.58"
+      "installedAt": "2026-07-20T15:08:11.757Z",
+      "migrationSyncVersion": "0.1.67"
     },
     "@jskit-ai/resource-crud-core": {
       "packageId": "@jskit-ai/resource-crud-core",
-      "version": "0.1.58",
+      "version": "0.1.67",
       "source": {
-        "type": "catalog",
-        "descriptorPath": "../jskit-catalog/catalog/packages.json#@jskit-ai/resource-crud-core"
+        "type": "npm-installed-package",
+        "packagePath": "node_modules/@jskit-ai/resource-crud-core",
+        "descriptorPath": "node_modules/@jskit-ai/resource-crud-core/package.descriptor.mjs"
       },
       "managed": {
         "packageJson": {
           "dependencies": {
             "@jskit-ai/resource-crud-core": {
-              "hadPrevious": false,
-              "previousValue": "",
+              "hadPrevious": true,
+              "previousValue": "0.1.67",
               "value": "0.x"
             }
           },
@@ -865,27 +771,23 @@
         "migrations": []
       },
       "options": {},
-      "installedAt": "2026-07-15T08:43:57.570Z",
-      "migrationSyncVersion": "0.1.58"
+      "installedAt": "2026-07-20T15:08:12.359Z",
+      "migrationSyncVersion": "0.1.67"
     },
     "@jskit-ai/storage-runtime": {
       "packageId": "@jskit-ai/storage-runtime",
-      "version": "0.1.112",
+      "version": "0.1.122",
       "source": {
-        "type": "catalog",
-        "descriptorPath": "../jskit-catalog/catalog/packages.json#@jskit-ai/storage-runtime"
+        "type": "npm-installed-package",
+        "packagePath": "node_modules/@jskit-ai/storage-runtime",
+        "descriptorPath": "node_modules/@jskit-ai/storage-runtime/package.descriptor.mjs"
       },
       "managed": {
         "packageJson": {
           "dependencies": {
-            "unstorage": {
-              "hadPrevious": false,
-              "previousValue": "",
-              "value": "^1.17.3"
-            },
             "@jskit-ai/storage-runtime": {
-              "hadPrevious": false,
-              "previousValue": "",
+              "hadPrevious": true,
+              "previousValue": "0.1.122",
               "value": "0.x"
             }
           },
@@ -899,57 +801,44 @@
         "migrations": []
       },
       "options": {},
-      "installedAt": "2026-07-15T08:44:00.233Z",
-      "migrationSyncVersion": "0.1.112"
+      "installedAt": "2026-07-20T15:08:12.994Z",
+      "migrationSyncVersion": "0.1.122"
     },
     "@jskit-ai/users-core": {
       "packageId": "@jskit-ai/users-core",
-      "version": "0.1.123",
+      "version": "0.1.134",
       "source": {
-        "type": "catalog",
-        "descriptorPath": "../jskit-catalog/catalog/packages.json#@jskit-ai/users-core"
+        "type": "npm-installed-package",
+        "packagePath": "node_modules/@jskit-ai/users-core",
+        "descriptorPath": "node_modules/@jskit-ai/users-core/package.descriptor.mjs"
       },
       "managed": {
         "packageJson": {
           "dependencies": {
             "@jskit-ai/crud-core": {
-              "hadPrevious": false,
-              "previousValue": "",
+              "hadPrevious": true,
+              "previousValue": "0.1.132",
               "value": "0.x"
             },
-            "@local/users": {
-              "hadPrevious": false,
-              "previousValue": "",
-              "value": "file:packages/users"
-            },
             "@jskit-ai/users-core": {
-              "hadPrevious": false,
-              "previousValue": "",
+              "hadPrevious": true,
+              "previousValue": "0.1.134",
               "value": "0.x"
             }
           },
           "devDependencies": {},
           "scripts": {}
         },
-        "text": {
-          "config/server.js::users-core-auth-profile-mode": {
-            "file": "config/server.js",
-            "op": "append-text",
-            "value": "\nconfig.auth ||= {};\nconfig.auth.profileMode = \"users\";\n",
-            "position": "bottom",
-            "reason": "Enable users-backed auth profile sync when users-core is installed.",
-            "category": "runtime-config",
-            "id": "users-core-auth-profile-mode"
-          }
-        },
+        "text": {},
         "source": {},
         "vite": {},
         "files": [
           {
             "path": "packages/users/package.json",
+            "ownership": "app",
             "hash": "71a0242b016d188eddefee3f2d196b5024f50c7eb2b9025918267c1dc5c2bdc6",
-            "hadPrevious": false,
-            "previousContentBase64": "",
+            "hadPrevious": true,
+            "previousContentBase64": "ewogICJuYW1lIjogIkBsb2NhbC91c2VycyIsCiAgInZlcnNpb24iOiAiMC4xLjAiLAogICJwcml2YXRlIjogdHJ1ZSwKICAidHlwZSI6ICJtb2R1bGUiLAogICJleHBvcnRzIjogewogICAgIi4vc2hhcmVkIjogIi4vc3JjL3NoYXJlZC9pbmRleC5qcyIKICB9Cn0K",
             "preserveOnRemove": true,
             "reason": "Install app-owned users package manifest.",
             "category": "users-core",
@@ -957,9 +846,10 @@
           },
           {
             "path": "packages/users/package.descriptor.mjs",
+            "ownership": "app",
             "hash": "99e26a9df171c3d9f4758847031dbc9c79175e5c96d5f0dc0a8bf6722f57937c",
-            "hadPrevious": false,
-            "previousContentBase64": "",
+            "hadPrevious": true,
+            "previousContentBase64": "ZXhwb3J0IGRlZmF1bHQgT2JqZWN0LmZyZWV6ZSh7CiAgcGFja2FnZVZlcnNpb246IDEsCiAgcGFja2FnZUlkOiAiQGxvY2FsL3VzZXJzIiwKICB2ZXJzaW9uOiAiMC4xLjAiLAogIGtpbmQ6ICJydW50aW1lIiwKICBkZXNjcmlwdGlvbjogIkFwcC1sb2NhbCBDUlVEIHBhY2thZ2UgKHVzZXJzKS4iLAogIGRlcGVuZHNPbjogWwogICAgIkBqc2tpdC1haS9hdXRoLWNvcmUiLAogICAgIkBqc2tpdC1haS9jcnVkLWNvcmUiLAogICAgIkBqc2tpdC1haS9kYXRhYmFzZS1ydW50aW1lIiwKICAgICJAanNraXQtYWkvaHR0cC1ydW50aW1lIiwKICAgICJAanNraXQtYWkvanNvbi1yZXN0LWFwaS1jb3JlIiwKICAgICJAanNraXQtYWkvcmVzb3VyY2UtY3J1ZC1jb3JlIiwKICAgICJAanNraXQtYWkvdXNlcnMtY29yZSIKICBdLAogIGNhcGFiaWxpdGllczogewogICAgcHJvdmlkZXM6IFsKICAgICAgImNydWQudXNlcnMiCiAgICBdLAogICAgcmVxdWlyZXM6IFsKICAgICAgInJ1bnRpbWUuYWN0aW9ucyIsCiAgICAgICJydW50aW1lLmRhdGFiYXNlIiwKICAgICAgImF1dGgucG9saWN5IiwKICAgICAgImpzb24tcmVzdC1hcGkuY29yZSIKICAgIF0KICB9LAogIHJ1bnRpbWU6IHsKICAgIHNlcnZlcjogewogICAgICBwcm92aWRlcnM6IFsKICAgICAgICB7CiAgICAgICAgICBlbnRyeXBvaW50OiAic3JjL3NlcnZlci9Vc2Vyc1Byb3ZpZGVyLmpzIiwKICAgICAgICAgIGV4cG9ydDogIlVzZXJzUHJvdmlkZXIiCiAgICAgICAgfQogICAgICBdCiAgICB9CiAgfSwKICBtZXRhZGF0YTogewogICAganNraXQ6IHsKICAgICAgc2NhZmZvbGRTaGFwZTogInVzZXJzLWNvcmUtY3J1ZC12MSIsCiAgICAgIHRhYmxlT3duZXJzaGlwOiB7CiAgICAgICAgdGFibGVzOiBbCiAgICAgICAgICB7CiAgICAgICAgICAgIHRhYmxlTmFtZTogInVzZXJzIiwKICAgICAgICAgICAgcHJvdmVuYW5jZTogInVzZXJzLWNvcmUtdGVtcGxhdGUiLAogICAgICAgICAgICBvd25lcktpbmQ6ICJiYXNlbGluZS1jcnVkIgogICAgICAgICAgfQogICAgICAgIF0KICAgICAgfQogICAgfSwKICAgIGFwaVN1bW1hcnk6IHsKICAgICAgc3VyZmFjZXM6IFsKICAgICAgICB7CiAgICAgICAgICBzdWJwYXRoOiAiLi9zaGFyZWQiLAogICAgICAgICAgc3VtbWFyeTogIkFwcC1sb2NhbCBDUlVEIHNoYXJlZCByZXNvdXJjZS4iCiAgICAgICAgfQogICAgICBdLAogICAgICBjb250YWluZXJUb2tlbnM6IHsKICAgICAgICBzZXJ2ZXI6IFsKICAgICAgICAgICJyZXBvc2l0b3J5LnVzZXJzIiwKICAgICAgICAgICJjcnVkLnVzZXJzIgogICAgICAgIF0KICAgICAgfQogICAgfQogIH0sCiAgbXV0YXRpb25zOiB7CiAgICBkZXBlbmRlbmNpZXM6IHsKICAgICAgcnVudGltZToge30sCiAgICAgIGRldjoge30KICAgIH0sCiAgICBwYWNrYWdlSnNvbjogewogICAgICBzY3JpcHRzOiB7fQogICAgfSwKICAgIHByb2NmaWxlOiB7fSwKICAgIGZpbGVzOiBbXQogIH0KfSk7Cg==",
             "preserveOnRemove": true,
             "reason": "Install app-owned users package descriptor for non-workspace tenancy.",
             "category": "users-core",
@@ -967,9 +857,10 @@
           },
           {
             "path": "packages/users/src/server/UsersProvider.js",
+            "ownership": "app",
             "hash": "032fa5c12ef8533f33fc9e62f9432dc9d7285d2e263cfad331e61f200e5b8b5f",
-            "hadPrevious": false,
-            "previousContentBase64": "",
+            "hadPrevious": true,
+            "previousContentBase64": "aW1wb3J0IHsgcmVzb2x2ZUFwcENvbmZpZyB9IGZyb20gIkBqc2tpdC1haS9rZXJuZWwvc2VydmVyL3N1cHBvcnQiOwppbXBvcnQgeyByZXNvbHZlQ3J1ZFN1cmZhY2VQb2xpY3lGcm9tQXBwQ29uZmlnIH0gZnJvbSAiQGpza2l0LWFpL2NydWQtY29yZS9zZXJ2ZXIvY3J1ZE1vZHVsZUNvbmZpZyI7CmltcG9ydCB7CiAgSU5URVJOQUxfSlNPTl9SRVNUX0FQSSwKICBhZGRSZXNvdXJjZUlmTWlzc2luZywKICBjcmVhdGVKc29uUmVzdFJlc291cmNlU2NvcGVPcHRpb25zCn0gZnJvbSAiQGpza2l0LWFpL2pzb24tcmVzdC1hcGktY29yZS9zZXJ2ZXIvanNvblJlc3RBcGlIb3N0IjsKaW1wb3J0IHsgd2l0aEFjdGlvbkRlZmF1bHRzIH0gZnJvbSAiQGpza2l0LWFpL2tlcm5lbC9zaGFyZWQvYWN0aW9ucyI7CmltcG9ydCB7IHRvRGF0YWJhc2VEYXRlVGltZVV0YyB9IGZyb20gIkBqc2tpdC1haS9kYXRhYmFzZS1ydW50aW1lL3NoYXJlZCI7CmltcG9ydCB7IGNyZWF0ZVJlcG9zaXRvcnkgfSBmcm9tICIuL3JlcG9zaXRvcnkuanMiOwppbXBvcnQgeyBjcmVhdGVTZXJ2aWNlIH0gZnJvbSAiLi9zZXJ2aWNlLmpzIjsKaW1wb3J0IHsgY3JlYXRlQWN0aW9ucyB9IGZyb20gIi4vYWN0aW9ucy5qcyI7CmltcG9ydCB7IHJlZ2lzdGVyUm91dGVzIH0gZnJvbSAiLi9yZWdpc3RlclJvdXRlcy5qcyI7CmltcG9ydCB7IHJlc291cmNlIH0gZnJvbSAiLi4vc2hhcmVkL3VzZXJSZXNvdXJjZS5qcyI7Cgpjb25zdCBDUlVEX01PRFVMRV9DT05GSUcgPSBPYmplY3QuZnJlZXplKHsKICBuYW1lc3BhY2U6ICJ1c2VycyIsCiAgc3VyZmFjZTogImhvbWUiLAogIG93bmVyc2hpcEZpbHRlcjogInB1YmxpYyIsCiAgcmVsYXRpdmVQYXRoOiAiL3VzZXJzIgp9KTsKCmZ1bmN0aW9uIHJlc29sdmVDcnVkUG9saWN5RnJvbUFwcChhcHApIHsKICByZXR1cm4gcmVzb2x2ZUNydWRTdXJmYWNlUG9saWN5RnJvbUFwcENvbmZpZyhDUlVEX01PRFVMRV9DT05GSUcsIHJlc29sdmVBcHBDb25maWcoYXBwKSwgewogICAgY29udGV4dDogIlVzZXJzUHJvdmlkZXIiCiAgfSk7Cn0KCmNsYXNzIFVzZXJzUHJvdmlkZXIgewogIHN0YXRpYyBpZCA9ICJjcnVkLnVzZXJzIjsKCiAgc3RhdGljIGRlcGVuZHNPbiA9IFsicnVudGltZS5hY3Rpb25zIiwgInJ1bnRpbWUuZGF0YWJhc2UiLCAiYXV0aC5wb2xpY3kuZmFzdGlmeSIsICJsb2NhbC5tYWluIiwgImpzb24tcmVzdC1hcGkuY29yZSJdOwoKICByZWdpc3RlcihhcHApIHsKICAgIGNvbnN0IGNydWRQb2xpY3kgPSByZXNvbHZlQ3J1ZFBvbGljeUZyb21BcHAoYXBwKTsKCiAgICBhcHAuc2luZ2xldG9uKCJyZXBvc2l0b3J5LnVzZXJzIiwgKHNjb3BlKSA9PiB7CiAgICAgIGNvbnN0IGFwaSA9IHNjb3BlLm1ha2UoSU5URVJOQUxfSlNPTl9SRVNUX0FQSSk7CiAgICAgIGNvbnN0IGtuZXggPSBzY29wZS5tYWtlKCJqc2tpdC5kYXRhYmFzZS5rbmV4Iik7CiAgICAgIHJldHVybiBjcmVhdGVSZXBvc2l0b3J5KHsKICAgICAgICBhcGksCiAgICAgICAga25leAogICAgICB9KTsKICAgIH0pOwoKICAgIGFwcC5zZXJ2aWNlKAogICAgICAiY3J1ZC51c2VycyIsCiAgICAgIChzY29wZSkgPT4gewogICAgICAgIHJldHVybiBjcmVhdGVTZXJ2aWNlKHsKICAgICAgICAgIHVzZXJzUmVwb3NpdG9yeTogc2NvcGUubWFrZSgicmVwb3NpdG9yeS51c2VycyIpCiAgICAgICAgfSk7CiAgICAgIH0KICAgICk7CgogICAgYXBwLmFjdGlvbnMoCiAgICAgIHdpdGhBY3Rpb25EZWZhdWx0cygKICAgICAgICBjcmVhdGVBY3Rpb25zKHsKICAgICAgICAgIHN1cmZhY2U6IGNydWRQb2xpY3kuc3VyZmFjZUlkCiAgICAgICAgfSksCiAgICAgICAgewogICAgICAgICAgZG9tYWluOiAiY3J1ZCIsCiAgICAgICAgICBkZXBlbmRlbmNpZXM6IHsKICAgICAgICAgICAgdXNlcnNTZXJ2aWNlOiAiY3J1ZC51c2VycyIKICAgICAgICAgIH0KICAgICAgICB9CiAgICAgICkKICAgICk7CiAgfQoKICBhc3luYyBib290KGFwcCkgewogICAgY29uc3QgY3J1ZFBvbGljeSA9IHJlc29sdmVDcnVkUG9saWN5RnJvbUFwcChhcHApOwogICAgY29uc3QgYXBpID0gYXBwLm1ha2UoSU5URVJOQUxfSlNPTl9SRVNUX0FQSSk7CiAgICBhd2FpdCBhZGRSZXNvdXJjZUlmTWlzc2luZygKICAgICAgYXBpLAogICAgICAidXNlcnMiLAogICAgICBjcmVhdGVKc29uUmVzdFJlc291cmNlU2NvcGVPcHRpb25zKHJlc291cmNlLCB7CiAgICAgICAgd3JpdGVTZXJpYWxpemVyczogewogICAgICAgICAgImRhdGV0aW1lLXV0YyI6IHRvRGF0YWJhc2VEYXRlVGltZVV0YwogICAgICAgIH0KICAgICAgfSkKICAgICk7CiAgICByZWdpc3RlclJvdXRlcyhhcHAsIHsKICAgICAgcm91dGVPd25lcnNoaXBGaWx0ZXI6IGNydWRQb2xpY3kub3duZXJzaGlwRmlsdGVyLAogICAgICByb3V0ZVN1cmZhY2U6IGNydWRQb2xpY3kuc3VyZmFjZUlkLAogICAgICByb3V0ZVJlbGF0aXZlUGF0aDogY3J1ZFBvbGljeS5yZWxhdGl2ZVBhdGgKICAgIH0pOwogIH0KfQoKZXhwb3J0IHsgVXNlcnNQcm92aWRlciB9Owo=",
             "preserveOnRemove": true,
             "reason": "Install app-owned users CRUD provider for non-workspace tenancy.",
             "category": "users-core",
@@ -977,9 +868,10 @@
           },
           {
             "path": "packages/users/src/server/actions.js",
+            "ownership": "app",
             "hash": "a335f18af4c036a6f4b909c13dfe8c4d8a3a724bcce7cad2fba97c7296320ec5",
-            "hadPrevious": false,
-            "previousContentBase64": "",
+            "hadPrevious": true,
+            "previousContentBase64": "aW1wb3J0IHsKICBjb21wb3NlU2NoZW1hRGVmaW5pdGlvbnMsCiAgcmVjb3JkSWRQYXJhbXNWYWxpZGF0b3IKfSBmcm9tICJAanNraXQtYWkva2VybmVsL3NoYXJlZC92YWxpZGF0b3JzIjsKaW1wb3J0IHsKICBjcmVhdGVDcnVkQ3Vyc29yUGFnaW5hdGlvblF1ZXJ5VmFsaWRhdG9yLAogIGxpc3RTZWFyY2hRdWVyeVZhbGlkYXRvcgp9IGZyb20gIkBqc2tpdC1haS9jcnVkLWNvcmUvc2VydmVyL2xpc3RRdWVyeVZhbGlkYXRvcnMiOwppbXBvcnQgeyByZXNvdXJjZSB9IGZyb20gIi4uL3NoYXJlZC91c2VyUmVzb3VyY2UuanMiOwoKY29uc3QgbGlzdEN1cnNvclBhZ2luYXRpb25RdWVyeVZhbGlkYXRvciA9IGNyZWF0ZUNydWRDdXJzb3JQYWdpbmF0aW9uUXVlcnlWYWxpZGF0b3IoewogIG9yZGVyQnk6IHJlc291cmNlLmRlZmF1bHRTb3J0Cn0pOwpjb25zdCBhdXRoZW50aWNhdGVkUGVybWlzc2lvbiA9IE9iamVjdC5mcmVlemUoewogIHJlcXVpcmU6ICJhdXRoZW50aWNhdGVkIgp9KTsKCmZ1bmN0aW9uIGNyZWF0ZUFjdGlvbnMoeyBzdXJmYWNlIH0gPSB7fSkgewogIHJldHVybiBPYmplY3QuZnJlZXplKFsKICAgIHsKICAgICAgaWQ6ICJjcnVkLnVzZXJzLmxpc3QiLAogICAgICB2ZXJzaW9uOiAxLAogICAgICBraW5kOiAicXVlcnkiLAogICAgICBjaGFubmVsczogWyJhcGkiLCAiYXV0b21hdGlvbiIsICJpbnRlcm5hbCJdLAogICAgICBzdXJmYWNlczogW3N1cmZhY2VdLAogICAgICBwZXJtaXNzaW9uOiBhdXRoZW50aWNhdGVkUGVybWlzc2lvbiwKICAgICAgaW5wdXQ6IGNvbXBvc2VTY2hlbWFEZWZpbml0aW9ucyhbCiAgICAgICAgbGlzdEN1cnNvclBhZ2luYXRpb25RdWVyeVZhbGlkYXRvciwKICAgICAgICBsaXN0U2VhcmNoUXVlcnlWYWxpZGF0b3IKICAgICAgXSksCiAgICAgIG91dHB1dDogbnVsbCwKICAgICAgaWRlbXBvdGVuY3k6ICJub25lIiwKICAgICAgYXVkaXQ6IHsKICAgICAgICBhY3Rpb25OYW1lOiAiY3J1ZC51c2Vycy5saXN0IgogICAgICB9LAogICAgICBvYnNlcnZhYmlsaXR5OiB7fSwKICAgICAgYXN5bmMgZXhlY3V0ZShpbnB1dCwgY29udGV4dCwgZGVwcykgewogICAgICAgIHJldHVybiBkZXBzLnVzZXJzU2VydmljZS5xdWVyeURvY3VtZW50cyhpbnB1dCB8fCB7fSwgewogICAgICAgICAgY29udGV4dCwKICAgICAgICAgIHZpc2liaWxpdHlDb250ZXh0OiBjb250ZXh0Py52aXNpYmlsaXR5Q29udGV4dAogICAgICAgIH0pOwogICAgICB9CiAgICB9LAogICAgewogICAgICBpZDogImNydWQudXNlcnMudmlldyIsCiAgICAgIHZlcnNpb246IDEsCiAgICAgIGtpbmQ6ICJxdWVyeSIsCiAgICAgIGNoYW5uZWxzOiBbImFwaSIsICJhdXRvbWF0aW9uIiwgImludGVybmFsIl0sCiAgICAgIHN1cmZhY2VzOiBbc3VyZmFjZV0sCiAgICAgIHBlcm1pc3Npb246IGF1dGhlbnRpY2F0ZWRQZXJtaXNzaW9uLAogICAgICBpbnB1dDogY29tcG9zZVNjaGVtYURlZmluaXRpb25zKFsKICAgICAgICByZWNvcmRJZFBhcmFtc1ZhbGlkYXRvcgogICAgICBdKSwKICAgICAgb3V0cHV0OiBudWxsLAogICAgICBpZGVtcG90ZW5jeTogIm5vbmUiLAogICAgICBhdWRpdDogewogICAgICAgIGFjdGlvbk5hbWU6ICJjcnVkLnVzZXJzLnZpZXciCiAgICAgIH0sCiAgICAgIG9ic2VydmFiaWxpdHk6IHt9LAogICAgICBhc3luYyBleGVjdXRlKGlucHV0LCBjb250ZXh0LCBkZXBzKSB7CiAgICAgICAgcmV0dXJuIGRlcHMudXNlcnNTZXJ2aWNlLmdldERvY3VtZW50QnlJZChpbnB1dC5yZWNvcmRJZCwgewogICAgICAgICAgY29udGV4dCwKICAgICAgICAgIHZpc2liaWxpdHlDb250ZXh0OiBjb250ZXh0Py52aXNpYmlsaXR5Q29udGV4dAogICAgICAgIH0pOwogICAgICB9CiAgICB9CiAgXSk7Cn0KCmV4cG9ydCB7IGNyZWF0ZUFjdGlvbnMgfTsK",
             "preserveOnRemove": true,
             "reason": "Install app-owned users CRUD actions for non-workspace tenancy.",
             "category": "users-core",
@@ -987,9 +879,10 @@
           },
           {
             "path": "packages/users/src/server/registerRoutes.js",
+            "ownership": "app",
             "hash": "e99defda4478bd5352dfdef65e8b86d82fbb2c932028e11b801889658b8fc8e1",
-            "hadPrevious": false,
-            "previousContentBase64": "",
+            "hadPrevious": true,
+            "previousContentBase64": "aW1wb3J0IHsgY3JlYXRlSnNvbkFwaVJlc291cmNlUm91dGVDb250cmFjdCB9IGZyb20gIkBqc2tpdC1haS9odHRwLXJ1bnRpbWUvc2hhcmVkL3ZhbGlkYXRvcnMvanNvbkFwaVJvdXRlVHJhbnNwb3J0IjsKaW1wb3J0IHsgbm9ybWFsaXplU3VyZmFjZUlkIH0gZnJvbSAiQGpza2l0LWFpL2tlcm5lbC9zaGFyZWQvc3VyZmFjZS9yZWdpc3RyeSI7CmltcG9ydCB7CiAgY3JlYXRlQ3J1ZEN1cnNvclBhZ2luYXRpb25RdWVyeVZhbGlkYXRvciwKICBsaXN0U2VhcmNoUXVlcnlWYWxpZGF0b3IKfSBmcm9tICJAanNraXQtYWkvY3J1ZC1jb3JlL3NlcnZlci9saXN0UXVlcnlWYWxpZGF0b3JzIjsKaW1wb3J0IHsgcmVzb2x2ZVNjb3BlZEFwaUJhc2VQYXRoIH0gZnJvbSAiQGpza2l0LWFpL2tlcm5lbC9zaGFyZWQvc3VyZmFjZSI7CmltcG9ydCB7IGNoZWNrUm91dGVWaXNpYmlsaXR5IH0gZnJvbSAiQGpza2l0LWFpL2tlcm5lbC9zaGFyZWQvc3VwcG9ydC92aXNpYmlsaXR5IjsKaW1wb3J0IHsKICBjb21wb3NlU2NoZW1hRGVmaW5pdGlvbnMsCiAgcmVjb3JkSWRQYXJhbXNWYWxpZGF0b3IKfSBmcm9tICJAanNraXQtYWkva2VybmVsL3NoYXJlZC92YWxpZGF0b3JzIjsKaW1wb3J0IHsgcmVzb3VyY2UgfSBmcm9tICIuLi9zaGFyZWQvdXNlclJlc291cmNlLmpzIjsKCmNvbnN0IGxpc3RDdXJzb3JQYWdpbmF0aW9uUXVlcnlWYWxpZGF0b3IgPSBjcmVhdGVDcnVkQ3Vyc29yUGFnaW5hdGlvblF1ZXJ5VmFsaWRhdG9yKHsKICBvcmRlckJ5OiByZXNvdXJjZS5kZWZhdWx0U29ydAp9KTsKY29uc3QgbGlzdFJvdXRlUXVlcnlWYWxpZGF0b3IgPSBjb21wb3NlU2NoZW1hRGVmaW5pdGlvbnMoWwogIGxpc3RDdXJzb3JQYWdpbmF0aW9uUXVlcnlWYWxpZGF0b3IsCiAgbGlzdFNlYXJjaFF1ZXJ5VmFsaWRhdG9yCl0pOwpjb25zdCBSRVNPVVJDRV9ST1VURV9DT05UUkFDVF9UWVBFID0gcmVzb3VyY2UubmFtZXNwYWNlOwpjb25zdCBsaXN0Um91dGVDb250cmFjdCA9IGNyZWF0ZUpzb25BcGlSZXNvdXJjZVJvdXRlQ29udHJhY3QoewogIHR5cGU6IFJFU09VUkNFX1JPVVRFX0NPTlRSQUNUX1RZUEUsCiAgcXVlcnk6IGxpc3RSb3V0ZVF1ZXJ5VmFsaWRhdG9yLAogIG91dHB1dDogcmVzb3VyY2Uub3BlcmF0aW9ucy52aWV3Lm91dHB1dCwKICBvdXRwdXRLaW5kOiAiY29sbGVjdGlvbiIKfSk7CmNvbnN0IHZpZXdSb3V0ZUNvbnRyYWN0ID0gY3JlYXRlSnNvbkFwaVJlc291cmNlUm91dGVDb250cmFjdCh7CiAgdHlwZTogUkVTT1VSQ0VfUk9VVEVfQ09OVFJBQ1RfVFlQRSwKICBvdXRwdXQ6IHJlc291cmNlLm9wZXJhdGlvbnMudmlldy5vdXRwdXQsCiAgb3V0cHV0S2luZDogInJlY29yZCIKfSk7CgpmdW5jdGlvbiByZWdpc3RlclJvdXRlcygKICBhcHAsCiAgewogICAgcm91dGVPd25lcnNoaXBGaWx0ZXIgPSAicHVibGljIiwKICAgIHJvdXRlU3VyZmFjZSA9ICIiLAogICAgcm91dGVSZWxhdGl2ZVBhdGggPSAiIgogIH0gPSB7fQopIHsKICBjb25zdCByb3V0ZXIgPSBhcHAubWFrZSgianNraXQuaHR0cC5yb3V0ZXIiKTsKICBjb25zdCBub3JtYWxpemVkUm91dGVTdXJmYWNlID0gbm9ybWFsaXplU3VyZmFjZUlkKHJvdXRlU3VyZmFjZSk7CiAgY29uc3Qgcm91dGVCYXNlID0gcmVzb2x2ZVNjb3BlZEFwaUJhc2VQYXRoKHsKICAgIHJvdXRlQmFzZTogIi8iLAogICAgcmVsYXRpdmVQYXRoOiByb3V0ZVJlbGF0aXZlUGF0aCwKICAgIHN0cmljdFBhcmFtczogZmFsc2UKICB9KTsKCiAgcm91dGVyLnJlZ2lzdGVyKAogICAgIkdFVCIsCiAgICByb3V0ZUJhc2UsCiAgICB7CiAgICAgIGF1dGg6ICJyZXF1aXJlZCIsCiAgICAgIHN1cmZhY2U6IG5vcm1hbGl6ZWRSb3V0ZVN1cmZhY2UsCiAgICAgIHZpc2liaWxpdHk6IGNoZWNrUm91dGVWaXNpYmlsaXR5KHJvdXRlT3duZXJzaGlwRmlsdGVyKSwKICAgICAgbWV0YTogewogICAgICAgIHRhZ3M6IFsiY3J1ZCJdLAogICAgICAgIHN1bW1hcnk6ICJMaXN0IHVzZXJzLiIKICAgICAgfSwKICAgICAgLi4ubGlzdFJvdXRlQ29udHJhY3QKICAgIH0sCiAgICBhc3luYyBmdW5jdGlvbiAocmVxdWVzdCwgcmVwbHkpIHsKICAgICAgY29uc3QgcmVzcG9uc2UgPSBhd2FpdCByZXF1ZXN0LmV4ZWN1dGVBY3Rpb24oewogICAgICAgIGFjdGlvbklkOiAiY3J1ZC51c2Vycy5saXN0IiwKICAgICAgICBpbnB1dDogewogICAgICAgICAgLi4uKHJlcXVlc3QuaW5wdXQucXVlcnkgfHwge30pCiAgICAgICAgfQogICAgICB9KTsKICAgICAgcmVwbHkuY29kZSgyMDApLnNlbmQocmVzcG9uc2UpOwogICAgfQogICk7CgogIHJvdXRlci5yZWdpc3RlcigKICAgICJHRVQiLAogICAgYCR7cm91dGVCYXNlfS86cmVjb3JkSWRgLAogICAgewogICAgICBhdXRoOiAicmVxdWlyZWQiLAogICAgICBzdXJmYWNlOiBub3JtYWxpemVkUm91dGVTdXJmYWNlLAogICAgICB2aXNpYmlsaXR5OiBjaGVja1JvdXRlVmlzaWJpbGl0eShyb3V0ZU93bmVyc2hpcEZpbHRlciksCiAgICAgIG1ldGE6IHsKICAgICAgICB0YWdzOiBbImNydWQiXSwKICAgICAgICBzdW1tYXJ5OiAiVmlldyBhIHVzZXIuIgogICAgICB9LAogICAgICAuLi52aWV3Um91dGVDb250cmFjdCwKICAgICAgcGFyYW1zOiByZWNvcmRJZFBhcmFtc1ZhbGlkYXRvcgogICAgfSwKICAgIGFzeW5jIGZ1bmN0aW9uIChyZXF1ZXN0LCByZXBseSkgewogICAgICBjb25zdCByZXNwb25zZSA9IGF3YWl0IHJlcXVlc3QuZXhlY3V0ZUFjdGlvbih7CiAgICAgICAgYWN0aW9uSWQ6ICJjcnVkLnVzZXJzLnZpZXciLAogICAgICAgIGlucHV0OiB7CiAgICAgICAgICByZWNvcmRJZDogcmVxdWVzdC5pbnB1dC5wYXJhbXMucmVjb3JkSWQKICAgICAgICB9CiAgICAgIH0pOwogICAgICByZXBseS5jb2RlKDIwMCkuc2VuZChyZXNwb25zZSk7CiAgICB9CiAgKTsKfQoKZXhwb3J0IHsgcmVnaXN0ZXJSb3V0ZXMgfTsK",
             "preserveOnRemove": true,
             "reason": "Install app-owned users CRUD routes for non-workspace tenancy.",
             "category": "users-core",
@@ -997,9 +890,10 @@
           },
           {
             "path": "packages/users/src/server/repository.js",
+            "ownership": "app",
             "hash": "39f1e2d408ba8e85ec90e3f78c44dceec67c7e2dfea9f2baf6958c816b71219b",
-            "hadPrevious": false,
-            "previousContentBase64": "",
+            "hadPrevious": true,
+            "previousContentBase64": "aW1wb3J0IHsgY3JlYXRlV2l0aFRyYW5zYWN0aW9uIH0gZnJvbSAiQGpza2l0LWFpL2RhdGFiYXNlLXJ1bnRpbWUvc2hhcmVkIjsKaW1wb3J0IHsKICBidWlsZEpzb25SZXN0UXVlcnlQYXJhbXMsCiAgY3JlYXRlSnNvblJlc3RDb250ZXh0LAogIHJldHVybk51bGxXaGVuSnNvblJlc3RSZXNvdXJjZU1pc3NpbmcKfSBmcm9tICJAanNraXQtYWkvanNvbi1yZXN0LWFwaS1jb3JlL3NlcnZlci9qc29uUmVzdEFwaUhvc3QiOwppbXBvcnQgeyByZXNvdXJjZSB9IGZyb20gIi4uL3NoYXJlZC91c2VyUmVzb3VyY2UuanMiOwoKY29uc3QgUkVTT1VSQ0VfVFlQRSA9IHJlc291cmNlLm5hbWVzcGFjZTsKCmZ1bmN0aW9uIGNyZWF0ZVJlcG9zaXRvcnkoeyBhcGksIGtuZXggfSA9IHt9KSB7CiAgY29uc3Qgd2l0aFRyYW5zYWN0aW9uID0gY3JlYXRlV2l0aFRyYW5zYWN0aW9uKGtuZXgpOwoKICBhc3luYyBmdW5jdGlvbiBxdWVyeURvY3VtZW50cyhxdWVyeSA9IHt9LCBvcHRpb25zID0ge30pIHsKICAgIHJldHVybiBhcGkucmVzb3VyY2VzLnVzZXJzLnF1ZXJ5KAogICAgICB7CiAgICAgICAgcXVlcnlQYXJhbXM6IGJ1aWxkSnNvblJlc3RRdWVyeVBhcmFtcyhSRVNPVVJDRV9UWVBFLCBxdWVyeSksCiAgICAgICAgdHJhbnNhY3Rpb246IG9wdGlvbnM/LnRyeCB8fCBudWxsLAogICAgICAgIHNpbXBsaWZpZWQ6IGZhbHNlCiAgICAgIH0sCiAgICAgIGNyZWF0ZUpzb25SZXN0Q29udGV4dChvcHRpb25zPy5jb250ZXh0IHx8IG51bGwpCiAgICApOwogIH0KCiAgYXN5bmMgZnVuY3Rpb24gZ2V0RG9jdW1lbnRCeUlkKHJlY29yZElkLCBvcHRpb25zID0ge30pIHsKICAgIHJldHVybiByZXR1cm5OdWxsV2hlbkpzb25SZXN0UmVzb3VyY2VNaXNzaW5nKCgpID0+CiAgICAgIGFwaS5yZXNvdXJjZXMudXNlcnMuZ2V0KAogICAgICAgIHsKICAgICAgICAgIGlkOiByZWNvcmRJZCwKICAgICAgICAgIHF1ZXJ5UGFyYW1zOiBidWlsZEpzb25SZXN0UXVlcnlQYXJhbXMoUkVTT1VSQ0VfVFlQRSwge30sIHsKICAgICAgICAgICAgaW5jbHVkZTogb3B0aW9ucz8uaW5jbHVkZQogICAgICAgICAgfSksCiAgICAgICAgICB0cmFuc2FjdGlvbjogb3B0aW9ucz8udHJ4IHx8IG51bGwsCiAgICAgICAgICBzaW1wbGlmaWVkOiBmYWxzZQogICAgICAgIH0sCiAgICAgICAgY3JlYXRlSnNvblJlc3RDb250ZXh0KG9wdGlvbnM/LmNvbnRleHQgfHwgbnVsbCkKICAgICAgKQogICAgKTsKICB9CgogIHJldHVybiBPYmplY3QuZnJlZXplKHsKICAgIHdpdGhUcmFuc2FjdGlvbiwKICAgIHF1ZXJ5RG9jdW1lbnRzLAogICAgZ2V0RG9jdW1lbnRCeUlkCiAgfSk7Cn0KCmV4cG9ydCB7IGNyZWF0ZVJlcG9zaXRvcnkgfTsK",
             "preserveOnRemove": true,
             "reason": "Install app-owned users CRUD repository.",
             "category": "users-core",
@@ -1007,9 +901,10 @@
           },
           {
             "path": "packages/users/src/server/service.js",
+            "ownership": "app",
             "hash": "cfe56ae49b580aaded2373cd79b8790c82974cf888b5fc9d4340552513f9b03a",
-            "hadPrevious": false,
-            "previousContentBase64": "",
+            "hadPrevious": true,
+            "previousContentBase64": "aW1wb3J0IHsgQXBwRXJyb3IgfSBmcm9tICJAanNraXQtYWkva2VybmVsL3NlcnZlci9ydW50aW1lL2Vycm9ycyI7CmltcG9ydCB7IHJldHVybkpzb25BcGlEb2N1bWVudCB9IGZyb20gIkBqc2tpdC1haS9odHRwLXJ1bnRpbWUvc2hhcmVkIjsKCmZ1bmN0aW9uIHJldHVybjQwNElmTm90Rm91bmQoZG9jdW1lbnQgPSBudWxsKSB7CiAgaWYgKCFkb2N1bWVudCkgewogICAgdGhyb3cgbmV3IEFwcEVycm9yKDQwNCwgIkRvY3VtZW50IG5vdCBmb3VuZC4iKTsKICB9CiAgcmV0dXJuIGRvY3VtZW50Owp9CgpmdW5jdGlvbiBjcmVhdGVTZXJ2aWNlKHsgdXNlcnNSZXBvc2l0b3J5IH0gPSB7fSkgewogIGlmICghdXNlcnNSZXBvc2l0b3J5KSB7CiAgICB0aHJvdyBuZXcgVHlwZUVycm9yKCJjcmVhdGVTZXJ2aWNlIHJlcXVpcmVzIHVzZXJzUmVwb3NpdG9yeS4iKTsKICB9CgogIHJldHVybiBPYmplY3QuZnJlZXplKHsKICAgIGFzeW5jIHF1ZXJ5RG9jdW1lbnRzKHF1ZXJ5ID0ge30sIG9wdGlvbnMgPSB7fSkgewogICAgICByZXR1cm4gcmV0dXJuSnNvbkFwaURvY3VtZW50KGF3YWl0IHVzZXJzUmVwb3NpdG9yeS5xdWVyeURvY3VtZW50cyhxdWVyeSwgewogICAgICAgIHRyeDogb3B0aW9ucz8udHJ4IHx8IG51bGwsCiAgICAgICAgY29udGV4dDogb3B0aW9ucz8uY29udGV4dCB8fCBudWxsCiAgICAgIH0pKTsKICAgIH0sCiAgICBhc3luYyBnZXREb2N1bWVudEJ5SWQocmVjb3JkSWQsIG9wdGlvbnMgPSB7fSkgewogICAgICByZXR1cm4gcmV0dXJuSnNvbkFwaURvY3VtZW50KHJldHVybjQwNElmTm90Rm91bmQoYXdhaXQgdXNlcnNSZXBvc2l0b3J5LmdldERvY3VtZW50QnlJZChyZWNvcmRJZCwgewogICAgICAgIHRyeDogb3B0aW9ucz8udHJ4IHx8IG51bGwsCiAgICAgICAgY29udGV4dDogb3B0aW9ucz8uY29udGV4dCB8fCBudWxsLAogICAgICAgIGluY2x1ZGU6IG9wdGlvbnM/LmluY2x1ZGUKICAgICAgfSkpKTsKICAgIH0KICB9KTsKfQoKZXhwb3J0IHsgY3JlYXRlU2VydmljZSB9Owo=",
             "preserveOnRemove": true,
             "reason": "Install app-owned users CRUD service.",
             "category": "users-core",
@@ -1017,9 +912,10 @@
           },
           {
             "path": "packages/users/src/shared/index.js",
+            "ownership": "app",
             "hash": "1ae725e80398c6ff9353c8bc8c917ce2c39eada3a035893f4c3f617792c1ad02",
-            "hadPrevious": false,
-            "previousContentBase64": "",
+            "hadPrevious": true,
+            "previousContentBase64": "ZXhwb3J0IHsgcmVzb3VyY2UgfSBmcm9tICIuL3VzZXJSZXNvdXJjZS5qcyI7Cg==",
             "preserveOnRemove": true,
             "reason": "Install app-owned users shared entrypoint.",
             "category": "users-core",
@@ -1027,9 +923,10 @@
           },
           {
             "path": "packages/users/src/shared/userResource.js",
+            "ownership": "app",
             "hash": "f3626c62e8c8eaae8f23b5c70bd4037ce3f7de83c598e2c8cd0d75c6d7db0f91",
-            "hadPrevious": false,
-            "previousContentBase64": "",
+            "hadPrevious": true,
+            "previousContentBase64": "aW1wb3J0IHsgZGVmaW5lQ3J1ZFJlc291cmNlIH0gZnJvbSAiQGpza2l0LWFpL3Jlc291cmNlLWNydWQtY29yZS9zaGFyZWQvY3J1ZFJlc291cmNlIjsKCmNvbnN0IHJlc291cmNlID0gZGVmaW5lQ3J1ZFJlc291cmNlKHsKICBuYW1lc3BhY2U6ICJ1c2VycyIsCiAgdGFibGVOYW1lOiAidXNlcnMiLAogIGNydWRPcGVyYXRpb25zOiBbImxpc3QiLCAidmlldyJdLAogIHNjaGVtYTogewogICAgbmFtZTogewogICAgICB0eXBlOiAic3RyaW5nIiwKICAgICAgcmVxdWlyZWQ6IHRydWUsCiAgICAgIG1pbkxlbmd0aDogMSwKICAgICAgbWF4TGVuZ3RoOiAxNjAsCiAgICAgIGFjdHVhbEZpZWxkOiAiZGlzcGxheV9uYW1lIiwKICAgICAgc2VhcmNoOiB0cnVlLAogICAgICBvcGVyYXRpb25zOiB7CiAgICAgICAgb3V0cHV0OiB7IHJlcXVpcmVkOiBmYWxzZSB9CiAgICAgIH0KICAgIH0sCiAgICBlbWFpbDogewogICAgICB0eXBlOiAic3RyaW5nIiwKICAgICAgcmVxdWlyZWQ6IHRydWUsCiAgICAgIHNlYXJjaDogdHJ1ZSwKICAgICAgb3BlcmF0aW9uczogewogICAgICAgIG91dHB1dDogeyByZXF1aXJlZDogZmFsc2UgfQogICAgICB9CiAgICB9LAogICAgdXNlcm5hbWU6IHsKICAgICAgdHlwZTogInN0cmluZyIsCiAgICAgIHJlcXVpcmVkOiB0cnVlLAogICAgICBzZWFyY2g6IHRydWUsCiAgICAgIG9wZXJhdGlvbnM6IHsKICAgICAgICBvdXRwdXQ6IHsgcmVxdWlyZWQ6IGZhbHNlIH0KICAgICAgfQogICAgfSwKICAgIGNyZWF0ZWRBdDogewogICAgICB0eXBlOiAiZGF0ZVRpbWUiLAogICAgICByZXF1aXJlZDogdHJ1ZSwKICAgICAgc3RvcmFnZTogeyB3cml0ZVNlcmlhbGl6ZXI6ICJkYXRldGltZS11dGMiIH0sCiAgICAgIG9wZXJhdGlvbnM6IHsKICAgICAgICBvdXRwdXQ6IHsgcmVxdWlyZWQ6IHRydWUgfQogICAgICB9CiAgICB9LAogICAgdXBkYXRlZEF0OiB7CiAgICAgIHR5cGU6ICJkYXRlVGltZSIsCiAgICAgIHJlcXVpcmVkOiB0cnVlLAogICAgICBzdG9yYWdlOiB7IHdyaXRlU2VyaWFsaXplcjogImRhdGV0aW1lLXV0YyIgfSwKICAgICAgb3BlcmF0aW9uczogewogICAgICAgIG91dHB1dDogeyByZXF1aXJlZDogdHJ1ZSB9CiAgICAgIH0KICAgIH0KICB9LAogIHNlYXJjaFNjaGVtYTogewogICAgaWQ6IHsKICAgICAgdHlwZTogImlkIiwKICAgICAgYWN0dWFsRmllbGQ6ICJpZCIKICAgIH0sCiAgICBxOiB7CiAgICAgIHR5cGU6ICJzdHJpbmciLAogICAgICBvbmVPZjogWyJuYW1lIiwgImVtYWlsIiwgInVzZXJuYW1lIl0sCiAgICAgIGZpbHRlck9wZXJhdG9yOiAibGlrZSIsCiAgICAgIHNwbGl0Qnk6ICIgIiwKICAgICAgbWF0Y2hBbGw6IHRydWUKICAgIH0KICB9LAogIGRlZmF1bHRTb3J0OiBbIm5hbWUiLCAiZW1haWwiXSwKICBhdXRvZmlsdGVyOiAicHVibGljIgp9KTsKCmV4cG9ydCB7IHJlc291cmNlIH07Cg==",
             "preserveOnRemove": true,
             "reason": "Install app-owned users shared resource.",
             "category": "users-core",
@@ -1041,7 +938,7 @@
             "id": "users-core-generic-initial-schema",
             "path": "migrations/20260715084402_users-core-generic-initial-schema.cjs",
             "hash": "e3e175b14687ad906c3b842ab283855512a1bd297497dbd6459406d04f63f891",
-            "skipped": false,
+            "skipped": true,
             "reason": "Install users/account core schema migration.",
             "category": "migration"
           },
@@ -1049,7 +946,7 @@
             "id": "users-core-profile-username-schema",
             "path": "migrations/20260715084402_users-core-profile-username-schema.cjs",
             "hash": "e68a5839534b8f3f261db264ef24d1b4d09ab8f032a9f260123f9559ebf32ad8",
-            "skipped": false,
+            "skipped": true,
             "reason": "Install users profile username migration.",
             "category": "migration"
           },
@@ -1057,112 +954,47 @@
             "id": "users-core-profile-updated-at-schema",
             "path": "migrations/20260715084402_users-core-profile-updated-at-schema.cjs",
             "hash": "2377c8ba5c3d772a7bf8377955f641ead859d96757c53525d3928f7688a655c5",
-            "skipped": false,
+            "skipped": true,
             "reason": "Install users profile updated-at migration.",
             "category": "migration"
           }
         ]
       },
       "options": {},
-      "installedAt": "2026-07-15T08:44:02.231Z",
-      "migrationSyncVersion": "0.1.123"
+      "installedAt": "2026-07-20T15:08:14.269Z",
+      "migrationSyncVersion": "0.1.134",
+      "warnings": [
+        "@jskit-ai/users-core: skipped migration users-core-generic-initial-schema (already managed at migrations/20260715084402_users-core-generic-initial-schema.cjs).",
+        "@jskit-ai/users-core: skipped migration users-core-profile-username-schema (already managed at migrations/20260715084402_users-core-profile-username-schema.cjs).",
+        "@jskit-ai/users-core: skipped migration users-core-profile-updated-at-schema (already managed at migrations/20260715084402_users-core-profile-updated-at-schema.cjs)."
+      ]
     },
     "@jskit-ai/users-web": {
       "packageId": "@jskit-ai/users-web",
-      "version": "0.1.128",
+      "version": "0.1.140",
       "source": {
-        "type": "catalog",
-        "descriptorPath": "../jskit-catalog/catalog/packages.json#@jskit-ai/users-web"
+        "type": "npm-installed-package",
+        "packagePath": "node_modules/@jskit-ai/users-web",
+        "descriptorPath": "node_modules/@jskit-ai/users-web/package.descriptor.mjs"
       },
       "managed": {
         "packageJson": {
           "dependencies": {
             "@jskit-ai/realtime": {
-              "hadPrevious": false,
-              "previousValue": "",
+              "hadPrevious": true,
+              "previousValue": "0.1.121",
               "value": "0.x"
             },
             "@jskit-ai/users-web": {
-              "hadPrevious": false,
-              "previousValue": "",
+              "hadPrevious": true,
+              "previousValue": "0.1.140",
               "value": "0.x"
             }
           },
           "devDependencies": {},
-          "scripts": {
-            "server:account": {
-              "hadPrevious": false,
-              "previousValue": "",
-              "value": "SERVER_SURFACE=account node ./bin/server.js"
-            },
-            "dev:account": {
-              "hadPrevious": false,
-              "previousValue": "",
-              "value": "VITE_SURFACE=account vite"
-            },
-            "build:account": {
-              "hadPrevious": false,
-              "previousValue": "",
-              "value": "VITE_SURFACE=account vite build"
-            }
-          }
+          "scripts": {}
         },
-        "text": {
-          "config/public.js::users-web-surface-config-account": {
-            "file": "config/public.js",
-            "op": "append-text",
-            "value": "\nconfig.surfaceDefinitions.account = {\n  id: \"account\",\n  label: \"Account\",\n  pagesRoot: \"account\",\n  enabled: true,\n  requiresAuth: true,\n  requiresWorkspace: false,\n  origin: \"\"\n};\n",
-            "position": "bottom",
-            "reason": "Register account surface definition in public surface config.",
-            "category": "users-web",
-            "id": "users-web-surface-config-account"
-          },
-          "src/placement.js::users-web-profile-settings-placement": {
-            "file": "src/placement.js",
-            "op": "append-text",
-            "value": "\naddPlacement({\n  id: \"users.profile.menu.settings\",\n  target: \"auth.profile-menu\",\n  kind: \"link\",\n  surfaces: [\"*\"],\n  order: 500,\n  props: {\n    label: \"Settings\",\n    to: \"/account\"\n  },\n  when: ({ auth }) => auth?.authenticated === true\n});\n",
-            "position": "bottom",
-            "reason": "Append users-web profile settings menu placement into app-owned placement registry.",
-            "category": "users-web",
-            "id": "users-web-profile-settings-placement"
-          },
-          "src/placement.js::users-web-home-tools-placement": {
-            "file": "src/placement.js",
-            "op": "append-text",
-            "value": "\naddPlacement({\n  id: \"users.home.tools.widget\",\n  target: \"shell.status\",\n  kind: \"component\",\n  surfaces: [\"home\"],\n  order: 900,\n  componentToken: \"users.web.home.tools.widget\",\n  when: ({ auth }) => auth?.authenticated === true\n});\n\naddPlacement({\n  id: \"users.home.menu.settings\",\n  target: \"home.tools-menu\",\n  kind: \"link\",\n  surfaces: [\"home\"],\n  order: 100,\n  props: {\n    label: \"Settings\",\n    surface: \"home\",\n    scopedSuffix: \"/settings\",\n    unscopedSuffix: \"/settings\"\n  },\n  when: ({ auth }) => auth?.authenticated === true\n});\n",
-            "position": "bottom",
-            "reason": "Append users-web home tools widget and settings menu placements into app-owned placement registry.",
-            "category": "users-web",
-            "id": "users-web-home-tools-placement"
-          },
-          "src/placementTopology.js::users-web-home-tools-topology": {
-            "file": "src/placementTopology.js",
-            "op": "append-text",
-            "value": "\naddPlacementTopology({\n  id: \"home.tools-menu\",\n  description: \"Home surface tools menu actions.\",\n  surfaces: [\"home\"],\n  variants: {\n    compact: {\n      outlet: \"home-cog:primary-menu\",\n      renderers: {\n        link: \"local.main.ui.surface-aware-menu-link-item\"\n      }\n    },\n    medium: {\n      outlet: \"home-cog:primary-menu\",\n      renderers: {\n        link: \"local.main.ui.surface-aware-menu-link-item\"\n      }\n    },\n    expanded: {\n      outlet: \"home-cog:primary-menu\",\n      renderers: {\n        link: \"local.main.ui.surface-aware-menu-link-item\"\n      }\n    }\n  }\n});\n",
-            "position": "bottom",
-            "reason": "Append users-web home tools semantic topology into app-owned placement topology.",
-            "category": "users-web",
-            "id": "users-web-home-tools-topology"
-          },
-          "src/placement.js::users-web-account-settings-sections-placement": {
-            "file": "src/placement.js",
-            "op": "append-text",
-            "value": "\naddPlacement({\n  id: \"users.account.settings.profile\",\n  target: \"settings.sections\",\n  owner: \"account-settings\",\n  kind: \"component\",\n  surfaces: [\"account\"],\n  order: 100,\n  componentToken: \"local.main.account-settings.section.profile\",\n  props: {\n    title: \"Profile\",\n    value: \"profile\",\n    usesSharedRuntime: true\n  }\n});\n\naddPlacement({\n  id: \"users.account.settings.preferences\",\n  target: \"settings.sections\",\n  owner: \"account-settings\",\n  kind: \"component\",\n  surfaces: [\"account\"],\n  order: 200,\n  componentToken: \"local.main.account-settings.section.preferences\",\n  props: {\n    title: \"Preferences\",\n    value: \"preferences\",\n    usesSharedRuntime: true\n  }\n});\n\naddPlacement({\n  id: \"users.account.settings.notifications\",\n  target: \"settings.sections\",\n  owner: \"account-settings\",\n  kind: \"component\",\n  surfaces: [\"account\"],\n  order: 300,\n  componentToken: \"local.main.account-settings.section.notifications\",\n  props: {\n    title: \"Notifications\",\n    value: \"notifications\",\n    usesSharedRuntime: true\n  }\n});\n",
-            "position": "bottom",
-            "reason": "Append users-web account settings section placements into the app-owned placement registry.",
-            "category": "users-web",
-            "id": "users-web-account-settings-sections-placement"
-          },
-          "src/placementTopology.js::users-web-account-settings-topology": {
-            "file": "src/placementTopology.js",
-            "op": "append-text",
-            "value": "\naddPlacementTopology({\n  id: \"settings.sections\",\n  owner: \"account-settings\",\n  description: \"Account settings content sections.\",\n  surfaces: [\"account\"],\n  variants: {\n    compact: {\n      outlet: \"account-settings:sections\"\n    },\n    medium: {\n      outlet: \"account-settings:sections\"\n    },\n    expanded: {\n      outlet: \"account-settings:sections\"\n    }\n  }\n});\n",
-            "position": "bottom",
-            "reason": "Append users-web account settings semantic topology into app-owned placement topology.",
-            "category": "users-web",
-            "id": "users-web-account-settings-topology"
-          }
-        },
+        "text": {},
         "source": {
           "packages/main/src/client/providers/MainClientProvider.js::users-web-main-client-provider-account-settings-profile-import": {
             "file": "packages/main/src/client/providers/MainClientProvider.js",
@@ -1211,9 +1043,10 @@
         "files": [
           {
             "path": "src/pages/account/index.vue",
+            "ownership": "package",
             "hash": "cfb92104a6723fdccf9e3e9ce19aba5a9611694da11185505c0c4d4d29667194",
-            "hadPrevious": false,
-            "previousContentBase64": "",
+            "hadPrevious": true,
+            "previousContentBase64": "PHJvdXRlIGxhbmc9Impzb24iPgp7CiAgIm1ldGEiOiB7CiAgICAiZ3VhcmQiOiB7CiAgICAgICJwb2xpY3kiOiAiYXV0aGVudGljYXRlZCIKICAgIH0KICB9Cn0KPC9yb3V0ZT4KCjx0ZW1wbGF0ZT4KICA8QWNjb3VudFNldHRpbmdzQ2xpZW50RWxlbWVudCAvPgo8L3RlbXBsYXRlPgoKPHNjcmlwdCBzZXR1cD4KaW1wb3J0IEFjY291bnRTZXR0aW5nc0NsaWVudEVsZW1lbnQgZnJvbSAiQGpza2l0LWFpL3VzZXJzLXdlYi9jbGllbnQvY29tcG9uZW50cy9BY2NvdW50U2V0dGluZ3NDbGllbnRFbGVtZW50IjsKPC9zY3JpcHQ+Cg==",
             "preserveOnRemove": false,
             "reason": "Install app-owned account surface root page scaffold.",
             "category": "users-web",
@@ -1221,9 +1054,10 @@
           },
           {
             "path": "src/components/account/settings/AccountSettingsProfileSection.vue",
-            "hash": "ffb7e3dedcf29ed9dbf2b5fb9e44622e03c0e14e96e03505d248f14621100293",
-            "hadPrevious": false,
-            "previousContentBase64": "",
+            "ownership": "package",
+            "hash": "a9b9d096f95ea8a8ee8162ea3a1facfdb278fd2aae847bac1fc711e75168a3bb",
+            "hadPrevious": true,
+            "previousContentBase64": "PHNjcmlwdCBzZXR1cD4KY29uc3QgcHJvcHMgPSBkZWZpbmVQcm9wcyh7CiAgcnVudGltZTogewogICAgdHlwZTogT2JqZWN0LAogICAgcmVxdWlyZWQ6IHRydWUKICB9Cn0pOwoKY29uc3QgcHJvZmlsZSA9IHByb3BzLnJ1bnRpbWUucHJvZmlsZTsKPC9zY3JpcHQ+Cgo8dGVtcGxhdGU+CiAgPHYtc2hlZXQgcm91bmRlZD0ibGciIGJvcmRlciBjbGFzcz0iYWNjb3VudC1zZXR0aW5ncy1zZWN0aW9uIj4KICAgIDxoZWFkZXIgY2xhc3M9ImFjY291bnQtc2V0dGluZ3Mtc2VjdGlvbl9faGVhZGVyIj4KICAgICAgPGgyIGNsYXNzPSJhY2NvdW50LXNldHRpbmdzLXNlY3Rpb25fX3RpdGxlIj5Qcm9maWxlPC9oMj4KICAgIDwvaGVhZGVyPgogICAgPGRpdiBjbGFzcz0iYWNjb3VudC1zZXR0aW5ncy1zZWN0aW9uX19ib2R5Ij4KICAgICAgPHYtZm9ybSBAc3VibWl0LnByZXZlbnQ9InByb2ZpbGUuc3VibWl0IiBub3ZhbGlkYXRlPgogICAgICAgIDx2LXJvdyBjbGFzcz0ibWItMiI+CiAgICAgICAgICA8di1jb2wgY29scz0iMTIiIG1kPSI0IiBjbGFzcz0iZC1mbGV4IGZsZXgtY29sdW1uIGFsaWduLWNlbnRlciBqdXN0aWZ5LWNlbnRlciI+CiAgICAgICAgICAgIDx2LWF2YXRhciA6c2l6ZT0icHJvZmlsZS5hdmF0YXIuc2l6ZSIgY29sb3I9InN1cmZhY2UtdmFyaWFudCIgcm91bmRlZD0iY2lyY2xlIiBjbGFzcz0ibWItMyI+CiAgICAgICAgICAgICAgPHYtaW1nIHYtaWY9InByb2ZpbGUuYXZhdGFyLmVmZmVjdGl2ZVVybCIgOnNyYz0icHJvZmlsZS5hdmF0YXIuZWZmZWN0aXZlVXJsIiBjb3ZlciAvPgogICAgICAgICAgICAgIDxzcGFuIHYtZWxzZSBjbGFzcz0idGV4dC1oNiI+e3sgcHJvZmlsZS5pbml0aWFscy52YWx1ZSB9fTwvc3Bhbj4KICAgICAgICAgICAgPC92LWF2YXRhcj4KICAgICAgICAgICAgPGRpdiBjbGFzcz0idGV4dC1jYXB0aW9uIHRleHQtbWVkaXVtLWVtcGhhc2lzIj5QcmV2aWV3IHNpemU6IHt7IHByb2ZpbGUuYXZhdGFyLnNpemUgfX0gcHg8L2Rpdj4KICAgICAgICAgIDwvdi1jb2w+CgogICAgICAgICAgPHYtY29sIGNvbHM9IjEyIiBtZD0iOCI+CiAgICAgICAgICAgIDxkaXYgY2xhc3M9ImQtZmxleCBmbGV4LXdyYXAgZ2EtMiBtYi0yIj4KICAgICAgICAgICAgICA8di1idG4KICAgICAgICAgICAgICAgIHZhcmlhbnQ9InRvbmFsIgogICAgICAgICAgICAgICAgY29sb3I9InNlY29uZGFyeSIKICAgICAgICAgICAgICAgIDpkaXNhYmxlZD0icHJvZmlsZS5pc1NhdmluZy52YWx1ZSB8fCBwcm9maWxlLmlzRGVsZXRpbmdBdmF0YXIudmFsdWUgfHwgcHJvZmlsZS5pc1JlZnJlc2hpbmcudmFsdWUiCiAgICAgICAgICAgICAgICBAY2xpY2s9InByb2ZpbGUub3BlbkF2YXRhckVkaXRvciIKICAgICAgICAgICAgICA+CiAgICAgICAgICAgICAgICBSZXBsYWNlIGF2YXRhcgogICAgICAgICAgICAgIDwvdi1idG4+CiAgICAgICAgICAgICAgPHYtYnRuCiAgICAgICAgICAgICAgICB2LWlmPSJwcm9maWxlLmF2YXRhci5oYXNVcGxvYWRlZEF2YXRhciIKICAgICAgICAgICAgICAgIHZhcmlhbnQ9InRleHQiCiAgICAgICAgICAgICAgICBjb2xvcj0iZXJyb3IiCiAgICAgICAgICAgICAgICA6bG9hZGluZz0icHJvZmlsZS5pc0RlbGV0aW5nQXZhdGFyLnZhbHVlIgogICAgICAgICAgICAgICAgOmRpc2FibGVkPSJwcm9maWxlLmlzU2F2aW5nLnZhbHVlIHx8IHByb2ZpbGUuaXNSZWZyZXNoaW5nLnZhbHVlIgogICAgICAgICAgICAgICAgQGNsaWNrPSJwcm9maWxlLnJlbW92ZUF2YXRhciIKICAgICAgICAgICAgICA+CiAgICAgICAgICAgICAgICBSZW1vdmUgYXZhdGFyCiAgICAgICAgICAgICAgPC92LWJ0bj4KICAgICAgICAgICAgPC9kaXY+CgogICAgICAgICAgICA8ZGl2IHYtaWY9InByb2ZpbGUuc2VsZWN0ZWRBdmF0YXJGaWxlTmFtZS52YWx1ZSIgY2xhc3M9InRleHQtY2FwdGlvbiB0ZXh0LW1lZGl1bS1lbXBoYXNpcyBtYi0yIj4KICAgICAgICAgICAgICBTZWxlY3RlZCBmaWxlOiB7eyBwcm9maWxlLnNlbGVjdGVkQXZhdGFyRmlsZU5hbWUudmFsdWUgfX0KICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICA8L3YtY29sPgogICAgICAgIDwvdi1yb3c+CgogICAgICAgIDx2LXJvdz4KICAgICAgICAgIDx2LWNvbCBjb2xzPSIxMiIgbWQ9IjYiPgogICAgICAgICAgICA8di10ZXh0LWZpZWxkCiAgICAgICAgICAgICAgdi1tb2RlbD0icHJvZmlsZS5mb3JtLmRpc3BsYXlOYW1lIgogICAgICAgICAgICAgIGxhYmVsPSJEaXNwbGF5IG5hbWUiCiAgICAgICAgICAgICAgdmFyaWFudD0ib3V0bGluZWQiCiAgICAgICAgICAgICAgZGVuc2l0eT0iY29tZm9ydGFibGUiCiAgICAgICAgICAgICAgYXV0b2NvbXBsZXRlPSJuaWNrbmFtZSIKICAgICAgICAgICAgICA6cmVhZG9ubHk9InByb2ZpbGUuaXNTYXZpbmcudmFsdWUgfHwgcHJvZmlsZS5pc1JlZnJlc2hpbmcudmFsdWUiCiAgICAgICAgICAgICAgOmVycm9yLW1lc3NhZ2VzPSJwcm9maWxlLmZpZWxkRXJyb3JzLmRpc3BsYXlOYW1lID8gW3Byb2ZpbGUuZmllbGRFcnJvcnMuZGlzcGxheU5hbWVdIDogW10iCiAgICAgICAgICAgIC8+CiAgICAgICAgICA8L3YtY29sPgoKICAgICAgICAgIDx2LWNvbCBjb2xzPSIxMiIgbWQ9IjYiPgogICAgICAgICAgICA8di10ZXh0LWZpZWxkCiAgICAgICAgICAgICAgdi1tb2RlbD0icHJvZmlsZS5mb3JtLmVtYWlsIgogICAgICAgICAgICAgIGxhYmVsPSJFbWFpbCIKICAgICAgICAgICAgICB2YXJpYW50PSJvdXRsaW5lZCIKICAgICAgICAgICAgICBkZW5zaXR5PSJjb21mb3J0YWJsZSIKICAgICAgICAgICAgICByZWFkb25seQogICAgICAgICAgICAgIGhpbnQ9Ik1hbmFnZWQgYnkgU3VwYWJhc2UgQXV0aCIKICAgICAgICAgICAgICBwZXJzaXN0ZW50LWhpbnQKICAgICAgICAgICAgLz4KICAgICAgICAgIDwvdi1jb2w+CiAgICAgICAgPC92LXJvdz4KCiAgICAgICAgPHYtYnRuCiAgICAgICAgICB0eXBlPSJzdWJtaXQiCiAgICAgICAgICBjb2xvcj0icHJpbWFyeSIKICAgICAgICAgIDpsb2FkaW5nPSJwcm9maWxlLmlzU2F2aW5nLnZhbHVlIgogICAgICAgICAgOmRpc2FibGVkPSJwcm9maWxlLmlzRGVsZXRpbmdBdmF0YXIudmFsdWUgfHwgcHJvZmlsZS5pc1JlZnJlc2hpbmcudmFsdWUiCiAgICAgICAgPgogICAgICAgICAgU2F2ZSBwcm9maWxlCiAgICAgICAgPC92LWJ0bj4KICAgICAgPC92LWZvcm0+CiAgICA8L2Rpdj4KICA8L3Ytc2hlZXQ+CjwvdGVtcGxhdGU+Cgo8c3R5bGUgc2NvcGVkPgouYWNjb3VudC1zZXR0aW5ncy1zZWN0aW9uIHsKICBvdmVyZmxvdzogaGlkZGVuOwp9CgouYWNjb3VudC1zZXR0aW5ncy1zZWN0aW9uX19oZWFkZXIgewogIHBhZGRpbmc6IDFyZW0gMXJlbSAwOwp9CgouYWNjb3VudC1zZXR0aW5ncy1zZWN0aW9uX190aXRsZSB7CiAgZm9udC1zaXplOiAxcmVtOwogIGZvbnQtd2VpZ2h0OiA2NTA7CiAgbGluZS1oZWlnaHQ6IDEuMjsKICBtYXJnaW46IDA7Cn0KCi5hY2NvdW50LXNldHRpbmdzLXNlY3Rpb25fX2JvZHkgewogIHBhZGRpbmc6IDFyZW07Cn0KCkBtZWRpYSAobWF4LXdpZHRoOiA2NDBweCkgewogIC5hY2NvdW50LXNldHRpbmdzLXNlY3Rpb25fX2JvZHkgOmRlZXAoLnYtYnRuKSB7CiAgICBtaW4taGVpZ2h0OiA0OHB4OwogIH0KfQo8L3N0eWxlPgo=",
             "preserveOnRemove": false,
             "reason": "Install app-owned account settings profile section scaffold.",
             "category": "users-web",
@@ -1231,9 +1065,10 @@
           },
           {
             "path": "src/components/account/settings/AccountSettingsPreferencesSection.vue",
+            "ownership": "package",
             "hash": "8898edbbe6da860228c05c8d2827b9cb8868340107ad5f0011c0fecc9763b9a8",
-            "hadPrevious": false,
-            "previousContentBase64": "",
+            "hadPrevious": true,
+            "previousContentBase64": "PHNjcmlwdCBzZXR1cD4KY29uc3QgcHJvcHMgPSBkZWZpbmVQcm9wcyh7CiAgcnVudGltZTogewogICAgdHlwZTogT2JqZWN0LAogICAgcmVxdWlyZWQ6IHRydWUKICB9Cn0pOwoKY29uc3QgcHJlZmVyZW5jZXMgPSBwcm9wcy5ydW50aW1lLnByZWZlcmVuY2VzOwo8L3NjcmlwdD4KCjx0ZW1wbGF0ZT4KICA8di1zaGVldCByb3VuZGVkPSJsZyIgYm9yZGVyIGNsYXNzPSJhY2NvdW50LXNldHRpbmdzLXNlY3Rpb24iPgogICAgPGhlYWRlciBjbGFzcz0iYWNjb3VudC1zZXR0aW5ncy1zZWN0aW9uX19oZWFkZXIiPgogICAgICA8aDIgY2xhc3M9ImFjY291bnQtc2V0dGluZ3Mtc2VjdGlvbl9fdGl0bGUiPlByZWZlcmVuY2VzPC9oMj4KICAgIDwvaGVhZGVyPgogICAgPGRpdiBjbGFzcz0iYWNjb3VudC1zZXR0aW5ncy1zZWN0aW9uX19ib2R5Ij4KICAgICAgPHYtZm9ybSBAc3VibWl0LnByZXZlbnQ9InByZWZlcmVuY2VzLnN1Ym1pdCIgbm92YWxpZGF0ZT4KICAgICAgICA8di1yb3c+CiAgICAgICAgICA8di1jb2wgY29scz0iMTIiIG1kPSI0Ij4KICAgICAgICAgICAgPHYtc2VsZWN0CiAgICAgICAgICAgICAgdi1tb2RlbD0icHJlZmVyZW5jZXMuZm9ybS50aGVtZSIKICAgICAgICAgICAgICBsYWJlbD0iVGhlbWUiCiAgICAgICAgICAgICAgOml0ZW1zPSJwcmVmZXJlbmNlcy5vcHRpb25zLnRoZW1lIgogICAgICAgICAgICAgIGl0ZW0tdGl0bGU9InRpdGxlIgogICAgICAgICAgICAgIGl0ZW0tdmFsdWU9InZhbHVlIgogICAgICAgICAgICAgIHZhcmlhbnQ9Im91dGxpbmVkIgogICAgICAgICAgICAgIGRlbnNpdHk9ImNvbWZvcnRhYmxlIgogICAgICAgICAgICAgIDpkaXNhYmxlZD0icHJlZmVyZW5jZXMuaXNTYXZpbmcudmFsdWUgfHwgcHJlZmVyZW5jZXMuaXNSZWZyZXNoaW5nLnZhbHVlIgogICAgICAgICAgICAgIDplcnJvci1tZXNzYWdlcz0icHJlZmVyZW5jZXMuZmllbGRFcnJvcnMudGhlbWUgPyBbcHJlZmVyZW5jZXMuZmllbGRFcnJvcnMudGhlbWVdIDogW10iCiAgICAgICAgICAgIC8+CiAgICAgICAgICA8L3YtY29sPgoKICAgICAgICAgIDx2LWNvbCBjb2xzPSIxMiIgbWQ9IjQiPgogICAgICAgICAgICA8di1zZWxlY3QKICAgICAgICAgICAgICB2LW1vZGVsPSJwcmVmZXJlbmNlcy5mb3JtLmxvY2FsZSIKICAgICAgICAgICAgICBsYWJlbD0iTGFuZ3VhZ2UgLyBsb2NhbGUiCiAgICAgICAgICAgICAgOml0ZW1zPSJwcmVmZXJlbmNlcy5vcHRpb25zLmxvY2FsZSIKICAgICAgICAgICAgICBpdGVtLXRpdGxlPSJ0aXRsZSIKICAgICAgICAgICAgICBpdGVtLXZhbHVlPSJ2YWx1ZSIKICAgICAgICAgICAgICB2YXJpYW50PSJvdXRsaW5lZCIKICAgICAgICAgICAgICBkZW5zaXR5PSJjb21mb3J0YWJsZSIKICAgICAgICAgICAgICA6ZGlzYWJsZWQ9InByZWZlcmVuY2VzLmlzU2F2aW5nLnZhbHVlIHx8IHByZWZlcmVuY2VzLmlzUmVmcmVzaGluZy52YWx1ZSIKICAgICAgICAgICAgICA6ZXJyb3ItbWVzc2FnZXM9InByZWZlcmVuY2VzLmZpZWxkRXJyb3JzLmxvY2FsZSA/IFtwcmVmZXJlbmNlcy5maWVsZEVycm9ycy5sb2NhbGVdIDogW10iCiAgICAgICAgICAgIC8+CiAgICAgICAgICA8L3YtY29sPgoKICAgICAgICAgIDx2LWNvbCBjb2xzPSIxMiIgbWQ9IjQiPgogICAgICAgICAgICA8di1zZWxlY3QKICAgICAgICAgICAgICB2LW1vZGVsPSJwcmVmZXJlbmNlcy5mb3JtLnRpbWVab25lIgogICAgICAgICAgICAgIGxhYmVsPSJUaW1lIHpvbmUiCiAgICAgICAgICAgICAgOml0ZW1zPSJwcmVmZXJlbmNlcy5vcHRpb25zLnRpbWVab25lIgogICAgICAgICAgICAgIHZhcmlhbnQ9Im91dGxpbmVkIgogICAgICAgICAgICAgIGRlbnNpdHk9ImNvbWZvcnRhYmxlIgogICAgICAgICAgICAgIDpkaXNhYmxlZD0icHJlZmVyZW5jZXMuaXNTYXZpbmcudmFsdWUgfHwgcHJlZmVyZW5jZXMuaXNSZWZyZXNoaW5nLnZhbHVlIgogICAgICAgICAgICAgIDplcnJvci1tZXNzYWdlcz0icHJlZmVyZW5jZXMuZmllbGRFcnJvcnMudGltZVpvbmUgPyBbcHJlZmVyZW5jZXMuZmllbGRFcnJvcnMudGltZVpvbmVdIDogW10iCiAgICAgICAgICAgIC8+CiAgICAgICAgICA8L3YtY29sPgoKICAgICAgICAgIDx2LWNvbCBjb2xzPSIxMiIgbWQ9IjQiPgogICAgICAgICAgICA8di1zZWxlY3QKICAgICAgICAgICAgICB2LW1vZGVsPSJwcmVmZXJlbmNlcy5mb3JtLmRhdGVGb3JtYXQiCiAgICAgICAgICAgICAgbGFiZWw9IkRhdGUgZm9ybWF0IgogICAgICAgICAgICAgIDppdGVtcz0icHJlZmVyZW5jZXMub3B0aW9ucy5kYXRlRm9ybWF0IgogICAgICAgICAgICAgIGl0ZW0tdGl0bGU9InRpdGxlIgogICAgICAgICAgICAgIGl0ZW0tdmFsdWU9InZhbHVlIgogICAgICAgICAgICAgIHZhcmlhbnQ9Im91dGxpbmVkIgogICAgICAgICAgICAgIGRlbnNpdHk9ImNvbWZvcnRhYmxlIgogICAgICAgICAgICAgIDpkaXNhYmxlZD0icHJlZmVyZW5jZXMuaXNTYXZpbmcudmFsdWUgfHwgcHJlZmVyZW5jZXMuaXNSZWZyZXNoaW5nLnZhbHVlIgogICAgICAgICAgICAgIDplcnJvci1tZXNzYWdlcz0icHJlZmVyZW5jZXMuZmllbGRFcnJvcnMuZGF0ZUZvcm1hdCA/IFtwcmVmZXJlbmNlcy5maWVsZEVycm9ycy5kYXRlRm9ybWF0XSA6IFtdIgogICAgICAgICAgICAvPgogICAgICAgICAgPC92LWNvbD4KCiAgICAgICAgICA8di1jb2wgY29scz0iMTIiIG1kPSI0Ij4KICAgICAgICAgICAgPHYtc2VsZWN0CiAgICAgICAgICAgICAgdi1tb2RlbD0icHJlZmVyZW5jZXMuZm9ybS5udW1iZXJGb3JtYXQiCiAgICAgICAgICAgICAgbGFiZWw9Ik51bWJlciBmb3JtYXQiCiAgICAgICAgICAgICAgOml0ZW1zPSJwcmVmZXJlbmNlcy5vcHRpb25zLm51bWJlckZvcm1hdCIKICAgICAgICAgICAgICBpdGVtLXRpdGxlPSJ0aXRsZSIKICAgICAgICAgICAgICBpdGVtLXZhbHVlPSJ2YWx1ZSIKICAgICAgICAgICAgICB2YXJpYW50PSJvdXRsaW5lZCIKICAgICAgICAgICAgICBkZW5zaXR5PSJjb21mb3J0YWJsZSIKICAgICAgICAgICAgICA6ZGlzYWJsZWQ9InByZWZlcmVuY2VzLmlzU2F2aW5nLnZhbHVlIHx8IHByZWZlcmVuY2VzLmlzUmVmcmVzaGluZy52YWx1ZSIKICAgICAgICAgICAgICA6ZXJyb3ItbWVzc2FnZXM9InByZWZlcmVuY2VzLmZpZWxkRXJyb3JzLm51bWJlckZvcm1hdCA/IFtwcmVmZXJlbmNlcy5maWVsZEVycm9ycy5udW1iZXJGb3JtYXRdIDogW10iCiAgICAgICAgICAgIC8+CiAgICAgICAgICA8L3YtY29sPgoKICAgICAgICAgIDx2LWNvbCBjb2xzPSIxMiIgbWQ9IjQiPgogICAgICAgICAgICA8di1zZWxlY3QKICAgICAgICAgICAgICB2LW1vZGVsPSJwcmVmZXJlbmNlcy5mb3JtLmN1cnJlbmN5Q29kZSIKICAgICAgICAgICAgICBsYWJlbD0iQ3VycmVuY3kiCiAgICAgICAgICAgICAgOml0ZW1zPSJwcmVmZXJlbmNlcy5vcHRpb25zLmN1cnJlbmN5IgogICAgICAgICAgICAgIHZhcmlhbnQ9Im91dGxpbmVkIgogICAgICAgICAgICAgIGRlbnNpdHk9ImNvbWZvcnRhYmxlIgogICAgICAgICAgICAgIDpkaXNhYmxlZD0icHJlZmVyZW5jZXMuaXNTYXZpbmcudmFsdWUgfHwgcHJlZmVyZW5jZXMuaXNSZWZyZXNoaW5nLnZhbHVlIgogICAgICAgICAgICAgIDplcnJvci1tZXNzYWdlcz0icHJlZmVyZW5jZXMuZmllbGRFcnJvcnMuY3VycmVuY3lDb2RlID8gW3ByZWZlcmVuY2VzLmZpZWxkRXJyb3JzLmN1cnJlbmN5Q29kZV0gOiBbXSIKICAgICAgICAgICAgLz4KICAgICAgICAgIDwvdi1jb2w+CgogICAgICAgICAgPHYtY29sIGNvbHM9IjEyIiBtZD0iMyI+CiAgICAgICAgICAgIDx2LXNlbGVjdAogICAgICAgICAgICAgIHYtbW9kZWwubnVtYmVyPSJwcmVmZXJlbmNlcy5mb3JtLmF2YXRhclNpemUiCiAgICAgICAgICAgICAgbGFiZWw9IkF2YXRhciBzaXplIgogICAgICAgICAgICAgIDppdGVtcz0icHJlZmVyZW5jZXMub3B0aW9ucy5hdmF0YXJTaXplIgogICAgICAgICAgICAgIHZhcmlhbnQ9Im91dGxpbmVkIgogICAgICAgICAgICAgIGRlbnNpdHk9ImNvbWZvcnRhYmxlIgogICAgICAgICAgICAgIDpkaXNhYmxlZD0icHJlZmVyZW5jZXMuaXNTYXZpbmcudmFsdWUgfHwgcHJlZmVyZW5jZXMuaXNSZWZyZXNoaW5nLnZhbHVlIgogICAgICAgICAgICAgIDplcnJvci1tZXNzYWdlcz0icHJlZmVyZW5jZXMuZmllbGRFcnJvcnMuYXZhdGFyU2l6ZSA/IFtwcmVmZXJlbmNlcy5maWVsZEVycm9ycy5hdmF0YXJTaXplXSA6IFtdIgogICAgICAgICAgICAvPgogICAgICAgICAgPC92LWNvbD4KICAgICAgICA8L3Ytcm93PgoKICAgICAgICA8di1idG4KICAgICAgICAgIHR5cGU9InN1Ym1pdCIKICAgICAgICAgIGNvbG9yPSJwcmltYXJ5IgogICAgICAgICAgOmxvYWRpbmc9InByZWZlcmVuY2VzLmlzU2F2aW5nLnZhbHVlIgogICAgICAgICAgOmRpc2FibGVkPSJwcmVmZXJlbmNlcy5pc1JlZnJlc2hpbmcudmFsdWUiCiAgICAgICAgPgogICAgICAgICAgU2F2ZSBwcmVmZXJlbmNlcwogICAgICAgIDwvdi1idG4+CiAgICAgIDwvdi1mb3JtPgogICAgPC9kaXY+CiAgPC92LXNoZWV0Pgo8L3RlbXBsYXRlPgoKPHN0eWxlIHNjb3BlZD4KLmFjY291bnQtc2V0dGluZ3Mtc2VjdGlvbiB7CiAgb3ZlcmZsb3c6IGhpZGRlbjsKfQoKLmFjY291bnQtc2V0dGluZ3Mtc2VjdGlvbl9faGVhZGVyIHsKICBwYWRkaW5nOiAxcmVtIDFyZW0gMDsKfQoKLmFjY291bnQtc2V0dGluZ3Mtc2VjdGlvbl9fdGl0bGUgewogIGZvbnQtc2l6ZTogMXJlbTsKICBmb250LXdlaWdodDogNjUwOwogIGxpbmUtaGVpZ2h0OiAxLjI7CiAgbWFyZ2luOiAwOwp9CgouYWNjb3VudC1zZXR0aW5ncy1zZWN0aW9uX19ib2R5IHsKICBwYWRkaW5nOiAxcmVtOwp9CgpAbWVkaWEgKG1heC13aWR0aDogNjQwcHgpIHsKICAuYWNjb3VudC1zZXR0aW5ncy1zZWN0aW9uX19ib2R5IDpkZWVwKC52LWJ0bikgewogICAgbWluLWhlaWdodDogNDhweDsKICB9Cn0KPC9zdHlsZT4K",
             "preserveOnRemove": false,
             "reason": "Install app-owned account settings preferences section scaffold.",
             "category": "users-web",
@@ -1241,9 +1076,10 @@
           },
           {
             "path": "src/components/account/settings/AccountSettingsNotificationsSection.vue",
+            "ownership": "package",
             "hash": "fdfd1e2ef24f9f3debd729121607406595e8750ed2f7292fe358edc77ba26547",
-            "hadPrevious": false,
-            "previousContentBase64": "",
+            "hadPrevious": true,
+            "previousContentBase64": "PHNjcmlwdCBzZXR1cD4KY29uc3QgcHJvcHMgPSBkZWZpbmVQcm9wcyh7CiAgcnVudGltZTogewogICAgdHlwZTogT2JqZWN0LAogICAgcmVxdWlyZWQ6IHRydWUKICB9Cn0pOwoKY29uc3Qgbm90aWZpY2F0aW9ucyA9IHByb3BzLnJ1bnRpbWUubm90aWZpY2F0aW9uczsKPC9zY3JpcHQ+Cgo8dGVtcGxhdGU+CiAgPHYtc2hlZXQgcm91bmRlZD0ibGciIGJvcmRlciBjbGFzcz0iYWNjb3VudC1zZXR0aW5ncy1zZWN0aW9uIj4KICAgIDxoZWFkZXIgY2xhc3M9ImFjY291bnQtc2V0dGluZ3Mtc2VjdGlvbl9faGVhZGVyIj4KICAgICAgPGgyIGNsYXNzPSJhY2NvdW50LXNldHRpbmdzLXNlY3Rpb25fX3RpdGxlIj5Ob3RpZmljYXRpb25zPC9oMj4KICAgIDwvaGVhZGVyPgogICAgPGRpdiBjbGFzcz0iYWNjb3VudC1zZXR0aW5ncy1zZWN0aW9uX19ib2R5Ij4KICAgICAgPHYtZm9ybSBAc3VibWl0LnByZXZlbnQ9Im5vdGlmaWNhdGlvbnMuc3VibWl0IiBub3ZhbGlkYXRlPgogICAgICAgIDx2LXN3aXRjaAogICAgICAgICAgdi1tb2RlbD0ibm90aWZpY2F0aW9ucy5mb3JtLnByb2R1Y3RVcGRhdGVzIgogICAgICAgICAgbGFiZWw9IlByb2R1Y3QgdXBkYXRlcyIKICAgICAgICAgIGNvbG9yPSJwcmltYXJ5IgogICAgICAgICAgaGlkZS1kZXRhaWxzCiAgICAgICAgICA6ZGlzYWJsZWQ9Im5vdGlmaWNhdGlvbnMuaXNTYXZpbmcudmFsdWUgfHwgbm90aWZpY2F0aW9ucy5pc1JlZnJlc2hpbmcudmFsdWUiCiAgICAgICAgICBjbGFzcz0ibWItMiIKICAgICAgICAvPgogICAgICAgIDx2LXN3aXRjaAogICAgICAgICAgdi1tb2RlbD0ibm90aWZpY2F0aW9ucy5mb3JtLmFjY291bnRBY3Rpdml0eSIKICAgICAgICAgIGxhYmVsPSJBY2NvdW50IGFjdGl2aXR5IGFsZXJ0cyIKICAgICAgICAgIGNvbG9yPSJwcmltYXJ5IgogICAgICAgICAgaGlkZS1kZXRhaWxzCiAgICAgICAgICA6ZGlzYWJsZWQ9Im5vdGlmaWNhdGlvbnMuaXNTYXZpbmcudmFsdWUgfHwgbm90aWZpY2F0aW9ucy5pc1JlZnJlc2hpbmcudmFsdWUiCiAgICAgICAgICBjbGFzcz0ibWItMiIKICAgICAgICAvPgogICAgICAgIDx2LXN3aXRjaAogICAgICAgICAgdi1tb2RlbD0ibm90aWZpY2F0aW9ucy5mb3JtLnNlY3VyaXR5QWxlcnRzIgogICAgICAgICAgbGFiZWw9IlNlY3VyaXR5IGFsZXJ0cyAocmVxdWlyZWQpIgogICAgICAgICAgY29sb3I9InByaW1hcnkiCiAgICAgICAgICBoaWRlLWRldGFpbHMKICAgICAgICAgIGRpc2FibGVkCiAgICAgICAgICBjbGFzcz0ibWItNCIKICAgICAgICAvPgogICAgICAgIDx2LWJ0bgogICAgICAgICAgdHlwZT0ic3VibWl0IgogICAgICAgICAgY29sb3I9InByaW1hcnkiCiAgICAgICAgICA6bG9hZGluZz0ibm90aWZpY2F0aW9ucy5pc1NhdmluZy52YWx1ZSIKICAgICAgICAgIDpkaXNhYmxlZD0ibm90aWZpY2F0aW9ucy5pc1JlZnJlc2hpbmcudmFsdWUiCiAgICAgICAgPgogICAgICAgICAgU2F2ZSBub3RpZmljYXRpb24gc2V0dGluZ3MKICAgICAgICA8L3YtYnRuPgogICAgICA8L3YtZm9ybT4KICAgIDwvZGl2PgogIDwvdi1zaGVldD4KPC90ZW1wbGF0ZT4KCjxzdHlsZSBzY29wZWQ+Ci5hY2NvdW50LXNldHRpbmdzLXNlY3Rpb24gewogIG92ZXJmbG93OiBoaWRkZW47Cn0KCi5hY2NvdW50LXNldHRpbmdzLXNlY3Rpb25fX2hlYWRlciB7CiAgcGFkZGluZzogMXJlbSAxcmVtIDA7Cn0KCi5hY2NvdW50LXNldHRpbmdzLXNlY3Rpb25fX3RpdGxlIHsKICBmb250LXNpemU6IDFyZW07CiAgZm9udC13ZWlnaHQ6IDY1MDsKICBsaW5lLWhlaWdodDogMS4yOwogIG1hcmdpbjogMDsKfQoKLmFjY291bnQtc2V0dGluZ3Mtc2VjdGlvbl9fYm9keSB7CiAgcGFkZGluZzogMXJlbTsKfQoKQG1lZGlhIChtYXgtd2lkdGg6IDY0MHB4KSB7CiAgLmFjY291bnQtc2V0dGluZ3Mtc2VjdGlvbl9fYm9keSA6ZGVlcCgudi1idG4pIHsKICAgIG1pbi1oZWlnaHQ6IDQ4cHg7CiAgfQp9Cjwvc3R5bGU+Cg==",
             "preserveOnRemove": false,
             "reason": "Install app-owned account settings notifications section scaffold.",
             "category": "users-web",
@@ -1253,8 +1089,8 @@
         "migrations": []
       },
       "options": {},
-      "installedAt": "2026-07-15T08:44:09.719Z",
-      "migrationSyncVersion": "0.1.128"
+      "installedAt": "2026-07-20T15:08:14.981Z",
+      "migrationSyncVersion": "0.1.140"
     },
     "@local/users": {
       "packageId": "@local/users",
@@ -1282,17 +1118,18 @@
     },
     "@jskit-ai/auth-provider-local-db-core": {
       "packageId": "@jskit-ai/auth-provider-local-db-core",
-      "version": "0.1.5",
+      "version": "0.1.16",
       "source": {
-        "type": "catalog",
-        "descriptorPath": "../jskit-catalog/catalog/packages.json#@jskit-ai/auth-provider-local-db-core"
+        "type": "npm-installed-package",
+        "packagePath": "node_modules/@jskit-ai/auth-provider-local-db-core",
+        "descriptorPath": "node_modules/@jskit-ai/auth-provider-local-db-core/package.descriptor.mjs"
       },
       "managed": {
         "packageJson": {
           "dependencies": {
             "@jskit-ai/auth-provider-local-db-core": {
-              "hadPrevious": false,
-              "previousValue": "",
+              "hadPrevious": true,
+              "previousValue": "0.1.16",
               "value": "0.x"
             }
           },
@@ -1304,12 +1141,12 @@
             "file": ".env",
             "op": "upsert-env",
             "key": "AUTH_LOCAL_BACKEND",
-            "value": "db",
             "hadPrevious": true,
-            "previousValue": "db",
             "reason": "Use the database-backed local auth backend.",
             "category": "runtime-config",
-            "id": "auth-local-backend-db"
+            "id": "auth-local-backend-db",
+            "value": "db",
+            "previousValue": "file"
           }
         },
         "source": {},
@@ -1320,15 +1157,24 @@
             "id": "auth-local-db-initial-schema",
             "path": "migrations/20260715084919_auth-local-db-initial-schema.cjs",
             "hash": "ef84cf36fec5be4eb9a66f712097b462894a676486ed73be1dc3291a036dca66",
-            "skipped": false,
+            "skipped": true,
             "reason": "Install DB-backed local auth credential, session, and recovery tables.",
             "category": "auth-local-db"
           }
         ]
       },
       "options": {},
-      "installedAt": "2026-07-15T08:49:19.191Z",
-      "migrationSyncVersion": "0.1.5"
+      "installedAt": "2026-07-20T15:08:09.152Z",
+      "migrationSyncVersion": "0.1.16",
+      "warnings": [
+        "@jskit-ai/auth-provider-local-db-core: skipped migration auth-local-db-initial-schema (already managed at migrations/20260715084919_auth-local-db-initial-schema.cjs)."
+      ]
+    }
+  },
+  "managed": {
+    "ciWorkflow": {
+      "path": ".github/workflows/jskit-verify.yml",
+      "hash": "205d7e79d3f1b2f7ed7fb488686e9d952681ef89368a12f6ab513acc8cee214b"
     }
   }
 }
