@@ -1,5 +1,5 @@
 import { expect, test } from "@playwright/test";
-import { BASE_URL } from "./support/base-url";
+import { BASE_URL } from "../support/base-url";
 
 test("a database-backed account can register, sign out, and sign in again", async ({ browser }) => {
   const accountName = `seed-account-${Date.now()}-${process.pid}`;

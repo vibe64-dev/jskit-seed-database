@@ -1,5 +1,5 @@
 import { expect, test } from "@playwright/test";
-import { BASE_URL } from "./support/base-url";
+import { BASE_URL } from "../support/base-url";
 
 test("general settings omits the removed shell introduction", async ({ page }) => {
   const accountName = `settings-account-${Date.now()}-${process.pid}`;
