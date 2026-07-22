@@ -33,7 +33,7 @@
     },
     "@jskit-ai/shell-web": {
       "packageId": "@jskit-ai/shell-web",
-      "version": "0.1.127",
+      "version": "0.1.128",
       "source": {
         "type": "catalog",
         "descriptorPath": "../jskit-catalog/catalog/packages.json#@jskit-ai/shell-web"
@@ -43,7 +43,7 @@
           "dependencies": {
             "@jskit-ai/shell-web": {
               "hadPrevious": true,
-              "previousValue": "0.1.127",
+              "previousValue": "0.1.128",
               "value": "0.x"
             }
           },
@@ -255,12 +255,12 @@
         "migrations": []
       },
       "options": {},
-      "installedAt": "2026-07-22T16:32:46.410Z",
-      "migrationSyncVersion": "0.1.127"
+      "installedAt": "2026-07-22T16:55:51.155Z",
+      "migrationSyncVersion": "0.1.128"
     },
     "@jskit-ai/database-runtime": {
       "packageId": "@jskit-ai/database-runtime",
-      "version": "0.1.125",
+      "version": "0.1.126",
       "source": {
         "type": "catalog",
         "descriptorPath": "../jskit-catalog/catalog/packages.json#@jskit-ai/database-runtime"
@@ -270,7 +270,7 @@
           "dependencies": {
             "@jskit-ai/database-runtime": {
               "hadPrevious": true,
-              "previousValue": "0.1.125",
+              "previousValue": "0.1.126",
               "value": "0.x"
             }
           },
@@ -307,12 +307,12 @@
         "migrations": []
       },
       "options": {},
-      "installedAt": "2026-07-22T16:32:44.756Z",
-      "migrationSyncVersion": "0.1.125"
+      "installedAt": "2026-07-22T16:55:41.427Z",
+      "migrationSyncVersion": "0.1.126"
     },
     "@jskit-ai/database-runtime-mysql": {
       "packageId": "@jskit-ai/database-runtime-mysql",
-      "version": "0.1.124",
+      "version": "0.1.125",
       "source": {
         "type": "npm-installed-package",
         "packagePath": "node_modules/@jskit-ai/database-runtime-mysql",
@@ -323,7 +323,7 @@
           "dependencies": {
             "@jskit-ai/database-runtime-mysql": {
               "hadPrevious": true,
-              "previousValue": "0.1.124",
+              "previousValue": "0.1.125",
               "value": "0.x"
             }
           },
@@ -335,62 +335,62 @@
             "file": ".env",
             "op": "upsert-env",
             "key": "DB_CLIENT",
-            "hadPrevious": false,
+            "hadPrevious": true,
             "reason": "Configure database client driver for runtime wiring.",
             "category": "runtime-config",
             "id": "database-client-mysql",
             "value": "mysql2",
-            "previousValue": ""
+            "previousValue": "mysql2"
           },
           ".env::database-host": {
             "file": ".env",
             "op": "upsert-env",
             "key": "DB_HOST",
-            "hadPrevious": false,
+            "hadPrevious": true,
             "reason": "Configure database host.",
             "category": "runtime-config",
             "id": "database-host",
             "value": "127.0.0.1",
-            "previousValue": ""
+            "previousValue": "127.0.0.1"
           },
           ".env::database-port": {
             "file": ".env",
             "op": "upsert-env",
             "key": "DB_PORT",
-            "hadPrevious": false,
+            "hadPrevious": true,
             "reason": "Configure database port.",
             "category": "runtime-config",
             "id": "database-port",
             "value": "36899",
-            "previousValue": ""
+            "previousValue": "36899"
           },
           ".env::database-name": {
             "file": ".env",
             "op": "upsert-env",
             "key": "DB_NAME",
-            "hadPrevious": false,
+            "hadPrevious": true,
             "reason": "Configure database name.",
             "category": "runtime-config",
             "id": "database-name",
             "value": "merc_vibe64_dev_jskit_seed_database",
-            "previousValue": ""
+            "previousValue": "merc_vibe64_dev_jskit_seed_database"
           },
           ".env::database-user": {
             "file": ".env",
             "op": "upsert-env",
             "key": "DB_USER",
-            "hadPrevious": false,
+            "hadPrevious": true,
             "reason": "Configure database user.",
             "category": "runtime-config",
             "id": "database-user",
             "value": "vibe64_dev_app",
-            "previousValue": ""
+            "previousValue": "vibe64_dev_app"
           },
           ".env::database-password": {
             "file": ".env",
             "op": "upsert-env",
             "key": "DB_PASSWORD",
-            "hadPrevious": false,
+            "hadPrevious": true,
             "reason": "Configure database password.",
             "category": "runtime-config",
             "id": "database-password",
@@ -408,12 +408,12 @@
         "db-name": "merc_vibe64_dev_jskit_seed_database",
         "db-user": "vibe64_dev_app"
       },
-      "installedAt": "2026-07-22T16:32:48.344Z",
-      "migrationSyncVersion": "0.1.124"
+      "installedAt": "2026-07-22T16:56:01.088Z",
+      "migrationSyncVersion": "0.1.125"
     },
     "@jskit-ai/auth-core": {
       "packageId": "@jskit-ai/auth-core",
-      "version": "0.1.123",
+      "version": "0.1.124",
       "source": {
         "type": "npm-installed-package",
         "packagePath": "node_modules/@jskit-ai/auth-core",
@@ -424,39 +424,10 @@
           "dependencies": {
             "@jskit-ai/kernel": {
               "hadPrevious": true,
-              "previousValue": "0.1.126",
+              "previousValue": "0.1.127",
               "value": "0.x"
             },
             "@jskit-ai/auth-core": {
-              "hadPrevious": true,
-              "previousValue": "0.1.123",
-              "value": "0.x"
-            }
-          },
-          "devDependencies": {},
-          "scripts": {}
-        },
-        "text": {},
-        "source": {},
-        "vite": {},
-        "files": [],
-        "migrations": []
-      },
-      "options": {},
-      "installedAt": "2026-07-22T16:32:40.659Z",
-      "migrationSyncVersion": "0.1.123"
-    },
-    "@jskit-ai/http-runtime": {
-      "packageId": "@jskit-ai/http-runtime",
-      "version": "0.1.124",
-      "source": {
-        "type": "catalog",
-        "descriptorPath": "../jskit-catalog/catalog/packages.json#@jskit-ai/http-runtime"
-      },
-      "managed": {
-        "packageJson": {
-          "dependencies": {
-            "@jskit-ai/http-runtime": {
               "hadPrevious": true,
               "previousValue": "0.1.124",
               "value": "0.x"
@@ -472,12 +443,41 @@
         "migrations": []
       },
       "options": {},
-      "installedAt": "2026-07-22T16:32:46.400Z",
+      "installedAt": "2026-07-22T16:55:28.083Z",
       "migrationSyncVersion": "0.1.124"
+    },
+    "@jskit-ai/http-runtime": {
+      "packageId": "@jskit-ai/http-runtime",
+      "version": "0.1.125",
+      "source": {
+        "type": "catalog",
+        "descriptorPath": "../jskit-catalog/catalog/packages.json#@jskit-ai/http-runtime"
+      },
+      "managed": {
+        "packageJson": {
+          "dependencies": {
+            "@jskit-ai/http-runtime": {
+              "hadPrevious": true,
+              "previousValue": "0.1.125",
+              "value": "0.x"
+            }
+          },
+          "devDependencies": {},
+          "scripts": {}
+        },
+        "text": {},
+        "source": {},
+        "vite": {},
+        "files": [],
+        "migrations": []
+      },
+      "options": {},
+      "installedAt": "2026-07-22T16:55:51.107Z",
+      "migrationSyncVersion": "0.1.125"
     },
     "@jskit-ai/auth-web": {
       "packageId": "@jskit-ai/auth-web",
-      "version": "0.1.126",
+      "version": "0.1.127",
       "source": {
         "type": "npm-installed-package",
         "packagePath": "node_modules/@jskit-ai/auth-web",
@@ -488,7 +488,7 @@
           "dependencies": {
             "@jskit-ai/auth-web": {
               "hadPrevious": true,
-              "previousValue": "0.1.126",
+              "previousValue": "0.1.127",
               "value": "0.x"
             }
           },
@@ -501,7 +501,7 @@
         "files": [
           {
             "path": "src/views/auth/LoginView.vue",
-            "ownership": "package",
+            "ownership": "app",
             "hash": "e73adefd3e6e9c4188ec94c9797eb7af161da5f6d1ba3dd5502dd4cdaca1eca4",
             "hadPrevious": true,
             "previousContentBase64": "PHNjcmlwdCBzZXR1cD4KaW1wb3J0IERlZmF1bHRMb2dpblZpZXcgZnJvbSAiQGpza2l0LWFpL2F1dGgtd2ViL2NsaWVudC92aWV3cy9EZWZhdWx0TG9naW5WaWV3IjsKPC9zY3JpcHQ+Cgo8dGVtcGxhdGU+CiAgPERlZmF1bHRMb2dpblZpZXcgLz4KPC90ZW1wbGF0ZT4K",
@@ -512,7 +512,7 @@
           },
           {
             "path": "src/views/auth/SignOutView.vue",
-            "ownership": "package",
+            "ownership": "app",
             "hash": "7fa51245e90a862b25926d306fdd80849dc663c6cac1fb71f42fd54cc4d83780",
             "hadPrevious": true,
             "previousContentBase64": "PHNjcmlwdCBzZXR1cD4KaW1wb3J0IERlZmF1bHRTaWduT3V0VmlldyBmcm9tICJAanNraXQtYWkvYXV0aC13ZWIvY2xpZW50L3ZpZXdzL0RlZmF1bHRTaWduT3V0VmlldyI7Cjwvc2NyaXB0PgoKPHRlbXBsYXRlPgogIDxEZWZhdWx0U2lnbk91dFZpZXcgLz4KPC90ZW1wbGF0ZT4K",
@@ -523,7 +523,7 @@
           },
           {
             "path": "src/views/auth/ResetPasswordView.vue",
-            "ownership": "package",
+            "ownership": "app",
             "hash": "3e62b0911364945ab07414dcc166ca653aa0718ba6f31104bb084b4e2026f85b",
             "hadPrevious": true,
             "previousContentBase64": "PHNjcmlwdCBzZXR1cD4KaW1wb3J0IERlZmF1bHRSZXNldFBhc3N3b3JkVmlldyBmcm9tICJAanNraXQtYWkvYXV0aC13ZWIvY2xpZW50L3ZpZXdzL0RlZmF1bHRSZXNldFBhc3N3b3JkVmlldyI7Cjwvc2NyaXB0PgoKPHRlbXBsYXRlPgogIDxEZWZhdWx0UmVzZXRQYXNzd29yZFZpZXcgLz4KPC90ZW1wbGF0ZT4K",
@@ -534,7 +534,7 @@
           },
           {
             "path": "src/pages/auth/login.vue",
-            "ownership": "package",
+            "ownership": "app",
             "hash": "ca4916a3d4608f5249b8eb66bbacd13f6860274a10c5f81164ae8da38704c289",
             "hadPrevious": true,
             "previousContentBase64": "PHJvdXRlIGxhbmc9Impzb24iPgp7CiAgIm1ldGEiOiB7CiAgICAiZ3VhcmQiOiB7CiAgICAgICJwb2xpY3kiOiAicHVibGljIgogICAgfQogIH0KfQo8L3JvdXRlPgoKPHNjcmlwdCBzZXR1cD4KaW1wb3J0IERlZmF1bHRMb2dpblZpZXcgZnJvbSAiQGpza2l0LWFpL2F1dGgtd2ViL2NsaWVudC92aWV3cy9EZWZhdWx0TG9naW5WaWV3IjsKPC9zY3JpcHQ+Cgo8dGVtcGxhdGU+CiAgPERlZmF1bHRMb2dpblZpZXcgLz4KPC90ZW1wbGF0ZT4K",
@@ -545,7 +545,7 @@
           },
           {
             "path": "src/pages/auth/signout.vue",
-            "ownership": "package",
+            "ownership": "app",
             "hash": "0ada4fe6f41a0b2d0ed74b2e4762da46f2031534c5ee6b4d394c252ca05cd235",
             "hadPrevious": true,
             "previousContentBase64": "PHJvdXRlIGxhbmc9Impzb24iPgp7CiAgIm1ldGEiOiB7CiAgICAiZ3VhcmQiOiB7CiAgICAgICJwb2xpY3kiOiAicHVibGljIgogICAgfQogIH0KfQo8L3JvdXRlPgoKPHNjcmlwdCBzZXR1cD4KaW1wb3J0IERlZmF1bHRTaWduT3V0VmlldyBmcm9tICJAanNraXQtYWkvYXV0aC13ZWIvY2xpZW50L3ZpZXdzL0RlZmF1bHRTaWduT3V0VmlldyI7Cjwvc2NyaXB0PgoKPHRlbXBsYXRlPgogIDxEZWZhdWx0U2lnbk91dFZpZXcgLz4KPC90ZW1wbGF0ZT4K",
@@ -556,7 +556,7 @@
           },
           {
             "path": "src/pages/auth/reset-password.vue",
-            "ownership": "package",
+            "ownership": "app",
             "hash": "d40cc3f89fc0fd1ac21f645dcccf534281c86c6e6b96bc80d4fcacb0a48c375e",
             "hadPrevious": true,
             "previousContentBase64": "PHJvdXRlIGxhbmc9Impzb24iPgp7CiAgIm1ldGEiOiB7CiAgICAiZ3VhcmQiOiB7CiAgICAgICJwb2xpY3kiOiAicHVibGljIgogICAgfQogIH0KfQo8L3JvdXRlPgoKPHNjcmlwdCBzZXR1cD4KaW1wb3J0IERlZmF1bHRSZXNldFBhc3N3b3JkVmlldyBmcm9tICJAanNraXQtYWkvYXV0aC13ZWIvY2xpZW50L3ZpZXdzL0RlZmF1bHRSZXNldFBhc3N3b3JkVmlldyI7Cjwvc2NyaXB0PgoKPHRlbXBsYXRlPgogIDxEZWZhdWx0UmVzZXRQYXNzd29yZFZpZXcgLz4KPC90ZW1wbGF0ZT4K",
@@ -569,12 +569,12 @@
         "migrations": []
       },
       "options": {},
-      "installedAt": "2026-07-22T16:32:46.604Z",
-      "migrationSyncVersion": "0.1.126"
+      "installedAt": "2026-07-22T16:55:52.521Z",
+      "migrationSyncVersion": "0.1.127"
     },
     "@jskit-ai/auth-provider-local-core": {
       "packageId": "@jskit-ai/auth-provider-local-core",
-      "version": "0.1.27",
+      "version": "0.1.28",
       "source": {
         "type": "npm-installed-package",
         "packagePath": "node_modules/@jskit-ai/auth-provider-local-core",
@@ -585,7 +585,7 @@
           "dependencies": {
             "@jskit-ai/auth-provider-local-core": {
               "hadPrevious": true,
-              "previousValue": "0.1.27",
+              "previousValue": "0.1.28",
               "value": "0.x"
             }
           },
@@ -622,12 +622,12 @@
         "migrations": []
       },
       "options": {},
-      "installedAt": "2026-07-22T16:32:42.953Z",
-      "migrationSyncVersion": "0.1.27"
+      "installedAt": "2026-07-22T16:55:33.034Z",
+      "migrationSyncVersion": "0.1.28"
     },
     "@jskit-ai/uploads-runtime": {
       "packageId": "@jskit-ai/uploads-runtime",
-      "version": "0.1.102",
+      "version": "0.1.103",
       "source": {
         "type": "catalog",
         "descriptorPath": "../jskit-catalog/catalog/packages.json#@jskit-ai/uploads-runtime"
@@ -637,7 +637,7 @@
           "dependencies": {
             "@jskit-ai/uploads-runtime": {
               "hadPrevious": true,
-              "previousValue": "0.1.102",
+              "previousValue": "0.1.103",
               "value": "0.x"
             }
           },
@@ -651,12 +651,12 @@
         "migrations": []
       },
       "options": {},
-      "installedAt": "2026-07-22T16:33:06.725Z",
-      "migrationSyncVersion": "0.1.102"
+      "installedAt": "2026-07-22T16:56:38.337Z",
+      "migrationSyncVersion": "0.1.103"
     },
     "@jskit-ai/uploads-image-web": {
       "packageId": "@jskit-ai/uploads-image-web",
-      "version": "0.1.102",
+      "version": "0.1.103",
       "source": {
         "type": "npm-installed-package",
         "packagePath": "node_modules/@jskit-ai/uploads-image-web",
@@ -667,7 +667,7 @@
           "dependencies": {
             "@jskit-ai/uploads-image-web": {
               "hadPrevious": true,
-              "previousValue": "0.1.102",
+              "previousValue": "0.1.103",
               "value": "0.x"
             }
           },
@@ -681,12 +681,12 @@
         "migrations": []
       },
       "options": {},
-      "installedAt": "2026-07-22T16:33:06.743Z",
-      "migrationSyncVersion": "0.1.102"
+      "installedAt": "2026-07-22T16:56:38.348Z",
+      "migrationSyncVersion": "0.1.103"
     },
     "@jskit-ai/json-rest-api-core": {
       "packageId": "@jskit-ai/json-rest-api-core",
-      "version": "0.1.70",
+      "version": "0.1.71",
       "source": {
         "type": "npm-installed-package",
         "packagePath": "node_modules/@jskit-ai/json-rest-api-core",
@@ -696,6 +696,36 @@
         "packageJson": {
           "dependencies": {
             "@jskit-ai/json-rest-api-core": {
+              "hadPrevious": true,
+              "previousValue": "0.1.71",
+              "value": "0.x"
+            }
+          },
+          "devDependencies": {},
+          "scripts": {}
+        },
+        "text": {},
+        "source": {},
+        "vite": {},
+        "files": [],
+        "migrations": []
+      },
+      "options": {},
+      "installedAt": "2026-07-22T16:56:10.232Z",
+      "migrationSyncVersion": "0.1.71"
+    },
+    "@jskit-ai/resource-core": {
+      "packageId": "@jskit-ai/resource-core",
+      "version": "0.1.70",
+      "source": {
+        "type": "npm-installed-package",
+        "packagePath": "node_modules/@jskit-ai/resource-core",
+        "descriptorPath": "node_modules/@jskit-ai/resource-core/package.descriptor.mjs"
+      },
+      "managed": {
+        "packageJson": {
+          "dependencies": {
+            "@jskit-ai/resource-core": {
               "hadPrevious": true,
               "previousValue": "0.1.70",
               "value": "0.x"
@@ -711,42 +741,12 @@
         "migrations": []
       },
       "options": {},
-      "installedAt": "2026-07-22T16:32:50.585Z",
+      "installedAt": "2026-07-22T16:56:18.459Z",
       "migrationSyncVersion": "0.1.70"
-    },
-    "@jskit-ai/resource-core": {
-      "packageId": "@jskit-ai/resource-core",
-      "version": "0.1.69",
-      "source": {
-        "type": "npm-installed-package",
-        "packagePath": "node_modules/@jskit-ai/resource-core",
-        "descriptorPath": "node_modules/@jskit-ai/resource-core/package.descriptor.mjs"
-      },
-      "managed": {
-        "packageJson": {
-          "dependencies": {
-            "@jskit-ai/resource-core": {
-              "hadPrevious": true,
-              "previousValue": "0.1.69",
-              "value": "0.x"
-            }
-          },
-          "devDependencies": {},
-          "scripts": {}
-        },
-        "text": {},
-        "source": {},
-        "vite": {},
-        "files": [],
-        "migrations": []
-      },
-      "options": {},
-      "installedAt": "2026-07-22T16:32:55.232Z",
-      "migrationSyncVersion": "0.1.69"
     },
     "@jskit-ai/resource-crud-core": {
       "packageId": "@jskit-ai/resource-crud-core",
-      "version": "0.1.69",
+      "version": "0.1.70",
       "source": {
         "type": "npm-installed-package",
         "packagePath": "node_modules/@jskit-ai/resource-crud-core",
@@ -757,7 +757,7 @@
           "dependencies": {
             "@jskit-ai/resource-crud-core": {
               "hadPrevious": true,
-              "previousValue": "0.1.69",
+              "previousValue": "0.1.70",
               "value": "0.x"
             }
           },
@@ -771,12 +771,12 @@
         "migrations": []
       },
       "options": {},
-      "installedAt": "2026-07-22T16:32:58.942Z",
-      "migrationSyncVersion": "0.1.69"
+      "installedAt": "2026-07-22T16:56:26.539Z",
+      "migrationSyncVersion": "0.1.70"
     },
     "@jskit-ai/storage-runtime": {
       "packageId": "@jskit-ai/storage-runtime",
-      "version": "0.1.124",
+      "version": "0.1.125",
       "source": {
         "type": "npm-installed-package",
         "packagePath": "node_modules/@jskit-ai/storage-runtime",
@@ -787,7 +787,7 @@
           "dependencies": {
             "@jskit-ai/storage-runtime": {
               "hadPrevious": true,
-              "previousValue": "0.1.124",
+              "previousValue": "0.1.125",
               "value": "0.x"
             }
           },
@@ -801,12 +801,12 @@
         "migrations": []
       },
       "options": {},
-      "installedAt": "2026-07-22T16:33:02.415Z",
-      "migrationSyncVersion": "0.1.124"
+      "installedAt": "2026-07-22T16:56:33.317Z",
+      "migrationSyncVersion": "0.1.125"
     },
     "@jskit-ai/users-core": {
       "packageId": "@jskit-ai/users-core",
-      "version": "0.1.136",
+      "version": "0.1.137",
       "source": {
         "type": "npm-installed-package",
         "packagePath": "node_modules/@jskit-ai/users-core",
@@ -817,12 +817,12 @@
           "dependencies": {
             "@jskit-ai/crud-core": {
               "hadPrevious": true,
-              "previousValue": "0.1.134",
+              "previousValue": "0.1.135",
               "value": "0.x"
             },
             "@jskit-ai/users-core": {
               "hadPrevious": true,
-              "previousValue": "0.1.136",
+              "previousValue": "0.1.137",
               "value": "0.x"
             }
           },
@@ -961,8 +961,8 @@
         ]
       },
       "options": {},
-      "installedAt": "2026-07-22T16:33:10.988Z",
-      "migrationSyncVersion": "0.1.136",
+      "installedAt": "2026-07-22T16:56:41.506Z",
+      "migrationSyncVersion": "0.1.137",
       "warnings": [
         "@jskit-ai/users-core: skipped migration users-core-generic-initial-schema (already managed at migrations/20260715084402_users-core-generic-initial-schema.cjs).",
         "@jskit-ai/users-core: skipped migration users-core-profile-username-schema (already managed at migrations/20260715084402_users-core-profile-username-schema.cjs).",
@@ -971,7 +971,7 @@
     },
     "@jskit-ai/users-web": {
       "packageId": "@jskit-ai/users-web",
-      "version": "0.1.142",
+      "version": "0.1.143",
       "source": {
         "type": "npm-installed-package",
         "packagePath": "node_modules/@jskit-ai/users-web",
@@ -982,12 +982,12 @@
           "dependencies": {
             "@jskit-ai/realtime": {
               "hadPrevious": true,
-              "previousValue": "0.1.123",
+              "previousValue": "0.1.124",
               "value": "0.x"
             },
             "@jskit-ai/users-web": {
               "hadPrevious": true,
-              "previousValue": "0.1.142",
+              "previousValue": "0.1.143",
               "value": "0.x"
             }
           },
@@ -1043,7 +1043,7 @@
         "files": [
           {
             "path": "src/pages/account/index.vue",
-            "ownership": "package",
+            "ownership": "app",
             "hash": "cfb92104a6723fdccf9e3e9ce19aba5a9611694da11185505c0c4d4d29667194",
             "hadPrevious": true,
             "previousContentBase64": "PHJvdXRlIGxhbmc9Impzb24iPgp7CiAgIm1ldGEiOiB7CiAgICAiZ3VhcmQiOiB7CiAgICAgICJwb2xpY3kiOiAiYXV0aGVudGljYXRlZCIKICAgIH0KICB9Cn0KPC9yb3V0ZT4KCjx0ZW1wbGF0ZT4KICA8QWNjb3VudFNldHRpbmdzQ2xpZW50RWxlbWVudCAvPgo8L3RlbXBsYXRlPgoKPHNjcmlwdCBzZXR1cD4KaW1wb3J0IEFjY291bnRTZXR0aW5nc0NsaWVudEVsZW1lbnQgZnJvbSAiQGpza2l0LWFpL3VzZXJzLXdlYi9jbGllbnQvY29tcG9uZW50cy9BY2NvdW50U2V0dGluZ3NDbGllbnRFbGVtZW50IjsKPC9zY3JpcHQ+Cg==",
@@ -1054,7 +1054,7 @@
           },
           {
             "path": "src/components/account/settings/AccountSettingsProfileSection.vue",
-            "ownership": "package",
+            "ownership": "app",
             "hash": "a9b9d096f95ea8a8ee8162ea3a1facfdb278fd2aae847bac1fc711e75168a3bb",
             "hadPrevious": true,
             "previousContentBase64": "PHNjcmlwdCBzZXR1cD4KY29uc3QgcHJvcHMgPSBkZWZpbmVQcm9wcyh7CiAgcnVudGltZTogewogICAgdHlwZTogT2JqZWN0LAogICAgcmVxdWlyZWQ6IHRydWUKICB9Cn0pOwoKY29uc3QgcHJvZmlsZSA9IHByb3BzLnJ1bnRpbWUucHJvZmlsZTsKPC9zY3JpcHQ+Cgo8dGVtcGxhdGU+CiAgPHYtc2hlZXQgcm91bmRlZD0ibGciIGJvcmRlciBjbGFzcz0iYWNjb3VudC1zZXR0aW5ncy1zZWN0aW9uIj4KICAgIDxoZWFkZXIgY2xhc3M9ImFjY291bnQtc2V0dGluZ3Mtc2VjdGlvbl9faGVhZGVyIj4KICAgICAgPGgyIGNsYXNzPSJhY2NvdW50LXNldHRpbmdzLXNlY3Rpb25fX3RpdGxlIj5Qcm9maWxlPC9oMj4KICAgIDwvaGVhZGVyPgogICAgPGRpdiBjbGFzcz0iYWNjb3VudC1zZXR0aW5ncy1zZWN0aW9uX19ib2R5Ij4KICAgICAgPHYtZm9ybSBAc3VibWl0LnByZXZlbnQ9InByb2ZpbGUuc3VibWl0IiBub3ZhbGlkYXRlPgogICAgICAgIDx2LXJvdyBjbGFzcz0ibWItMiI+CiAgICAgICAgICA8di1jb2wgY29scz0iMTIiIG1kPSI0IiBjbGFzcz0iZC1mbGV4IGZsZXgtY29sdW1uIGFsaWduLWNlbnRlciBqdXN0aWZ5LWNlbnRlciI+CiAgICAgICAgICAgIDx2LWF2YXRhciA6c2l6ZT0icHJvZmlsZS5hdmF0YXIuc2l6ZSIgY29sb3I9InN1cmZhY2UtdmFyaWFudCIgcm91bmRlZD0iY2lyY2xlIiBjbGFzcz0ibWItMyI+CiAgICAgICAgICAgICAgPHYtaW1nIHYtaWY9InByb2ZpbGUuYXZhdGFyLmVmZmVjdGl2ZVVybCIgOnNyYz0icHJvZmlsZS5hdmF0YXIuZWZmZWN0aXZlVXJsIiBjb3ZlciAvPgogICAgICAgICAgICAgIDxzcGFuIHYtZWxzZSBjbGFzcz0idGV4dC1oNiI+e3sgcHJvZmlsZS5pbml0aWFscy52YWx1ZSB9fTwvc3Bhbj4KICAgICAgICAgICAgPC92LWF2YXRhcj4KICAgICAgICAgICAgPGRpdiBjbGFzcz0idGV4dC1jYXB0aW9uIHRleHQtbWVkaXVtLWVtcGhhc2lzIj5QcmV2aWV3IHNpemU6IHt7IHByb2ZpbGUuYXZhdGFyLnNpemUgfX0gcHg8L2Rpdj4KICAgICAgICAgIDwvdi1jb2w+CgogICAgICAgICAgPHYtY29sIGNvbHM9IjEyIiBtZD0iOCI+CiAgICAgICAgICAgIDxkaXYgY2xhc3M9ImQtZmxleCBmbGV4LXdyYXAgZ2EtMiBtYi0yIj4KICAgICAgICAgICAgICA8di1idG4KICAgICAgICAgICAgICAgIHZhcmlhbnQ9InRvbmFsIgogICAgICAgICAgICAgICAgY29sb3I9InNlY29uZGFyeSIKICAgICAgICAgICAgICAgIDpkaXNhYmxlZD0icHJvZmlsZS5pc1NhdmluZy52YWx1ZSB8fCBwcm9maWxlLmlzRGVsZXRpbmdBdmF0YXIudmFsdWUgfHwgcHJvZmlsZS5pc1JlZnJlc2hpbmcudmFsdWUiCiAgICAgICAgICAgICAgICBAY2xpY2s9InByb2ZpbGUub3BlbkF2YXRhckVkaXRvciIKICAgICAgICAgICAgICA+CiAgICAgICAgICAgICAgICBSZXBsYWNlIGF2YXRhcgogICAgICAgICAgICAgIDwvdi1idG4+CiAgICAgICAgICAgICAgPHYtYnRuCiAgICAgICAgICAgICAgICB2LWlmPSJwcm9maWxlLmF2YXRhci5oYXNVcGxvYWRlZEF2YXRhciIKICAgICAgICAgICAgICAgIHZhcmlhbnQ9InRleHQiCiAgICAgICAgICAgICAgICBjb2xvcj0iZXJyb3IiCiAgICAgICAgICAgICAgICA6bG9hZGluZz0icHJvZmlsZS5pc0RlbGV0aW5nQXZhdGFyLnZhbHVlIgogICAgICAgICAgICAgICAgOmRpc2FibGVkPSJwcm9maWxlLmlzU2F2aW5nLnZhbHVlIHx8IHByb2ZpbGUuaXNSZWZyZXNoaW5nLnZhbHVlIgogICAgICAgICAgICAgICAgQGNsaWNrPSJwcm9maWxlLnJlbW92ZUF2YXRhciIKICAgICAgICAgICAgICA+CiAgICAgICAgICAgICAgICBSZW1vdmUgYXZhdGFyCiAgICAgICAgICAgICAgPC92LWJ0bj4KICAgICAgICAgICAgPC9kaXY+CgogICAgICAgICAgICA8ZGl2IHYtaWY9InByb2ZpbGUuc2VsZWN0ZWRBdmF0YXJGaWxlTmFtZS52YWx1ZSIgY2xhc3M9InRleHQtY2FwdGlvbiB0ZXh0LW1lZGl1bS1lbXBoYXNpcyBtYi0yIj4KICAgICAgICAgICAgICBTZWxlY3RlZCBmaWxlOiB7eyBwcm9maWxlLnNlbGVjdGVkQXZhdGFyRmlsZU5hbWUudmFsdWUgfX0KICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICA8L3YtY29sPgogICAgICAgIDwvdi1yb3c+CgogICAgICAgIDx2LXJvdz4KICAgICAgICAgIDx2LWNvbCBjb2xzPSIxMiIgbWQ9IjYiPgogICAgICAgICAgICA8di10ZXh0LWZpZWxkCiAgICAgICAgICAgICAgdi1tb2RlbD0icHJvZmlsZS5mb3JtLmRpc3BsYXlOYW1lIgogICAgICAgICAgICAgIGxhYmVsPSJEaXNwbGF5IG5hbWUiCiAgICAgICAgICAgICAgdmFyaWFudD0ib3V0bGluZWQiCiAgICAgICAgICAgICAgZGVuc2l0eT0iY29tZm9ydGFibGUiCiAgICAgICAgICAgICAgYXV0b2NvbXBsZXRlPSJuaWNrbmFtZSIKICAgICAgICAgICAgICA6cmVhZG9ubHk9InByb2ZpbGUuaXNTYXZpbmcudmFsdWUgfHwgcHJvZmlsZS5pc1JlZnJlc2hpbmcudmFsdWUiCiAgICAgICAgICAgICAgOmVycm9yLW1lc3NhZ2VzPSJwcm9maWxlLmZpZWxkRXJyb3JzLmRpc3BsYXlOYW1lID8gW3Byb2ZpbGUuZmllbGRFcnJvcnMuZGlzcGxheU5hbWVdIDogW10iCiAgICAgICAgICAgIC8+CiAgICAgICAgICA8L3YtY29sPgoKICAgICAgICAgIDx2LWNvbCBjb2xzPSIxMiIgbWQ9IjYiPgogICAgICAgICAgICA8di10ZXh0LWZpZWxkCiAgICAgICAgICAgICAgdi1tb2RlbD0icHJvZmlsZS5mb3JtLmVtYWlsIgogICAgICAgICAgICAgIGxhYmVsPSJFbWFpbCIKICAgICAgICAgICAgICB2YXJpYW50PSJvdXRsaW5lZCIKICAgICAgICAgICAgICBkZW5zaXR5PSJjb21mb3J0YWJsZSIKICAgICAgICAgICAgICByZWFkb25seQogICAgICAgICAgICAgIGhpbnQ9Ik1hbmFnZWQgYnkgeW91ciBzaWduLWluIGFjY291bnQiCiAgICAgICAgICAgICAgcGVyc2lzdGVudC1oaW50CiAgICAgICAgICAgIC8+CiAgICAgICAgICA8L3YtY29sPgogICAgICAgIDwvdi1yb3c+CgogICAgICAgIDx2LWJ0bgogICAgICAgICAgdHlwZT0ic3VibWl0IgogICAgICAgICAgY29sb3I9InByaW1hcnkiCiAgICAgICAgICA6bG9hZGluZz0icHJvZmlsZS5pc1NhdmluZy52YWx1ZSIKICAgICAgICAgIDpkaXNhYmxlZD0icHJvZmlsZS5pc0RlbGV0aW5nQXZhdGFyLnZhbHVlIHx8IHByb2ZpbGUuaXNSZWZyZXNoaW5nLnZhbHVlIgogICAgICAgID4KICAgICAgICAgIFNhdmUgcHJvZmlsZQogICAgICAgIDwvdi1idG4+CiAgICAgIDwvdi1mb3JtPgogICAgPC9kaXY+CiAgPC92LXNoZWV0Pgo8L3RlbXBsYXRlPgoKPHN0eWxlIHNjb3BlZD4KLmFjY291bnQtc2V0dGluZ3Mtc2VjdGlvbiB7CiAgb3ZlcmZsb3c6IGhpZGRlbjsKfQoKLmFjY291bnQtc2V0dGluZ3Mtc2VjdGlvbl9faGVhZGVyIHsKICBwYWRkaW5nOiAxcmVtIDFyZW0gMDsKfQoKLmFjY291bnQtc2V0dGluZ3Mtc2VjdGlvbl9fdGl0bGUgewogIGZvbnQtc2l6ZTogMXJlbTsKICBmb250LXdlaWdodDogNjUwOwogIGxpbmUtaGVpZ2h0OiAxLjI7CiAgbWFyZ2luOiAwOwp9CgouYWNjb3VudC1zZXR0aW5ncy1zZWN0aW9uX19ib2R5IHsKICBwYWRkaW5nOiAxcmVtOwp9CgpAbWVkaWEgKG1heC13aWR0aDogNjQwcHgpIHsKICAuYWNjb3VudC1zZXR0aW5ncy1zZWN0aW9uX19ib2R5IDpkZWVwKC52LWJ0bikgewogICAgbWluLWhlaWdodDogNDhweDsKICB9Cn0KPC9zdHlsZT4K",
@@ -1065,7 +1065,7 @@
           },
           {
             "path": "src/components/account/settings/AccountSettingsPreferencesSection.vue",
-            "ownership": "package",
+            "ownership": "app",
             "hash": "8898edbbe6da860228c05c8d2827b9cb8868340107ad5f0011c0fecc9763b9a8",
             "hadPrevious": true,
             "previousContentBase64": "PHNjcmlwdCBzZXR1cD4KY29uc3QgcHJvcHMgPSBkZWZpbmVQcm9wcyh7CiAgcnVudGltZTogewogICAgdHlwZTogT2JqZWN0LAogICAgcmVxdWlyZWQ6IHRydWUKICB9Cn0pOwoKY29uc3QgcHJlZmVyZW5jZXMgPSBwcm9wcy5ydW50aW1lLnByZWZlcmVuY2VzOwo8L3NjcmlwdD4KCjx0ZW1wbGF0ZT4KICA8di1zaGVldCByb3VuZGVkPSJsZyIgYm9yZGVyIGNsYXNzPSJhY2NvdW50LXNldHRpbmdzLXNlY3Rpb24iPgogICAgPGhlYWRlciBjbGFzcz0iYWNjb3VudC1zZXR0aW5ncy1zZWN0aW9uX19oZWFkZXIiPgogICAgICA8aDIgY2xhc3M9ImFjY291bnQtc2V0dGluZ3Mtc2VjdGlvbl9fdGl0bGUiPlByZWZlcmVuY2VzPC9oMj4KICAgIDwvaGVhZGVyPgogICAgPGRpdiBjbGFzcz0iYWNjb3VudC1zZXR0aW5ncy1zZWN0aW9uX19ib2R5Ij4KICAgICAgPHYtZm9ybSBAc3VibWl0LnByZXZlbnQ9InByZWZlcmVuY2VzLnN1Ym1pdCIgbm92YWxpZGF0ZT4KICAgICAgICA8di1yb3c+CiAgICAgICAgICA8di1jb2wgY29scz0iMTIiIG1kPSI0Ij4KICAgICAgICAgICAgPHYtc2VsZWN0CiAgICAgICAgICAgICAgdi1tb2RlbD0icHJlZmVyZW5jZXMuZm9ybS50aGVtZSIKICAgICAgICAgICAgICBsYWJlbD0iVGhlbWUiCiAgICAgICAgICAgICAgOml0ZW1zPSJwcmVmZXJlbmNlcy5vcHRpb25zLnRoZW1lIgogICAgICAgICAgICAgIGl0ZW0tdGl0bGU9InRpdGxlIgogICAgICAgICAgICAgIGl0ZW0tdmFsdWU9InZhbHVlIgogICAgICAgICAgICAgIHZhcmlhbnQ9Im91dGxpbmVkIgogICAgICAgICAgICAgIGRlbnNpdHk9ImNvbWZvcnRhYmxlIgogICAgICAgICAgICAgIDpkaXNhYmxlZD0icHJlZmVyZW5jZXMuaXNTYXZpbmcudmFsdWUgfHwgcHJlZmVyZW5jZXMuaXNSZWZyZXNoaW5nLnZhbHVlIgogICAgICAgICAgICAgIDplcnJvci1tZXNzYWdlcz0icHJlZmVyZW5jZXMuZmllbGRFcnJvcnMudGhlbWUgPyBbcHJlZmVyZW5jZXMuZmllbGRFcnJvcnMudGhlbWVdIDogW10iCiAgICAgICAgICAgIC8+CiAgICAgICAgICA8L3YtY29sPgoKICAgICAgICAgIDx2LWNvbCBjb2xzPSIxMiIgbWQ9IjQiPgogICAgICAgICAgICA8di1zZWxlY3QKICAgICAgICAgICAgICB2LW1vZGVsPSJwcmVmZXJlbmNlcy5mb3JtLmxvY2FsZSIKICAgICAgICAgICAgICBsYWJlbD0iTGFuZ3VhZ2UgLyBsb2NhbGUiCiAgICAgICAgICAgICAgOml0ZW1zPSJwcmVmZXJlbmNlcy5vcHRpb25zLmxvY2FsZSIKICAgICAgICAgICAgICBpdGVtLXRpdGxlPSJ0aXRsZSIKICAgICAgICAgICAgICBpdGVtLXZhbHVlPSJ2YWx1ZSIKICAgICAgICAgICAgICB2YXJpYW50PSJvdXRsaW5lZCIKICAgICAgICAgICAgICBkZW5zaXR5PSJjb21mb3J0YWJsZSIKICAgICAgICAgICAgICA6ZGlzYWJsZWQ9InByZWZlcmVuY2VzLmlzU2F2aW5nLnZhbHVlIHx8IHByZWZlcmVuY2VzLmlzUmVmcmVzaGluZy52YWx1ZSIKICAgICAgICAgICAgICA6ZXJyb3ItbWVzc2FnZXM9InByZWZlcmVuY2VzLmZpZWxkRXJyb3JzLmxvY2FsZSA/IFtwcmVmZXJlbmNlcy5maWVsZEVycm9ycy5sb2NhbGVdIDogW10iCiAgICAgICAgICAgIC8+CiAgICAgICAgICA8L3YtY29sPgoKICAgICAgICAgIDx2LWNvbCBjb2xzPSIxMiIgbWQ9IjQiPgogICAgICAgICAgICA8di1zZWxlY3QKICAgICAgICAgICAgICB2LW1vZGVsPSJwcmVmZXJlbmNlcy5mb3JtLnRpbWVab25lIgogICAgICAgICAgICAgIGxhYmVsPSJUaW1lIHpvbmUiCiAgICAgICAgICAgICAgOml0ZW1zPSJwcmVmZXJlbmNlcy5vcHRpb25zLnRpbWVab25lIgogICAgICAgICAgICAgIHZhcmlhbnQ9Im91dGxpbmVkIgogICAgICAgICAgICAgIGRlbnNpdHk9ImNvbWZvcnRhYmxlIgogICAgICAgICAgICAgIDpkaXNhYmxlZD0icHJlZmVyZW5jZXMuaXNTYXZpbmcudmFsdWUgfHwgcHJlZmVyZW5jZXMuaXNSZWZyZXNoaW5nLnZhbHVlIgogICAgICAgICAgICAgIDplcnJvci1tZXNzYWdlcz0icHJlZmVyZW5jZXMuZmllbGRFcnJvcnMudGltZVpvbmUgPyBbcHJlZmVyZW5jZXMuZmllbGRFcnJvcnMudGltZVpvbmVdIDogW10iCiAgICAgICAgICAgIC8+CiAgICAgICAgICA8L3YtY29sPgoKICAgICAgICAgIDx2LWNvbCBjb2xzPSIxMiIgbWQ9IjQiPgogICAgICAgICAgICA8di1zZWxlY3QKICAgICAgICAgICAgICB2LW1vZGVsPSJwcmVmZXJlbmNlcy5mb3JtLmRhdGVGb3JtYXQiCiAgICAgICAgICAgICAgbGFiZWw9IkRhdGUgZm9ybWF0IgogICAgICAgICAgICAgIDppdGVtcz0icHJlZmVyZW5jZXMub3B0aW9ucy5kYXRlRm9ybWF0IgogICAgICAgICAgICAgIGl0ZW0tdGl0bGU9InRpdGxlIgogICAgICAgICAgICAgIGl0ZW0tdmFsdWU9InZhbHVlIgogICAgICAgICAgICAgIHZhcmlhbnQ9Im91dGxpbmVkIgogICAgICAgICAgICAgIGRlbnNpdHk9ImNvbWZvcnRhYmxlIgogICAgICAgICAgICAgIDpkaXNhYmxlZD0icHJlZmVyZW5jZXMuaXNTYXZpbmcudmFsdWUgfHwgcHJlZmVyZW5jZXMuaXNSZWZyZXNoaW5nLnZhbHVlIgogICAgICAgICAgICAgIDplcnJvci1tZXNzYWdlcz0icHJlZmVyZW5jZXMuZmllbGRFcnJvcnMuZGF0ZUZvcm1hdCA/IFtwcmVmZXJlbmNlcy5maWVsZEVycm9ycy5kYXRlRm9ybWF0XSA6IFtdIgogICAgICAgICAgICAvPgogICAgICAgICAgPC92LWNvbD4KCiAgICAgICAgICA8di1jb2wgY29scz0iMTIiIG1kPSI0Ij4KICAgICAgICAgICAgPHYtc2VsZWN0CiAgICAgICAgICAgICAgdi1tb2RlbD0icHJlZmVyZW5jZXMuZm9ybS5udW1iZXJGb3JtYXQiCiAgICAgICAgICAgICAgbGFiZWw9Ik51bWJlciBmb3JtYXQiCiAgICAgICAgICAgICAgOml0ZW1zPSJwcmVmZXJlbmNlcy5vcHRpb25zLm51bWJlckZvcm1hdCIKICAgICAgICAgICAgICBpdGVtLXRpdGxlPSJ0aXRsZSIKICAgICAgICAgICAgICBpdGVtLXZhbHVlPSJ2YWx1ZSIKICAgICAgICAgICAgICB2YXJpYW50PSJvdXRsaW5lZCIKICAgICAgICAgICAgICBkZW5zaXR5PSJjb21mb3J0YWJsZSIKICAgICAgICAgICAgICA6ZGlzYWJsZWQ9InByZWZlcmVuY2VzLmlzU2F2aW5nLnZhbHVlIHx8IHByZWZlcmVuY2VzLmlzUmVmcmVzaGluZy52YWx1ZSIKICAgICAgICAgICAgICA6ZXJyb3ItbWVzc2FnZXM9InByZWZlcmVuY2VzLmZpZWxkRXJyb3JzLm51bWJlckZvcm1hdCA/IFtwcmVmZXJlbmNlcy5maWVsZEVycm9ycy5udW1iZXJGb3JtYXRdIDogW10iCiAgICAgICAgICAgIC8+CiAgICAgICAgICA8L3YtY29sPgoKICAgICAgICAgIDx2LWNvbCBjb2xzPSIxMiIgbWQ9IjQiPgogICAgICAgICAgICA8di1zZWxlY3QKICAgICAgICAgICAgICB2LW1vZGVsPSJwcmVmZXJlbmNlcy5mb3JtLmN1cnJlbmN5Q29kZSIKICAgICAgICAgICAgICBsYWJlbD0iQ3VycmVuY3kiCiAgICAgICAgICAgICAgOml0ZW1zPSJwcmVmZXJlbmNlcy5vcHRpb25zLmN1cnJlbmN5IgogICAgICAgICAgICAgIHZhcmlhbnQ9Im91dGxpbmVkIgogICAgICAgICAgICAgIGRlbnNpdHk9ImNvbWZvcnRhYmxlIgogICAgICAgICAgICAgIDpkaXNhYmxlZD0icHJlZmVyZW5jZXMuaXNTYXZpbmcudmFsdWUgfHwgcHJlZmVyZW5jZXMuaXNSZWZyZXNoaW5nLnZhbHVlIgogICAgICAgICAgICAgIDplcnJvci1tZXNzYWdlcz0icHJlZmVyZW5jZXMuZmllbGRFcnJvcnMuY3VycmVuY3lDb2RlID8gW3ByZWZlcmVuY2VzLmZpZWxkRXJyb3JzLmN1cnJlbmN5Q29kZV0gOiBbXSIKICAgICAgICAgICAgLz4KICAgICAgICAgIDwvdi1jb2w+CgogICAgICAgICAgPHYtY29sIGNvbHM9IjEyIiBtZD0iMyI+CiAgICAgICAgICAgIDx2LXNlbGVjdAogICAgICAgICAgICAgIHYtbW9kZWwubnVtYmVyPSJwcmVmZXJlbmNlcy5mb3JtLmF2YXRhclNpemUiCiAgICAgICAgICAgICAgbGFiZWw9IkF2YXRhciBzaXplIgogICAgICAgICAgICAgIDppdGVtcz0icHJlZmVyZW5jZXMub3B0aW9ucy5hdmF0YXJTaXplIgogICAgICAgICAgICAgIHZhcmlhbnQ9Im91dGxpbmVkIgogICAgICAgICAgICAgIGRlbnNpdHk9ImNvbWZvcnRhYmxlIgogICAgICAgICAgICAgIDpkaXNhYmxlZD0icHJlZmVyZW5jZXMuaXNTYXZpbmcudmFsdWUgfHwgcHJlZmVyZW5jZXMuaXNSZWZyZXNoaW5nLnZhbHVlIgogICAgICAgICAgICAgIDplcnJvci1tZXNzYWdlcz0icHJlZmVyZW5jZXMuZmllbGRFcnJvcnMuYXZhdGFyU2l6ZSA/IFtwcmVmZXJlbmNlcy5maWVsZEVycm9ycy5hdmF0YXJTaXplXSA6IFtdIgogICAgICAgICAgICAvPgogICAgICAgICAgPC92LWNvbD4KICAgICAgICA8L3Ytcm93PgoKICAgICAgICA8di1idG4KICAgICAgICAgIHR5cGU9InN1Ym1pdCIKICAgICAgICAgIGNvbG9yPSJwcmltYXJ5IgogICAgICAgICAgOmxvYWRpbmc9InByZWZlcmVuY2VzLmlzU2F2aW5nLnZhbHVlIgogICAgICAgICAgOmRpc2FibGVkPSJwcmVmZXJlbmNlcy5pc1JlZnJlc2hpbmcudmFsdWUiCiAgICAgICAgPgogICAgICAgICAgU2F2ZSBwcmVmZXJlbmNlcwogICAgICAgIDwvdi1idG4+CiAgICAgIDwvdi1mb3JtPgogICAgPC9kaXY+CiAgPC92LXNoZWV0Pgo8L3RlbXBsYXRlPgoKPHN0eWxlIHNjb3BlZD4KLmFjY291bnQtc2V0dGluZ3Mtc2VjdGlvbiB7CiAgb3ZlcmZsb3c6IGhpZGRlbjsKfQoKLmFjY291bnQtc2V0dGluZ3Mtc2VjdGlvbl9faGVhZGVyIHsKICBwYWRkaW5nOiAxcmVtIDFyZW0gMDsKfQoKLmFjY291bnQtc2V0dGluZ3Mtc2VjdGlvbl9fdGl0bGUgewogIGZvbnQtc2l6ZTogMXJlbTsKICBmb250LXdlaWdodDogNjUwOwogIGxpbmUtaGVpZ2h0OiAxLjI7CiAgbWFyZ2luOiAwOwp9CgouYWNjb3VudC1zZXR0aW5ncy1zZWN0aW9uX19ib2R5IHsKICBwYWRkaW5nOiAxcmVtOwp9CgpAbWVkaWEgKG1heC13aWR0aDogNjQwcHgpIHsKICAuYWNjb3VudC1zZXR0aW5ncy1zZWN0aW9uX19ib2R5IDpkZWVwKC52LWJ0bikgewogICAgbWluLWhlaWdodDogNDhweDsKICB9Cn0KPC9zdHlsZT4K",
@@ -1076,7 +1076,7 @@
           },
           {
             "path": "src/components/account/settings/AccountSettingsNotificationsSection.vue",
-            "ownership": "package",
+            "ownership": "app",
             "hash": "fdfd1e2ef24f9f3debd729121607406595e8750ed2f7292fe358edc77ba26547",
             "hadPrevious": true,
             "previousContentBase64": "PHNjcmlwdCBzZXR1cD4KY29uc3QgcHJvcHMgPSBkZWZpbmVQcm9wcyh7CiAgcnVudGltZTogewogICAgdHlwZTogT2JqZWN0LAogICAgcmVxdWlyZWQ6IHRydWUKICB9Cn0pOwoKY29uc3Qgbm90aWZpY2F0aW9ucyA9IHByb3BzLnJ1bnRpbWUubm90aWZpY2F0aW9uczsKPC9zY3JpcHQ+Cgo8dGVtcGxhdGU+CiAgPHYtc2hlZXQgcm91bmRlZD0ibGciIGJvcmRlciBjbGFzcz0iYWNjb3VudC1zZXR0aW5ncy1zZWN0aW9uIj4KICAgIDxoZWFkZXIgY2xhc3M9ImFjY291bnQtc2V0dGluZ3Mtc2VjdGlvbl9faGVhZGVyIj4KICAgICAgPGgyIGNsYXNzPSJhY2NvdW50LXNldHRpbmdzLXNlY3Rpb25fX3RpdGxlIj5Ob3RpZmljYXRpb25zPC9oMj4KICAgIDwvaGVhZGVyPgogICAgPGRpdiBjbGFzcz0iYWNjb3VudC1zZXR0aW5ncy1zZWN0aW9uX19ib2R5Ij4KICAgICAgPHYtZm9ybSBAc3VibWl0LnByZXZlbnQ9Im5vdGlmaWNhdGlvbnMuc3VibWl0IiBub3ZhbGlkYXRlPgogICAgICAgIDx2LXN3aXRjaAogICAgICAgICAgdi1tb2RlbD0ibm90aWZpY2F0aW9ucy5mb3JtLnByb2R1Y3RVcGRhdGVzIgogICAgICAgICAgbGFiZWw9IlByb2R1Y3QgdXBkYXRlcyIKICAgICAgICAgIGNvbG9yPSJwcmltYXJ5IgogICAgICAgICAgaGlkZS1kZXRhaWxzCiAgICAgICAgICA6ZGlzYWJsZWQ9Im5vdGlmaWNhdGlvbnMuaXNTYXZpbmcudmFsdWUgfHwgbm90aWZpY2F0aW9ucy5pc1JlZnJlc2hpbmcudmFsdWUiCiAgICAgICAgICBjbGFzcz0ibWItMiIKICAgICAgICAvPgogICAgICAgIDx2LXN3aXRjaAogICAgICAgICAgdi1tb2RlbD0ibm90aWZpY2F0aW9ucy5mb3JtLmFjY291bnRBY3Rpdml0eSIKICAgICAgICAgIGxhYmVsPSJBY2NvdW50IGFjdGl2aXR5IGFsZXJ0cyIKICAgICAgICAgIGNvbG9yPSJwcmltYXJ5IgogICAgICAgICAgaGlkZS1kZXRhaWxzCiAgICAgICAgICA6ZGlzYWJsZWQ9Im5vdGlmaWNhdGlvbnMuaXNTYXZpbmcudmFsdWUgfHwgbm90aWZpY2F0aW9ucy5pc1JlZnJlc2hpbmcudmFsdWUiCiAgICAgICAgICBjbGFzcz0ibWItMiIKICAgICAgICAvPgogICAgICAgIDx2LXN3aXRjaAogICAgICAgICAgdi1tb2RlbD0ibm90aWZpY2F0aW9ucy5mb3JtLnNlY3VyaXR5QWxlcnRzIgogICAgICAgICAgbGFiZWw9IlNlY3VyaXR5IGFsZXJ0cyAocmVxdWlyZWQpIgogICAgICAgICAgY29sb3I9InByaW1hcnkiCiAgICAgICAgICBoaWRlLWRldGFpbHMKICAgICAgICAgIGRpc2FibGVkCiAgICAgICAgICBjbGFzcz0ibWItNCIKICAgICAgICAvPgogICAgICAgIDx2LWJ0bgogICAgICAgICAgdHlwZT0ic3VibWl0IgogICAgICAgICAgY29sb3I9InByaW1hcnkiCiAgICAgICAgICA6bG9hZGluZz0ibm90aWZpY2F0aW9ucy5pc1NhdmluZy52YWx1ZSIKICAgICAgICAgIDpkaXNhYmxlZD0ibm90aWZpY2F0aW9ucy5pc1JlZnJlc2hpbmcudmFsdWUiCiAgICAgICAgPgogICAgICAgICAgU2F2ZSBub3RpZmljYXRpb24gc2V0dGluZ3MKICAgICAgICA8L3YtYnRuPgogICAgICA8L3YtZm9ybT4KICAgIDwvZGl2PgogIDwvdi1zaGVldD4KPC90ZW1wbGF0ZT4KCjxzdHlsZSBzY29wZWQ+Ci5hY2NvdW50LXNldHRpbmdzLXNlY3Rpb24gewogIG92ZXJmbG93OiBoaWRkZW47Cn0KCi5hY2NvdW50LXNldHRpbmdzLXNlY3Rpb25fX2hlYWRlciB7CiAgcGFkZGluZzogMXJlbSAxcmVtIDA7Cn0KCi5hY2NvdW50LXNldHRpbmdzLXNlY3Rpb25fX3RpdGxlIHsKICBmb250LXNpemU6IDFyZW07CiAgZm9udC13ZWlnaHQ6IDY1MDsKICBsaW5lLWhlaWdodDogMS4yOwogIG1hcmdpbjogMDsKfQoKLmFjY291bnQtc2V0dGluZ3Mtc2VjdGlvbl9fYm9keSB7CiAgcGFkZGluZzogMXJlbTsKfQoKQG1lZGlhIChtYXgtd2lkdGg6IDY0MHB4KSB7CiAgLmFjY291bnQtc2V0dGluZ3Mtc2VjdGlvbl9fYm9keSA6ZGVlcCgudi1idG4pIHsKICAgIG1pbi1oZWlnaHQ6IDQ4cHg7CiAgfQp9Cjwvc3R5bGU+Cg==",
@@ -1089,8 +1089,8 @@
         "migrations": []
       },
       "options": {},
-      "installedAt": "2026-07-22T16:33:17.295Z",
-      "migrationSyncVersion": "0.1.142"
+      "installedAt": "2026-07-22T16:56:44.554Z",
+      "migrationSyncVersion": "0.1.143"
     },
     "@local/users": {
       "packageId": "@local/users",
@@ -1118,7 +1118,7 @@
     },
     "@jskit-ai/auth-provider-local-db-core": {
       "packageId": "@jskit-ai/auth-provider-local-db-core",
-      "version": "0.1.18",
+      "version": "0.1.19",
       "source": {
         "type": "npm-installed-package",
         "packagePath": "node_modules/@jskit-ai/auth-provider-local-db-core",
@@ -1129,7 +1129,7 @@
           "dependencies": {
             "@jskit-ai/auth-provider-local-db-core": {
               "hadPrevious": true,
-              "previousValue": "0.1.18",
+              "previousValue": "0.1.19",
               "value": "0.x"
             }
           },
@@ -1164,8 +1164,8 @@
         ]
       },
       "options": {},
-      "installedAt": "2026-07-22T16:32:44.774Z",
-      "migrationSyncVersion": "0.1.18",
+      "installedAt": "2026-07-22T16:55:41.563Z",
+      "migrationSyncVersion": "0.1.19",
       "warnings": [
         "@jskit-ai/auth-provider-local-db-core: skipped migration auth-local-db-initial-schema (already managed at migrations/20260715084919_auth-local-db-initial-schema.cjs)."
       ]
